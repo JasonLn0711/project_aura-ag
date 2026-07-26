@@ -92,8 +92,8 @@ cross-worktree route observes its publishable files.
 - Owned runtime-store raw-byte findings: 0.
 - Owned runtime-store logical SQLite findings: 0.
 - Fresh-environment stale partner-path findings: 0.
-- Public-anonymization regression: 3/3 pass.
-- Current-main full regression: 600/600 pass.
+- Public-anonymization regression: 5/5 pass.
+- Current-main full regression: 602/602 pass.
 - Full Python regression: 398/398 pass.
 - Bridge Python regression: 14/14 pass.
 - Web workspace tests: 31/31 pass.
@@ -114,7 +114,7 @@ cross-worktree route observes its publishable files.
 - Event ID: `a702ec95-a08f-4da5-81ff-8d6cad89c008`
 - Event hash:
   `952183786855a47d5c1ca5aff14cba9b825c0a671dc5074412671c898c8dec15`
-- Trace SHA-256:
+- Original one-event trace SHA-256:
   `ba293ee02c28ad0dda1dbcb9e18d29ea637ed1fff31898e9a3196892d25f62c4`
 - Trace:
   `artifacts/privacy/2026-07-27-repository-store-anonymization/audit/audit-2026-07-27.jsonl`
@@ -124,20 +124,64 @@ preserved-history gate.
 
 ## Historical stewardship gate
 
-The current repository object audit identifies 498 historical objects and 18
-Git metadata files that retain earlier labels. Ref names are clear, and no
-historical bytes are reachable through the current working-state scan.
+The expanded object-aware audit identifies 506 of 4,636 local Git objects and
+534 object or embedded-archive events that retain earlier labels. The broader
+count includes tree objects and embedded ZIP members that the initial
+checkout-oriented inventory did not classify.
+
+Three concrete metadata targets were backed up inside the owner-only recovery
+boundary. The legacy index was rebuilt from its sanitized HEAD, and two
+reflogs were rewritten with role-based labels. Git metadata now reports zero
+findings; the legacy worktree still has the same 594-file content hash and 48
+unstaged owner changes.
 
 Removing those immutable historical bytes would rewrite commit identities and
 require a coordinated force update. The active instruction preserves both
 local and remote commits, so this audit records historical removal as the next
 explicit authorization gate rather than changing history implicitly.
 
+## Isolated history-rewrite rehearsal
+
+An isolated, non-remote candidate was created from published source commit
+`2dcb3bca4270cd4271c0723a369bfd05f1c851d4`:
+
+- candidate root:
+  `72dec73ed1b9f3aca0a0ed06aa3db6e4fdbefec5`;
+- source and candidate trees: 1,940 files each;
+- missing files, additional files, content drift, and mode drift: 0;
+- candidate current-state findings: 0;
+- candidate object findings across 1,229 objects: 0;
+- candidate Git metadata findings: 0;
+- portable candidate bundle:
+  `~/Downloads/project_aura-ag-history-rewrite-rehearsal-20260727.bundle`;
+- bundle SHA-256:
+  `40a3a31eb6dd5d4cda2c3224404d113b419cf557f44c421fdd65a482834897e3`;
+- bundle verification: complete history, pass;
+- source refs and remotes changed by the rehearsal: 0.
+
+This establishes technical feasibility without changing the published branch.
+The candidate is intentionally a single sanitized baseline commit; adopting
+that tradeoff requires explicit authorization because it replaces public
+commit identities while the recovery bundle preserves the prior lineage.
+
+## Rehearsal machine event
+
+- Session: `history-rewrite-rehearsal-20260727`
+- Event: `privacy.history_rewrite_rehearsal_validated`
+- Event ID: `d8b0790e-e350-4ca2-8d2a-dd5703a3e027`
+- Event hash:
+  `6fb93a93537feddc5d5452a806cd092ce0f3dab30f8adc352703964e2924a898`
+- Updated two-event trace SHA-256:
+  `684cacca7c8838b06dcc28039b032f26d3e5a299862fac2d0ed3b2a53134ea31`
+- Force update authorized: false.
+- Remote mutated: false.
+
 ## Durable connections
 
 - [Public anonymization policy](../../privacy/public-anonymization-policy.md)
 - [Initial public-anonymization audit](../2026-07-26-public-anonymization/audit-event.md)
 - [Machine-readable scan summary](../../../artifacts/privacy/2026-07-27-repository-store-anonymization/scan-summary.json)
+- [History-rewrite rehearsal evidence](../../../artifacts/privacy/2026-07-27-repository-store-anonymization/history-rewrite-rehearsal.json)
 - [Audit event index](../README.md)
 - `planning-everything-track/weeks/2026-W31/days/2026-07-27.md`
 - `planning-everything-track/data/projects/2026-07-project-aura-native-agent-workspace.md`

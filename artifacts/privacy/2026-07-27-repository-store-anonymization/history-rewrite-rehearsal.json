@@ -1,0 +1,43 @@
+{
+  "audit_id": "AUDIT-2026-07-27-AURA-REPOSITORY-STORE-ANONYMIZATION-001",
+  "generated_at": "2026-07-27T01:50:39.825+08:00",
+  "status": "candidate_validated_remote_unchanged",
+  "source": {
+    "commit": "2dcb3bca4270cd4271c0723a369bfd05f1c851d4",
+    "files": 1940,
+    "objects_total": 4636,
+    "objects_with_findings": 506,
+    "object_finding_events": 534,
+    "metadata_findings_after_cleanup": 0
+  },
+  "candidate": {
+    "directory": "~/Downloads/project_aura-ag-history-rewrite-rehearsal-20260727/",
+    "commit": "72dec73ed1b9f3aca0a0ed06aa3db6e4fdbefec5",
+    "files": 1940,
+    "objects_total": 1229,
+    "current_findings": 0,
+    "object_findings": 0,
+    "metadata_findings": 0,
+    "missing_files": 0,
+    "additional_files": 0,
+    "content_or_mode_drift": 0
+  },
+  "candidate_bundle": {
+    "path": "~/Downloads/project_aura-ag-history-rewrite-rehearsal-20260727.bundle",
+    "sha256": "40a3a31eb6dd5d4cda2c3224404d113b419cf557f44c421fdd65a482834897e3",
+    "complete_history": true,
+    "verification": "pass"
+  },
+  "metadata_recovery": {
+    "directory": "~/Downloads/project_aura-ag-legacy08-recovery-20260727/git-metadata-pre-sanitization/",
+    "branch_reflog_sha256": "aee79a339ddf263574a239a8335985325e42f4b69a246da59ec2f71d6aa695e5",
+    "worktree_head_reflog_sha256": "b509fcab3daf341cedccf8d5024d4486613d49a26bbf98de4bd35b0dc0ad6656",
+    "worktree_index_sha256": "d12118b31d5bf525f758b3a8b352b4e778eaef6fa7714d9f7c5308c74d9e2ce1"
+  },
+  "activation_gate": {
+    "force_update_authorized": false,
+    "remote_mutated": false,
+    "final_candidate_must_be_regenerated_from_current_remote_main": true,
+    "collaborator_coordination_required": true
+  }
+}

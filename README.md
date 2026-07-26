@@ -1053,6 +1053,17 @@ The first command validates the active checkout. The second validates every
 registered worktree before publication while preserving each worktree's own
 branch and uncommitted state.
 
+Historical stewardship diagnostics:
+
+```bash
+uv run python scripts/check_public_anonymization.py \
+  --all-worktrees --git-objects --git-metadata
+```
+
+This broader command reports historical object findings until an explicitly
+authorized history rewrite is complete. It leaves refs, objects, worktrees,
+and remotes unchanged.
+
 Stable daily-use release gates:
 
 ```bash
