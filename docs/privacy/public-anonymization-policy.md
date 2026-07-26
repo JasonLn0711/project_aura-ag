@@ -14,11 +14,12 @@ partner identities.
 - Evidence path:
   `artifacts/privacy/2026-07-26-public-anonymization/`.
 - Scope control: the executable gate covers every registered worktree's
-  current publishable state; historical Git-object migration is a separately
-  authorized stewardship operation.
-- Next gate: publish the validated current-state gate and audit to remote
-  `main`, then activate history migration only through an explicit,
-  recoverable rewrite plan.
+  current publishable state and the activated replacement lineage on remote
+  `main`. Owner-held recovery bundles and retained local objects stay within a
+  separately activated local-cleanup path.
+- Next gate: collaborators refresh onto the replacement lineage; repository
+  owners may later activate local unreachable-object cleanup after confirming
+  every required recovery copy.
 
 ## Public labels
 
@@ -75,12 +76,13 @@ administrative files while leaving object files to the object-aware reader.
 - [History-rewrite rehearsal evidence](../../artifacts/privacy/2026-07-27-repository-store-anonymization/history-rewrite-rehearsal.json)
 
 Current-state publication and historical-ref stewardship remain separate
-claim layers. The current gate now covers all ten registered worktrees,
-including the inherited dirty side worktree without absorbing its unrelated
-changes. Historical objects move through a separately approved migration that
-preserves a recovery copy and records the new object map.
+claim layers. The current gate covers all ten registered worktrees, including
+the inherited dirty side worktree without absorbing its unrelated changes.
+The authorized remote migration preserved verified recovery bundles, matched
+the current published tree exactly, and replaced the reachable `main` lineage
+through an exact `force-with-lease` boundary.
 
-The isolated rehearsal proves a zero-finding replacement history can retain
-the exact published file tree. Activating it requires an explicit force-update
-decision, collaborator coordination, and a final candidate regenerated from
-the then-current remote `main`.
+The activated candidate and its complete-history bundle both validate at zero
+findings across current files, reachable Git objects, and Git metadata. Local
+worktrees and their owner-controlled changes remain preserved; any later local
+object cleanup begins as its own authorized stewardship operation.

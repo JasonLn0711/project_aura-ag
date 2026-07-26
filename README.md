@@ -1060,9 +1060,11 @@ uv run python scripts/check_public_anonymization.py \
   --all-worktrees --git-objects --git-metadata
 ```
 
-This broader command reports historical object findings until an explicitly
-authorized history rewrite is complete. It leaves refs, objects, worktrees,
-and remotes unchanged.
+This broader command validates the published replacement lineage at zero
+findings after the authorized history activation. It remains read-only.
+Existing local clones that retain earlier refs, reflogs, or unreachable objects
+continue to report those retained recovery objects until their owner activates
+the separate local-cleanup path.
 
 Stable daily-use release gates:
 

@@ -18,12 +18,12 @@
   evidence, and next gate.
 - Evidence path:
   `artifacts/privacy/2026-07-27-repository-store-anonymization/`.
-- Scope control: current working-state migration preserves every local and
-  remote commit; historical object rewriting remains an explicitly activated
-  stewardship operation.
-- Next gate: publish the current-state gate and audit to remote `main`, then
-  decide whether historical object removal warrants coordinated force-update
-  authorization.
+- Scope control: the authorized remote rewrite replaced the reachable public
+  lineage through an exact lease while preserving owner-held recovery bundles,
+  local worktrees, and their uncommitted state.
+- Next gate: collaborators refresh onto the replacement lineage; local
+  unreachable-object cleanup remains a separately activated stewardship
+  operation.
 
 ## Issue and root cause
 
@@ -135,10 +135,10 @@ reflogs were rewritten with role-based labels. Git metadata now reports zero
 findings; the legacy worktree still has the same 594-file content hash and 48
 unstaged owner changes.
 
-Removing those immutable historical bytes would rewrite commit identities and
-require a coordinated force update. The active instruction preserves both
-local and remote commits, so this audit records historical removal as the next
-explicit authorization gate rather than changing history implicitly.
+Removing those immutable historical bytes from the public reachable lineage
+rewrites commit identities and therefore used an explicit, recoverable
+force-update authorization. Local recovery objects and worktrees remain
+preserved under owner control and can enter a separate cleanup operation later.
 
 ## Isolated history-rewrite rehearsal
 
@@ -175,6 +175,49 @@ commit identities while the recovery bundle preserves the prior lineage.
   `684cacca7c8838b06dcc28039b032f26d3e5a299862fac2d0ed3b2a53134ea31`
 - Force update authorized: false.
 - Remote mutated: false.
+
+## Authorized remote history activation
+
+Explicit authorization activated final candidate
+`384961595a2be45e3e40077de11792a891534d37` against the exact expected remote
+tip `f4a949fccf73ebd10d15b88244830944ac5617fc`.
+
+Pre-activation controls:
+
+- the source and candidate tree IDs both resolved to
+  `65a5e78badc5922385852d85fb014e67d3ab6f52`;
+- the candidate contained 1,941 files and validated at zero findings across
+  its worktree, 1,249 local Git objects, and Git metadata;
+- the complete candidate bundle
+  `~/Downloads/project_aura-ag-history-rewrite-rehearsal-f4a949f-20260727.bundle`
+  passed verification with SHA-256
+  `e35d7600833ce45a820d0fb86c83c5e3b70da23df789ad3e6cbc64d36198314e`;
+- the original remote lineage was captured before mutation in
+  `~/Downloads/project_aura-ag-pre-history-rewrite-f4a949f-20260727.bundle`;
+  its complete-history verification passed and its SHA-256 is
+  `9aa821b30cf6e2d263c413a742585fd0ffe360cfc9e13bfc887b9eec40394bd3`.
+
+The exact `force-with-lease` update succeeded. Immediate remote inspection
+reported one branch ref, `main`, at the authorized candidate, with zero tags.
+The replacement lineage is therefore the only reachable published history.
+Provider-controlled retention of unreachable server objects remains outside
+this reachable-ref claim.
+
+Local worktrees, inherited uncommitted changes, recovery bundles, and the
+original local object database were preserved. Local unreachable-object
+cleanup requires a separate authorization.
+
+## Activation machine event
+
+- Session: `history-rewrite-activation-20260727`
+- Event: `privacy.history_rewrite_activated`
+- Event ID: `ef4ce052-ac34-4281-92ee-dbedfdff4d54`
+- Event hash:
+  `5493a827fb338c31b9a0fc0d274161d87bae3ce7079d5a38740d10a6b57082fc`
+- Updated three-event trace SHA-256:
+  `afe241b72e885c890c1a3f7ede8f99a27a008119a45842fd6925511de283ff6e`
+- Force update authorized: true.
+- Reachable remote history activated: true.
 
 ## Durable connections
 

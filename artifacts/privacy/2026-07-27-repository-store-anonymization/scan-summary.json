@@ -1,8 +1,8 @@
 {
   "audit_id": "AUDIT-2026-07-27-AURA-REPOSITORY-STORE-ANONYMIZATION-001",
-  "generated_at": "2026-07-27T01:18:35.830+08:00",
-  "scope": "registered_worktrees_and_owned_runtime_stores",
-  "status": "current_state_validated_history_preserved",
+  "generated_at": "2026-07-27T06:55:55.032+08:00",
+  "scope": "registered_worktrees_owned_runtime_stores_and_remote_main_lineage",
+  "status": "remote_main_rewritten_current_state_validated_local_history_preserved",
   "first_principle": {
     "scarce_resource": "public trust, identity privacy, and recoverable repository history",
     "canonical_home": "project_aura-ag",
@@ -61,32 +61,46 @@
     "event_hash": "952183786855a47d5c1ca5aff14cba9b825c0a671dc5074412671c898c8dec15",
     "rehearsal_event_id": "d8b0790e-e350-4ca2-8d2a-dd5703a3e027",
     "rehearsal_event_hash": "6fb93a93537feddc5d5452a806cd092ce0f3dab30f8adc352703964e2924a898",
-    "trace_sha256": "684cacca7c8838b06dcc28039b032f26d3e5a299862fac2d0ed3b2a53134ea31"
+    "activation_event_id": "ef4ce052-ac34-4281-92ee-dbedfdff4d54",
+    "activation_event_hash": "5493a827fb338c31b9a0fc0d274161d87bae3ce7079d5a38740d10a6b57082fc",
+    "trace_sha256": "afe241b72e885c890c1a3f7ede8f99a27a008119a45842fd6925511de283ff6e"
   },
   "history_rewrite_rehearsal": {
-    "source_commit": "2dcb3bca4270cd4271c0723a369bfd05f1c851d4",
-    "source_objects_total": 4636,
-    "source_objects_with_findings": 506,
-    "source_object_finding_events": 534,
+    "source_commit": "f4a949fccf73ebd10d15b88244830944ac5617fc",
+    "source_reachable_objects_total": 3622,
+    "source_reachable_objects_with_findings": 166,
+    "source_reachable_object_finding_events": 183,
+    "local_pre_rewrite_objects_total": 4636,
+    "local_pre_rewrite_objects_with_findings": 506,
+    "local_pre_rewrite_object_finding_events": 534,
     "source_git_metadata_findings_after_cleanup": 0,
-    "candidate_commit": "72dec73ed1b9f3aca0a0ed06aa3db6e4fdbefec5",
-    "source_files": 1940,
-    "candidate_files": 1940,
+    "candidate_commit": "384961595a2be45e3e40077de11792a891534d37",
+    "source_files": 1941,
+    "candidate_files": 1941,
     "missing_files": 0,
     "additional_files": 0,
     "content_or_mode_drift": 0,
-    "candidate_objects_total": 1229,
+    "candidate_objects_total": 1249,
     "candidate_current_findings": 0,
     "candidate_object_findings": 0,
     "candidate_git_metadata_findings": 0,
-    "bundle_sha256": "40a3a31eb6dd5d4cda2c3224404d113b419cf557f44c421fdd65a482834897e3",
+    "bundle_sha256": "e35d7600833ce45a820d0fb86c83c5e3b70da23df789ad3e6cbc64d36198314e",
     "bundle_verification": "pass",
-    "force_update_authorized": false,
-    "remote_mutated": false
+    "pre_rewrite_remote_bundle_sha256": "9aa821b30cf6e2d263c413a742585fd0ffe360cfc9e13bfc887b9eec40394bd3",
+    "pre_rewrite_remote_bundle_verification": "pass",
+    "lease_expected_old": "f4a949fccf73ebd10d15b88244830944ac5617fc",
+    "force_update_authorized": true,
+    "force_mode": "force-with-lease",
+    "remote_mutated": true,
+    "remote_refs_after": 1,
+    "remote_tags_after": 0,
+    "reachable_remote_history_replaced": true
   },
   "scope_control": {
     "current_state": "validated",
     "git_metadata": "validated",
-    "historical_git_objects": "zero_finding_candidate_ready_pending_explicit_force_update_authorization"
+    "remote_main_reachable_objects": "validated_zero_findings",
+    "server_unreachable_objects": "provider_controlled_retention",
+    "local_historical_git_objects": "preserved_pending_separate_cleanup_authorization"
   }
 }
