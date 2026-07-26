@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "17",
+  "state": "long-plan",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "17-long-plan.png",
+  "sha256": "8f7ab89c6ff25b3d063cdcb62b47b0df518db74f79037f544985e2b32a2e4dad",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "plan"
+  ],
+  "content_formats": [
+    "markdown"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "plan:visual-17",
+      "kind": "plan",
+      "title": "執行計畫",
+      "body_sha256": "266623c80190c1f634e62420865f86ca7325186d3ef9e5e9cdef862ed00c2978",
+      "body_characters": 542
+    }
+  ]
+}

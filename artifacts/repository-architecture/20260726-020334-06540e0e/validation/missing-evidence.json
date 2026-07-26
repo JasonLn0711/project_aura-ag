@@ -1,0 +1,23 @@
+{
+  "status": "ready_with_limitations",
+  "items": [
+    {
+      "id": "ME-001",
+      "confidence": "Unknown",
+      "evidence": "Windows and macOS target-host suites are unavailable_not_passed; Ubuntu 24.04 is the measured release platform.",
+      "next_validation": "Run the full package and GUI suite on each additional declared target OS."
+    },
+    {
+      "id": "ME-002",
+      "confidence": "Partially Verified",
+      "evidence": "Native and model BOM entries reflect discoverable local commands and declarations.",
+      "next_validation": "Collect immutable native package and model manifests from release hosts."
+    },
+    {
+      "id": "ME-003",
+      "confidence": "Blocked",
+      "evidence": "The prompt-named source archive repository-technical-architecture-package-project_aura-ag-20260725-221128-393521.zip was not present in the supplied Downloads or repository paths.",
+      "next_validation": "Attach the exact archive if byte-level comparison beyond source commit 93fd7587ae628104e0fa23581204d92ee085e3ce is required."
+    }
+  ]
+}

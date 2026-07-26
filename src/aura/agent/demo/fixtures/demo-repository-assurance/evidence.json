@@ -1,0 +1,48 @@
+{
+  "fixture_id": "demo-repository-assurance",
+  "classification": "public",
+  "findings": [
+    {
+      "risk_id": "R-001",
+      "severity": "High",
+      "title": "TranscriptionTab coordination hotspot",
+      "source": "src/aura/ui/transcription_tab.py",
+      "confidence": "Confirmed"
+    },
+    {
+      "risk_id": "R-002",
+      "severity": "High",
+      "title": "Live ASR queue has no explicit bound",
+      "source": "src/aura/asr/threads.py",
+      "confidence": "Confirmed"
+    },
+    {
+      "risk_id": "R-003",
+      "severity": "High",
+      "title": "Frozen lock activation requires one release path",
+      "source": "uv.lock",
+      "confidence": "Partially Verified"
+    },
+    {
+      "risk_id": "R-004",
+      "severity": "High",
+      "title": "Model identities use mutable names or tags",
+      "source": "src/aura/config.py",
+      "confidence": "Confirmed"
+    },
+    {
+      "risk_id": "R-006",
+      "severity": "High",
+      "title": "Privacy provenance benefits from a repository-wide gate",
+      "source": "artifacts/",
+      "confidence": "Partially Verified"
+    },
+    {
+      "risk_id": "R-010",
+      "severity": "Medium",
+      "title": "Static quality thresholds are a future validation layer",
+      "source": "pyproject.toml",
+      "confidence": "Confirmed"
+    }
+  ]
+}

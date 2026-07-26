@@ -1,0 +1,19 @@
+flowchart LR
+Task[Task and selected references] --> Guard[DataTransferGuard]
+Canonical[AURA canonical evidence] --> Adapter[Read-only evidence adapter]
+Adapter --> Freshness[Eligibility and freshness]
+Freshness --> Guard
+Guard --> Preview[Immutable TransferPreview]
+Preview --> ViewModel[TransferReviewViewModel]
+ViewModel --> LiveReview[Plain-language Live review]
+LiveReview --> Decision[Explicit current-payload confirmation]
+Decision --> Codex[Exact confirmed transmitted_text]
+ViewModel --> DemoNotice[Demo local-only notice and optional inspection]
+DemoNotice --> DemoSatisfied[demo_local_only audit satisfaction]
+DemoSatisfied --> Demo[Deterministic local provider]
+Guard --> Block[Credential and raw-audio hard block]
+Canonical -. raw audio remains local .-> Local[Local playback]
+RepoAuth[Repository authority and scoped approvals] --> Codex
+RepoAuth -. separate from initial-payload review .-> LiveReview
+Codex --> Run[(Agent run artifacts)]
+Demo --> Run

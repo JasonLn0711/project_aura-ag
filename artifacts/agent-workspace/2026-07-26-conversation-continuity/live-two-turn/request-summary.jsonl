@@ -1,0 +1,2 @@
+{"request_id":"live-continuity-1","workflow":"live_conversation_continuity_smoke","turn":1,"safety_profile":"read-only","network_access":false,"data_boundary":"minimal synthetic instruction","runtime_classification":"valid_target_runtime"}
+{"request_id":"live-continuity-2","workflow":"live_conversation_continuity_smoke","turn":2,"safety_profile":"read-only","network_access":false,"data_boundary":"minimal synthetic instruction","continuation":"same_provider_thread","runtime_classification":"valid_target_runtime"}

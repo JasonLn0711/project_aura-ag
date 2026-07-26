@@ -1,0 +1,5 @@
+service,boundary,network_default
+OpenAI / ChatGPT,Codex-managed cloud,disabled
+System browser,provider login only,user activated
+Ollama,local process,local
+Git repository,local selected root,none

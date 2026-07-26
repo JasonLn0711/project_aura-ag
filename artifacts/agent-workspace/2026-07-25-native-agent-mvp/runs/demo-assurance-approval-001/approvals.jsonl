@@ -1,0 +1,2 @@
+{"approval_id": "approval-demo-r002", "category": "worktree_creation", "displayed_summary_hash": "a96cb9b936bc7db8ef48680e5b222f1bbd3fb95f66fef8572bc8d99591554a22", "record_type": "request", "requested_at": "2026-07-25T21:38:05.176+08:00"}
+{"actor": "user", "approval_id": "approval-demo-r002", "decided_at": "2026-07-25T21:38:05.179+08:00", "decision": "approved_once", "record_type": "decision"}

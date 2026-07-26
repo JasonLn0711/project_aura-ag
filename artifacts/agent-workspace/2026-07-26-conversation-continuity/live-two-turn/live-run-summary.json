@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "LIVE_MINIMUM_COMPLETED",
+  "runtime_classification": "valid_target_runtime",
+  "provider": "Codex app-server over stdio",
+  "account_status": "signed_in",
+  "resolved_model": "gpt-5.6-sol",
+  "resolved_effort": "low",
+  "turn_count": 2,
+  "same_provider_thread": true,
+  "turns": [
+    {
+      "turn": 1,
+      "run_id_sha256": "0a7606fd240241204bb891b59e9c38da38f59cb23787e61447ec5f9bfa329e86",
+      "thread_id_sha256": "d23a052c80431153c11ee6a315f6668923f0a0dc9f91897d98b2153fbdc2431b",
+      "expected_reply_observed": true,
+      "event_count": 35,
+      "seconds": 6.151
+    },
+    {
+      "turn": 2,
+      "run_id_sha256": "2b131f0476fc5bb38193cf0dc44e9a111d6cb4709b6f9ee3ef99b1fa9518d049",
+      "thread_id_sha256": "d23a052c80431153c11ee6a315f6668923f0a0dc9f91897d98b2153fbdc2431b",
+      "expected_reply_observed": true,
+      "event_count": 37,
+      "seconds": 4.421
+    }
+  ],
+  "tracked_checkout_unchanged": true,
+  "process_tree_clean_after_shutdown": true,
+  "total_seconds": 10.833,
+  "failure_class": null,
+  "credential_values_captured": false,
+  "raw_audio_transferred": false,
+  "completed_at": "2026-07-26T22:13:39.351+08:00"
+}

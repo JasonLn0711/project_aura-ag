@@ -1,0 +1,58 @@
+{"event_type":"provider.ready","payload":{"provider":"Demo Provider","network":false,"fixture_id":"demo-repository-assurance"}}
+{"event_type":"message.user","payload":{"text":"Replay Repository Assurance Demo","workflow":"repository_health_review"}}
+{"event_type":"context.snapshot","payload":{"repository":"sanitized-project-aura","base_commit":"demo-6807f516","evidence_package":"demo-architecture-package","demo":true}}
+{"event_type":"data_boundary.confirmed","payload":{"local_only":true,"raw_audio_excluded":true,"unselected_sessions_excluded":true}}
+{"event_type":"run.created","payload":{"mode":"demo","safety_profile":"demo"}}
+{"event_type":"run.started","payload":{"phase":"preflight"}}
+{"event_type":"run.phase_changed","payload":{"phase":"context_review"}}
+{"event_type":"plan.updated","payload":{"steps":[{"step":"Inspect repository evidence","status":"in_progress"},{"step":"Review R-002","status":"pending"},{"step":"Validate bounded remediation","status":"pending"},{"step":"Generate architecture package","status":"pending"}]}}
+{"event_type":"run.phase_changed","payload":{"phase":"planning"}}
+{"event_type":"evidence.linked","payload":{"risk_id":"R-001","severity":"High","source":"src/aura/ui/transcription_tab.py","confidence":"Confirmed"}}
+{"event_type":"evidence.linked","payload":{"risk_id":"R-002","severity":"High","source":"src/aura/asr/threads.py","confidence":"Confirmed","selected":true}}
+{"event_type":"evidence.linked","payload":{"risk_id":"R-003","severity":"High","source":"uv.lock","confidence":"Partially Verified"}}
+{"event_type":"reasoning.summary.completed","payload":{"summary":"R-002 has the smallest bounded remediation surface: retain durable audio and bound provisional ASR work."}}
+{"event_type":"approval.requested","payload":{"approval_id":"approval-demo-r002","category":"worktree_creation","title":"建立示範隔離工作區","reason":"在隔離工作區展示 R-002 修正","risk":"low","repository":"sanitized-project-aura","network":false,"decision_options":["approved_once","rejected","cancelled"]}}
+{"event_type":"approval.resolved","payload":{"approval_id":"approval-demo-r002","decision":"approved_once","actor":"user"}}
+{"event_type":"run.phase_changed","payload":{"phase":"running"}}
+{"event_type":"command.requested","payload":{"command_id":"cmd-demo-001","argv":["git","worktree","add","<demo-worktree>","demo-6807f516"],"cwd":"<demo-repository>","simulated":true}}
+{"event_type":"command.started","payload":{"command_id":"cmd-demo-001","simulated":true}}
+{"event_type":"command.output.delta","payload":{"command_id":"cmd-demo-001","text":"Preparing worktree (detached HEAD demo-6807f516)","simulated":true}}
+{"event_type":"command.completed","payload":{"command_id":"cmd-demo-001","exit_code":0,"simulated":true}}
+{"event_type":"file_change.proposed","payload":{"file_change_id":"change-demo-r002","paths":["src/aura/asr/threads.py"],"additions":2,"deletions":1,"binary":false,"path_policy":"allowed","simulated":true}}
+{"event_type":"diff.updated","payload":{"file_change_id":"change-demo-r002","fixture":"proposed.patch","base_commit":"demo-6807f516","simulated":true}}
+{"event_type":"file_change.completed","payload":{"file_change_id":"change-demo-r002","paths":["src/aura/asr/threads.py"],"simulated":true}}
+{"event_type":"run.phase_changed","payload":{"phase":"testing"}}
+{"event_type":"test.started","payload":{"command":"python -m unittest tests.test_agent_demo","simulated":true}}
+{"event_type":"test.completed","payload":{"passed":8,"failed":0,"skipped":0,"duration_seconds":0.42,"simulated":true}}
+{"event_type":"run.phase_changed","payload":{"phase":"review_required"}}
+{"event_type":"run.phase_changed","payload":{"phase":"reporting"}}
+{"event_type":"report.started","payload":{"section_total":25,"fixture_result":true}}
+{"event_type":"report.section_ready","payload":{"section":1,"title":"Executive Summary","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":2,"title":"Repository Map","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":3,"title":"Technology Stack Inventory","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":4,"title":"C4 System Context","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":5,"title":"C4 Container Architecture","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":6,"title":"Component Architecture","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":7,"title":"Runtime and Data Flow","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":8,"title":"API and Interface Inventory","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":9,"title":"Dependency Graph","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":10,"title":"SBOM","state":"ready_with_limitations"}}
+{"event_type":"report.section_ready","payload":{"section":11,"title":"Build and Deployment Architecture","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":12,"title":"Configuration and Environment Variables","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":13,"title":"Security Boundaries","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":14,"title":"Architecture Decision Records","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":15,"title":"Risks and Technical Debt","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":16,"title":"Local Development and Execution Guide","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":17,"title":"Testing and Quality Strategy","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":18,"title":"Observability and Operations","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":19,"title":"Data Storage, Retention, and Lifecycle","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":20,"title":"Open Questions, Unknowns, and Release Gates","state":"ready_with_limitations"}}
+{"event_type":"report.section_ready","payload":{"section":21,"title":"Reliability Architecture and SLOs","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":22,"title":"Identity, Authentication, and Future Team Readiness","state":"ready_with_limitations"}}
+{"event_type":"report.section_ready","payload":{"section":23,"title":"Prompt-Injection and Instruction-Trust Model","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":24,"title":"Permission, Network, Dependency, Container, and Publication Governance","state":"ready"}}
+{"event_type":"report.section_ready","payload":{"section":25,"title":"UX Architecture and Cognitive-Load Validation","state":"ready"}}
+{"event_type":"report.validation_completed","payload":{"status":"ready_with_limitations","missing_evidence":["live target platform matrix"]}}
+{"event_type":"report.ready","payload":{"package":"demo-architecture-package","section_count":25,"fixture_result":true}}
+{"event_type":"artifact.exported","payload":{"artifact":"demo-evidence-packet.zip","checksum":"demo-sha256","fixture_result":true}}
+{"event_type":"run.completed","payload":{"outcome":"demo_completed","fixture_result":true}}

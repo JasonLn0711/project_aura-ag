@@ -1,0 +1,9 @@
+flowchart LR
+User[Operator objective] --> Profile[Allowlisted repository profile]
+Profile --> Mode[Ask, Review, Implement, or Publish]
+Mode --> Policy[Policy and resource preflight]
+Policy --> Queue[Durable queue]
+Queue --> Run[AgentRun]
+Run --> Read[Repository inspection]
+Read --> Review[Reviewable output]
+Review --> Worktree[Isolated worktree when mutation is approved]

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "20260726-020334-06540e0e",
+  "generated_at": "2026-07-26T02:03:34+08:00",
+  "repository": "project_aura-stable-daily",
+  "source_commit": "51eeef3409d6a553042becef8d7e38283ce3c2d8",
+  "source_branch": "aura-agent/20260725/stable-daily-workspace",
+  "source_dirty": false,
+  "generator": "aura.agent.reporting.ArchitecturePackageGenerator",
+  "release_maturity": "single-operator stable daily-use",
+  "confidence_vocabulary": [
+    "Confirmed",
+    "Partially Verified",
+    "Inferred",
+    "Unknown",
+    "Blocked"
+  ],
+  "limitations": [
+    "Native dependency presence is observed on this workstation only.",
+    "Mermaid source receives structural validation when no Mermaid CLI is installed.",
+    "Model assets without immutable provider identifiers remain Partially Verified."
+  ]
+}

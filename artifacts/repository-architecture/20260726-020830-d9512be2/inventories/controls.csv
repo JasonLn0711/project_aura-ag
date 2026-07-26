@@ -1,0 +1,15 @@
+control,area,implementation,evidence
+C-001,execution,Read-only default and no danger-full-access,src/aura/agent/policy.py
+C-002,filesystem,Canonical allowlist and symlink boundary,PathPolicy
+C-003,credentials,App-server-managed authentication,ADR-006
+C-004,UI,Static trusted Qt renderer registry,ADR-003
+C-005,approvals,Request-scoped approve once decisions,AgentRunController
+C-006,network,Network disabled by default,ADR-011
+C-007,data,Minimal transfer preview and local redaction,build_transfer_preview
+C-008,Git,Detached isolated worktree and push prohibition,WorktreeManager and CommandPolicy
+C-009,audit,Append-only normalized run events,AgentRunStore
+C-010,recovery,Incomplete runs discovered without auto-resume,AgentRunStore.discover_incomplete
+C-011,scheduling,One Live run with recording and live-ASR priority,DurableRunScheduler and ResourceGovernor
+C-012,instructions,Repository instruction trust bound to commit and hash,InstructionTrustPolicy
+C-013,publication,"Explicit Publish stage, agent branch, validation, freshness, secret scan, and external credentials",PublicationManager
+C-014,retention,"Manual cleanup after storage totals, warnings, and preview",AgentStorageManager.cleanup_preview

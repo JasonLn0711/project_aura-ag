@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "state_id": "10",
+  "state": "blocked-image-placeholder",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "10-blocked-image-placeholder.png",
+  "sha256": "9fea37c52727ea2ddefc6d4fe2a43b9810cce61dab2a2a5f8faa64fb3695d1b3",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 3,
+  "blank_item_count": 0,
+  "kinds": [
+    "user",
+    "progress",
+    "assistant"
+  ],
+  "content_formats": [
+    "markdown",
+    "structured",
+    "markdown"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "user:user-1",
+      "kind": "user",
+      "title": "你",
+      "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+      "body_characters": 42
+    },
+    {
+      "stable_id": "progress:visual-10",
+      "kind": "progress",
+      "title": "工作進度",
+      "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+      "body_characters": 25
+    },
+    {
+      "stable_id": "assistant:assistant-1",
+      "kind": "assistant",
+      "title": "Aura",
+      "body_sha256": "ca11ac85e81e16a03b7ea3c9fe0583236e08c645c0d880f93fe375cadf3e1271",
+      "body_characters": 89
+    }
+  ]
+}

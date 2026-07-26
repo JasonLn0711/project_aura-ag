@@ -1,0 +1,17 @@
+{
+  "status": "ready_with_limitations",
+  "items": [
+    {
+      "id": "ME-001",
+      "confidence": "Unknown",
+      "evidence": "No complete target-platform runtime matrix was executed in this generation.",
+      "next_validation": "Run the full package and GUI suite on each declared target OS."
+    },
+    {
+      "id": "ME-002",
+      "confidence": "Partially Verified",
+      "evidence": "Native and model BOM entries reflect discoverable local commands and declarations.",
+      "next_validation": "Collect immutable native package and model manifests from release hosts."
+    }
+  ]
+}

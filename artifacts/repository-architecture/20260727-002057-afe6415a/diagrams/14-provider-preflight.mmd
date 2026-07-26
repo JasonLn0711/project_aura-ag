@@ -1,0 +1,16 @@
+sequenceDiagram
+actor User
+participant AURA
+participant Codex
+participant Browser
+AURA->>Codex: Discover executable and version
+AURA->>AURA: Verify compatibility manifest
+AURA->>Codex: initialize
+AURA->>Codex: account/read and model/list
+AURA->>Codex: thread/list no-side-effect probe
+Codex-->>AURA: Compatibility and capability evidence
+opt Login required
+AURA-->>User: Sign-in action
+User->>Browser: Provider-owned login
+Browser-->>Codex: Authorization result
+end

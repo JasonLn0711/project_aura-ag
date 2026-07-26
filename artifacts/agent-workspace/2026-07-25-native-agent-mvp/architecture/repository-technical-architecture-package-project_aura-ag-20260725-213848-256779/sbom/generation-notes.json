@@ -1,0 +1,11 @@
+{
+  "generator": "stdlib parser over pyproject.toml and uv.lock",
+  "formats": [
+    "CycloneDX 1.6",
+    "SPDX 2.3"
+  ],
+  "known_omissions": [
+    "undiscoverable OS package records",
+    "immutable hashes for provider-hosted models"
+  ]
+}

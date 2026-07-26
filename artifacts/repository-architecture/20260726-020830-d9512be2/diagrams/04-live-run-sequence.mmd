@@ -1,0 +1,14 @@
+sequenceDiagram
+actor User
+participant UI
+participant Controller
+participant Codex
+User->>UI: Confirm policy and start
+UI->>Controller: start_run
+Controller->>Codex: thread/start
+Codex-->>Controller: thread/started
+Controller->>Codex: turn/start
+Codex-->>Controller: streamed notifications
+Controller-->>UI: validated normalized events
+Codex-->>Controller: turn/completed
+Controller-->>UI: durable terminal state

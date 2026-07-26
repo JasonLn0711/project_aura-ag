@@ -1,0 +1,8 @@
+flowchart LR
+Action[Confirmed AURA action] --> Fresh[Hash and revision freshness]
+Fresh --> Link[EngineeringTaskLink]
+Link --> Preview[Classified redacted preview]
+Preview --> Confirm[Operator confirmation]
+Confirm --> Run[Evidence-backed AgentRun]
+Run --> Status[Linked engineering status]
+Status -. preserves .-> Action

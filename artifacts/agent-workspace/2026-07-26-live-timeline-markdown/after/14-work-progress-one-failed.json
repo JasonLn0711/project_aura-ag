@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "14",
+  "state": "work-progress-one-failed",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "14-work-progress-one-failed.png",
+  "sha256": "1a42310bfcfbd68c8380e7ee5d6bc7bae50e1a9f3a02d03bad599e4b1255af2b",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "progress"
+  ],
+  "content_formats": [
+    "structured"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "progress:visual-14",
+      "kind": "progress",
+      "title": "工作進度",
+      "body_sha256": "5f5f12ca57c3d2de3bad0f06e131ff278ee5d44591e93dc0c2e32af9f30f66ba",
+      "body_characters": 21
+    }
+  ]
+}

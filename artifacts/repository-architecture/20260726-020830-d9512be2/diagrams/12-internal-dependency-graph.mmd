@@ -1,0 +1,11 @@
+flowchart LR
+Main[aura.ui.main_window] --> Tabs[aura.ui tabs]
+Main --> AgentUI[aura.ui.agent_workspace_tab]
+AgentUI --> Controller[aura.agent.controller]
+Controller --> Contracts[aura.agent.contracts]
+Controller --> Providers[aura.agent.providers]
+Controller --> Persistence[aura.agent.persistence]
+Providers --> Policy[aura.agent.policy]
+AgentUI --> Evidence[aura.agent.evidence]
+AgentUI --> Reporting[aura.agent.reporting]
+Evidence --> Existing[aura.claim_review]

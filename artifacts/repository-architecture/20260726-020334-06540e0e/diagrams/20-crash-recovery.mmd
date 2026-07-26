@@ -1,0 +1,9 @@
+flowchart LR
+Crash[App or provider crash] --> Catalog[(Durable catalog and run evidence)]
+Catalog --> Discover[Startup integrity scan]
+Discover --> Card[Recovery Card]
+Card --> Resume[Resume read-only work]
+Card --> Inspect[Inspect artifacts]
+Card --> Abandon[Abandon run]
+Resume --> Gate[Fresh policy and resource preflight]
+Gate -. mutating work requires explicit restart .-> Queue[Queue]

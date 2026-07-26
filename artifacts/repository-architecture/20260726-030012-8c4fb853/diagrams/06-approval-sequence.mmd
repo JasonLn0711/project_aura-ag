@@ -1,0 +1,11 @@
+sequenceDiagram
+participant Provider
+participant Controller
+actor User
+Provider->>Controller: approval request
+Controller->>Controller: policy check and durable request
+Controller-->>User: trusted native approval card
+User->>Controller: approve once / reject / stop
+Controller->>Controller: durable decision
+Controller-->>Provider: request-scoped response
+Provider-->>Controller: eventual outcome

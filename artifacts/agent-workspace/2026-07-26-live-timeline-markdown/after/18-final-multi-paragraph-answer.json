@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "18",
+  "state": "final-multi-paragraph-answer",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "18-final-multi-paragraph-answer.png",
+  "sha256": "f88524a8d9d71b5f3cac41cbaa843d3686ffefde221458792caae3a6a3cc8f99",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "assistant"
+  ],
+  "content_formats": [
+    "markdown"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "assistant:assistant-final",
+      "kind": "assistant",
+      "title": "Aura",
+      "body_sha256": "f37667ccbda4c46f529f2a298cceb18cfd30185003537650bebe3d6cde3c4e43",
+      "body_characters": 207
+    }
+  ]
+}

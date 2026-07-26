@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "state_id": "10",
+  "state": "viewport-1440x900",
+  "source": "synthetic-invalid-test-data",
+  "capture_kind": "centered_dialog_canvas",
+  "png": "10-viewport-1440x900.png",
+  "sha256": "8a00efdfd644c179cd22fd33cfab15b1e8daef0ed5fd36df5d9c5e6950757d41",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "dialog_size": {
+    "width": 760,
+    "height": 700
+  },
+  "local_demo": false,
+  "blocked": false,
+  "full_document_confirmation_required": false,
+  "full_document_checked": false,
+  "technical_details_expanded": false,
+  "confirmation_enabled": true,
+  "confirmation_visible": true
+}

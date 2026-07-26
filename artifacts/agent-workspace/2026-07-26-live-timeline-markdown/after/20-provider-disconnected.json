@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "20",
+  "state": "provider-disconnected",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "20-provider-disconnected.png",
+  "sha256": "3031980cd861927ac2e21749ae63c76670ee7cc9668dd74cc11b2dc6a77e23f8",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "error"
+  ],
+  "content_formats": [
+    "structured"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "provider-error:visual-20",
+      "kind": "error",
+      "title": "Codex 執行環境需要重新連線",
+      "body_sha256": "5a0f896925a4df6f2bb6f03752aa54076f5a6d4ca7aea9510aa7fef6b226b562",
+      "body_characters": 33
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+name,version,scope,license,source
+accelerate,1.13.0,transitive,Unknown,pyproject.toml + uv.lock
+aiohappyeyeballs,2.6.1,transitive,Unknown,pyproject.toml + uv.lock
+aiohttp,3.14.3,transitive,Unknown,pyproject.toml + uv.lock
+aiosignal,1.4.0,transitive,Unknown,pyproject.toml + uv.lock
+alembic,1.18.4,transitive,Unknown,pyproject.toml + uv.lock
+annotated-doc,0.0.4,transitive,MIT,pyproject.toml + uv.lock
+anyio,4.13.0,transitive,MIT,pyproject.toml + uv.lock
+asteroid-filterbanks,0.4.0,transitive,Unknown,pyproject.toml + uv.lock
+async-timeout,5.0.1,transitive,Unknown,pyproject.toml + uv.lock
+attrs,26.1.0,transitive,Unknown,pyproject.toml + uv.lock
+av,17.0.1,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+bitsandbytes,0.49.2,transitive,Unknown,pyproject.toml + uv.lock
+certifi,2026.4.22,transitive,MPL-2.0,pyproject.toml + uv.lock
+charset-normalizer,3.4.7,transitive,MIT,pyproject.toml + uv.lock
+click,8.3.3,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+colorama,0.4.6,transitive,Unknown,pyproject.toml + uv.lock
+colorlog,6.10.1,transitive,Unknown,pyproject.toml + uv.lock
+contourpy,1.3.3,transitive,"BSD 3-Clause License
+
+ Copyright (c) 2021-2025, ContourPy Developers.
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided t",pyproject.toml + uv.lock
+ctranslate2,4.7.1,transitive,MIT,pyproject.toml + uv.lock
+cuda-bindings,12.9.7,transitive,LicenseRef-NVIDIA-SOFTWARE-LICENSE,pyproject.toml + uv.lock
+cuda-pathfinder,1.5.4,transitive,Apache-2.0,pyproject.toml + uv.lock
+cuda-toolkit,12.8.1,transitive,Unknown,pyproject.toml + uv.lock
+cycler,0.12.1,transitive,"Copyright (c) 2015, matplotlib project
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are m",pyproject.toml + uv.lock
+einops,0.8.2,transitive,Unknown,pyproject.toml + uv.lock
+exceptiongroup,1.3.1,transitive,Unknown,pyproject.toml + uv.lock
+faster-whisper,1.2.1,direct,MIT,pyproject.toml + uv.lock
+filelock,3.29.0,transitive,MIT,pyproject.toml + uv.lock
+flatbuffers,25.12.19,transitive,Apache 2.0,pyproject.toml + uv.lock
+fonttools,4.62.1,transitive,MIT,pyproject.toml + uv.lock
+frozenlist,1.8.0,transitive,Unknown,pyproject.toml + uv.lock
+fsspec,2026.4.0,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+googleapis-common-protos,1.75.0,transitive,Unknown,pyproject.toml + uv.lock
+greenlet,3.5.0,transitive,Unknown,pyproject.toml + uv.lock
+grpcio,1.80.0,transitive,Unknown,pyproject.toml + uv.lock
+h11,0.16.0,transitive,MIT,pyproject.toml + uv.lock
+hf-xet,1.5.0,transitive,Apache-2.0,pyproject.toml + uv.lock
+httpcore,1.0.9,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+httpx,0.28.1,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+huggingface-hub,1.14.0,transitive,Apache-2.0,pyproject.toml + uv.lock
+idna,3.15,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+importlib-metadata,8.7.1,transitive,Unknown,pyproject.toml + uv.lock
+jinja2,3.1.6,transitive,Unknown,pyproject.toml + uv.lock
+joblib,1.5.3,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+julius,0.2.7,transitive,Unknown,pyproject.toml + uv.lock
+kiwisolver,1.5.0,transitive,"=========================
+ The Kiwi licensing terms
+=========================
+Kiwi is licensed under the terms of the Modified BSD License (also known as
+New or Revised BSD), as follows:
+
+Copyright (c",pyproject.toml + uv.lock
+lightning,2.6.1,transitive,Unknown,pyproject.toml + uv.lock
+lightning-utilities,0.15.3,transitive,Unknown,pyproject.toml + uv.lock
+mako,1.3.12,transitive,Unknown,pyproject.toml + uv.lock
+markdown-it-py,4.2.0,transitive,Unknown,pyproject.toml + uv.lock
+markupsafe,3.0.3,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+matplotlib,3.10.9,transitive,"License agreement for matplotlib versions 1.3.0 and later
+ =========================================================
+
+ 1. This LICENSE AGREEMENT is between the Matplotlib Development Team
+ (""MDT""), an",pyproject.toml + uv.lock
+mdurl,0.1.2,transitive,Unknown,pyproject.toml + uv.lock
+mpmath,1.3.0,transitive,BSD,pyproject.toml + uv.lock
+multidict,6.7.1,transitive,Unknown,pyproject.toml + uv.lock
+networkx,3.6.1,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+noisereduce,3.0.3,direct,MIT,pyproject.toml + uv.lock
+numpy,2.4.4,direct,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0,pyproject.toml + uv.lock
+nvidia-cublas-cu12,12.8.4.1,direct,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cuda-cupti-cu12,12.8.90,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cuda-nvrtc-cu12,12.8.93,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cuda-runtime-cu12,12.8.90,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cudnn-cu12,9.19.0.56,direct,LicenseRef-NVIDIA-Proprietary,pyproject.toml + uv.lock
+nvidia-cufft-cu12,11.3.3.83,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cufile-cu12,1.13.1.3,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-curand-cu12,10.3.9.90,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cusolver-cu12,11.7.3.90,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cusparse-cu12,12.5.8.93,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-cusparselt-cu12,0.7.1,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-nccl-cu12,2.28.9,transitive,LicenseRef-NVIDIA-Proprietary,pyproject.toml + uv.lock
+nvidia-npp-cu12,12.4.1.87,direct,LicenseRef-NVIDIA-Proprietary,pyproject.toml + uv.lock
+nvidia-nvjitlink-cu12,12.8.93,transitive,NVIDIA Proprietary Software,pyproject.toml + uv.lock
+nvidia-nvshmem-cu12,3.4.5,transitive,LicenseRef-NVIDIA-Proprietary,pyproject.toml + uv.lock
+nvidia-nvtx-cu12,12.8.90,transitive,Apache 2.0,pyproject.toml + uv.lock
+onnxruntime,1.26.0,transitive,MIT License,pyproject.toml + uv.lock
+opentelemetry-api,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-exporter-otlp,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-exporter-otlp-proto-common,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-exporter-otlp-proto-grpc,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-exporter-otlp-proto-http,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-proto,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-sdk,1.41.1,transitive,Unknown,pyproject.toml + uv.lock
+opentelemetry-semantic-conventions,0.62b1,transitive,Unknown,pyproject.toml + uv.lock
+optuna,4.8.0,transitive,Unknown,pyproject.toml + uv.lock
+packaging,26.2,transitive,Apache-2.0 OR BSD-2-Clause,pyproject.toml + uv.lock
+pandas,3.0.3,transitive,Unknown,pyproject.toml + uv.lock
+pillow,12.3.0,transitive,MIT-CMU,pyproject.toml + uv.lock
+primepy,1.3,transitive,Unknown,pyproject.toml + uv.lock
+project-aura-refactor,1.17.0,transitive,MIT,pyproject.toml + uv.lock
+propcache,0.5.2,transitive,Unknown,pyproject.toml + uv.lock
+protobuf,6.33.6,transitive,3-Clause BSD License,pyproject.toml + uv.lock
+psutil,7.2.2,transitive,Unknown,pyproject.toml + uv.lock
+pyannote-audio,4.0.4,transitive,Unknown,pyproject.toml + uv.lock
+pyannote-core,6.0.1,transitive,Unknown,pyproject.toml + uv.lock
+pyannote-database,6.1.1,transitive,Unknown,pyproject.toml + uv.lock
+pyannote-metrics,4.1,transitive,Unknown,pyproject.toml + uv.lock
+pyannote-pipeline,4.0.0,transitive,Unknown,pyproject.toml + uv.lock
+pyannoteai-sdk,0.4.0,transitive,Unknown,pyproject.toml + uv.lock
+pyarrow,25.0.0,transitive,Unknown,pyproject.toml + uv.lock
+pyaudio,0.2.14,direct,MIT,pyproject.toml + uv.lock
+pydub,0.25.1,direct,MIT,pyproject.toml + uv.lock
+pygments,2.20.0,transitive,BSD-2-Clause,pyproject.toml + uv.lock
+pyparsing,3.3.2,transitive,MIT,pyproject.toml + uv.lock
+pyqt6,6.11.0,direct,GPL-3.0-only,pyproject.toml + uv.lock
+pyqt6-qt6,6.11.0,transitive,LGPL v3,pyproject.toml + uv.lock
+pyqt6-sip,13.11.1,transitive,BSD-2-Clause,pyproject.toml + uv.lock
+pyqtgraph,0.14.0,direct,MIT,pyproject.toml + uv.lock
+python-dateutil,2.9.0.post0,transitive,Dual License,pyproject.toml + uv.lock
+pytorch-lightning,2.6.1,transitive,Unknown,pyproject.toml + uv.lock
+pytorch-metric-learning,2.9.0,transitive,Unknown,pyproject.toml + uv.lock
+pytz,2026.2,transitive,Unknown,pyproject.toml + uv.lock
+pyyaml,6.0.3,direct,MIT,pyproject.toml + uv.lock
+qt-material,2.17,direct,BSD-2-Clause,pyproject.toml + uv.lock
+rapidfuzz,3.14.5,direct,MIT,pyproject.toml + uv.lock
+regex,2026.5.9,transitive,Apache-2.0 AND CNRI-Python,pyproject.toml + uv.lock
+requests,2.34.1,direct,Apache-2.0,pyproject.toml + uv.lock
+rich,15.0.0,transitive,MIT,pyproject.toml + uv.lock
+safetensors,0.7.0,transitive,Unknown,pyproject.toml + uv.lock
+scikit-learn,1.8.0,transitive,Unknown,pyproject.toml + uv.lock
+scipy,1.17.1,transitive,"Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that th",pyproject.toml + uv.lock
+setuptools,81.0.0,transitive,MIT,pyproject.toml + uv.lock
+shellingham,1.5.4,transitive,ISC License,pyproject.toml + uv.lock
+six,1.17.0,transitive,MIT,pyproject.toml + uv.lock
+sortedcontainers,2.4.0,transitive,Unknown,pyproject.toml + uv.lock
+sqlalchemy,2.0.49,transitive,Unknown,pyproject.toml + uv.lock
+sympy,1.14.0,transitive,BSD,pyproject.toml + uv.lock
+threadpoolctl,3.6.0,transitive,Unknown,pyproject.toml + uv.lock
+tokenizers,0.22.2,transitive,Unknown,pyproject.toml + uv.lock
+tomli,2.4.1,transitive,Unknown,pyproject.toml + uv.lock
+torch,2.11.0+cu128,transitive,BSD-3-Clause,pyproject.toml + uv.lock
+torch-audiomentations,0.12.0,transitive,Unknown,pyproject.toml + uv.lock
+torch-pitch-shift,1.2.5,transitive,Unknown,pyproject.toml + uv.lock
+torchaudio,2.11.0+cu128,transitive,Unknown,pyproject.toml + uv.lock
+torchcodec,0.11.1+cu128,transitive,Unknown,pyproject.toml + uv.lock
+torchmetrics,1.9.0,transitive,Unknown,pyproject.toml + uv.lock
+tqdm,4.67.3,transitive,MPL-2.0 AND MIT,pyproject.toml + uv.lock
+transformers,5.8.1,transitive,Apache 2.0 License,pyproject.toml + uv.lock
+triton,3.6.0,transitive,Unknown,pyproject.toml + uv.lock
+typer,0.25.1,transitive,MIT,pyproject.toml + uv.lock
+typing-extensions,4.15.0,transitive,PSF-2.0,pyproject.toml + uv.lock
+tzdata,2026.2,transitive,Unknown,pyproject.toml + uv.lock
+urllib3,2.7.0,transitive,MIT,pyproject.toml + uv.lock
+webrtcvad,2.0.10,direct,MIT,pyproject.toml + uv.lock
+yarl,1.23.0,transitive,Unknown,pyproject.toml + uv.lock
+zipp,3.23.1,transitive,Unknown,pyproject.toml + uv.lock

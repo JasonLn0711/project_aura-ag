@@ -1,0 +1,1455 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "project_aura-stable-daily-architecture-package",
+  "documentNamespace": "https://project-aura.invalid/spdx/33b5f5b3-42f4-4545-82a6-170f74685b93",
+  "creationInfo": {
+    "created": "2026-07-25T18:08:33Z",
+    "creators": [
+      "Tool: AURA ArchitecturePackageGenerator-1"
+    ]
+  },
+  "packages": [
+    {
+      "name": "accelerate",
+      "SPDXID": "SPDXRef-Package-1-accelerate",
+      "versionInfo": "1.13.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "SPDXID": "SPDXRef-Package-2-aiohappyeyeballs",
+      "versionInfo": "2.6.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "PSF-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "aiohttp",
+      "SPDXID": "SPDXRef-Package-3-aiohttp",
+      "versionInfo": "3.14.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0 AND MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "aiosignal",
+      "SPDXID": "SPDXRef-Package-4-aiosignal",
+      "versionInfo": "1.4.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "alembic",
+      "SPDXID": "SPDXRef-Package-5-alembic",
+      "versionInfo": "1.18.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "annotated-doc",
+      "SPDXID": "SPDXRef-Package-6-annotated-doc",
+      "versionInfo": "0.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "anyio",
+      "SPDXID": "SPDXRef-Package-7-anyio",
+      "versionInfo": "4.13.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "asteroid-filterbanks",
+      "SPDXID": "SPDXRef-Package-8-asteroid-filterbanks",
+      "versionInfo": "0.4.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "async-timeout",
+      "SPDXID": "SPDXRef-Package-9-async-timeout",
+      "versionInfo": "5.0.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "attrs",
+      "SPDXID": "SPDXRef-Package-10-attrs",
+      "versionInfo": "26.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "av",
+      "SPDXID": "SPDXRef-Package-11-av",
+      "versionInfo": "17.0.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "bitsandbytes",
+      "SPDXID": "SPDXRef-Package-12-bitsandbytes",
+      "versionInfo": "0.49.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "certifi",
+      "SPDXID": "SPDXRef-Package-13-certifi",
+      "versionInfo": "2026.4.22",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "charset-normalizer",
+      "SPDXID": "SPDXRef-Package-14-charset-normalizer",
+      "versionInfo": "3.4.7",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "click",
+      "SPDXID": "SPDXRef-Package-15-click",
+      "versionInfo": "8.3.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "colorama",
+      "SPDXID": "SPDXRef-Package-16-colorama",
+      "versionInfo": "0.4.6",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "colorlog",
+      "SPDXID": "SPDXRef-Package-17-colorlog",
+      "versionInfo": "6.10.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "contourpy",
+      "SPDXID": "SPDXRef-Package-18-contourpy",
+      "versionInfo": "1.3.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License\n\n Copyright (c) 2021-2025, ContourPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided t",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "ctranslate2",
+      "SPDXID": "SPDXRef-Package-19-ctranslate2",
+      "versionInfo": "4.7.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "cuda-bindings",
+      "SPDXID": "SPDXRef-Package-20-cuda-bindings",
+      "versionInfo": "12.9.7",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-NVIDIA-SOFTWARE-LICENSE",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "cuda-pathfinder",
+      "SPDXID": "SPDXRef-Package-21-cuda-pathfinder",
+      "versionInfo": "1.5.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "cuda-toolkit",
+      "SPDXID": "SPDXRef-Package-22-cuda-toolkit",
+      "versionInfo": "12.8.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "cycler",
+      "SPDXID": "SPDXRef-Package-23-cycler",
+      "versionInfo": "0.12.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Copyright (c) 2015, matplotlib project\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are m",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "einops",
+      "SPDXID": "SPDXRef-Package-24-einops",
+      "versionInfo": "0.8.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "exceptiongroup",
+      "SPDXID": "SPDXRef-Package-25-exceptiongroup",
+      "versionInfo": "1.3.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "faster-whisper",
+      "SPDXID": "SPDXRef-Package-26-faster-whisper",
+      "versionInfo": "1.2.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "filelock",
+      "SPDXID": "SPDXRef-Package-27-filelock",
+      "versionInfo": "3.29.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "flatbuffers",
+      "SPDXID": "SPDXRef-Package-28-flatbuffers",
+      "versionInfo": "25.12.19",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "fonttools",
+      "SPDXID": "SPDXRef-Package-29-fonttools",
+      "versionInfo": "4.62.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "frozenlist",
+      "SPDXID": "SPDXRef-Package-30-frozenlist",
+      "versionInfo": "1.8.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "fsspec",
+      "SPDXID": "SPDXRef-Package-31-fsspec",
+      "versionInfo": "2026.4.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "SPDXID": "SPDXRef-Package-32-googleapis-common-protos",
+      "versionInfo": "1.75.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "greenlet",
+      "SPDXID": "SPDXRef-Package-33-greenlet",
+      "versionInfo": "3.5.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT AND PSF-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "grpcio",
+      "SPDXID": "SPDXRef-Package-34-grpcio",
+      "versionInfo": "1.80.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "h11",
+      "SPDXID": "SPDXRef-Package-35-h11",
+      "versionInfo": "0.16.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "hf-xet",
+      "SPDXID": "SPDXRef-Package-36-hf-xet",
+      "versionInfo": "1.5.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "httpcore",
+      "SPDXID": "SPDXRef-Package-37-httpcore",
+      "versionInfo": "1.0.9",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "httpx",
+      "SPDXID": "SPDXRef-Package-38-httpx",
+      "versionInfo": "0.28.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "huggingface-hub",
+      "SPDXID": "SPDXRef-Package-39-huggingface-hub",
+      "versionInfo": "1.14.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "idna",
+      "SPDXID": "SPDXRef-Package-40-idna",
+      "versionInfo": "3.15",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "importlib-metadata",
+      "SPDXID": "SPDXRef-Package-41-importlib-metadata",
+      "versionInfo": "8.7.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "jinja2",
+      "SPDXID": "SPDXRef-Package-42-jinja2",
+      "versionInfo": "3.1.6",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "joblib",
+      "SPDXID": "SPDXRef-Package-43-joblib",
+      "versionInfo": "1.5.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "julius",
+      "SPDXID": "SPDXRef-Package-44-julius",
+      "versionInfo": "0.2.7",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "kiwisolver",
+      "SPDXID": "SPDXRef-Package-45-kiwisolver",
+      "versionInfo": "1.5.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "=========================\n The Kiwi licensing terms\n=========================\nKiwi is licensed under the terms of the Modified BSD License (also known as\nNew or Revised BSD), as follows:\n\nCopyright (c",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "lightning",
+      "SPDXID": "SPDXRef-Package-46-lightning",
+      "versionInfo": "2.6.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "lightning-utilities",
+      "SPDXID": "SPDXRef-Package-47-lightning-utilities",
+      "versionInfo": "0.15.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "mako",
+      "SPDXID": "SPDXRef-Package-48-mako",
+      "versionInfo": "1.3.12",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "markdown-it-py",
+      "SPDXID": "SPDXRef-Package-49-markdown-it-py",
+      "versionInfo": "4.2.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "markupsafe",
+      "SPDXID": "SPDXRef-Package-50-markupsafe",
+      "versionInfo": "3.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "matplotlib",
+      "SPDXID": "SPDXRef-Package-51-matplotlib",
+      "versionInfo": "3.10.9",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "License agreement for matplotlib versions 1.3.0 and later\n =========================================================\n\n 1. This LICENSE AGREEMENT is between the Matplotlib Development Team\n (\"MDT\"), an",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "mdurl",
+      "SPDXID": "SPDXRef-Package-52-mdurl",
+      "versionInfo": "0.1.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "mpmath",
+      "SPDXID": "SPDXRef-Package-53-mpmath",
+      "versionInfo": "1.3.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "multidict",
+      "SPDXID": "SPDXRef-Package-54-multidict",
+      "versionInfo": "6.7.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache License 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "networkx",
+      "SPDXID": "SPDXRef-Package-55-networkx",
+      "versionInfo": "3.6.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "noisereduce",
+      "SPDXID": "SPDXRef-Package-56-noisereduce",
+      "versionInfo": "3.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "numpy",
+      "SPDXID": "SPDXRef-Package-57-numpy",
+      "versionInfo": "2.4.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cublas-cu12",
+      "SPDXID": "SPDXRef-Package-58-nvidia-cublas-cu12",
+      "versionInfo": "12.8.4.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu12",
+      "SPDXID": "SPDXRef-Package-59-nvidia-cuda-cupti-cu12",
+      "versionInfo": "12.8.90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "SPDXID": "SPDXRef-Package-60-nvidia-cuda-nvrtc-cu12",
+      "versionInfo": "12.8.93",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu12",
+      "SPDXID": "SPDXRef-Package-61-nvidia-cuda-runtime-cu12",
+      "versionInfo": "12.8.90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cudnn-cu12",
+      "SPDXID": "SPDXRef-Package-62-nvidia-cudnn-cu12",
+      "versionInfo": "9.19.0.56",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-NVIDIA-Proprietary",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cufft-cu12",
+      "SPDXID": "SPDXRef-Package-63-nvidia-cufft-cu12",
+      "versionInfo": "11.3.3.83",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cufile-cu12",
+      "SPDXID": "SPDXRef-Package-64-nvidia-cufile-cu12",
+      "versionInfo": "1.13.1.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-curand-cu12",
+      "SPDXID": "SPDXRef-Package-65-nvidia-curand-cu12",
+      "versionInfo": "10.3.9.90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cusolver-cu12",
+      "SPDXID": "SPDXRef-Package-66-nvidia-cusolver-cu12",
+      "versionInfo": "11.7.3.90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cusparse-cu12",
+      "SPDXID": "SPDXRef-Package-67-nvidia-cusparse-cu12",
+      "versionInfo": "12.5.8.93",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-cusparselt-cu12",
+      "SPDXID": "SPDXRef-Package-68-nvidia-cusparselt-cu12",
+      "versionInfo": "0.7.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-nccl-cu12",
+      "SPDXID": "SPDXRef-Package-69-nvidia-nccl-cu12",
+      "versionInfo": "2.28.9",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-NVIDIA-Proprietary",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-npp-cu12",
+      "SPDXID": "SPDXRef-Package-70-nvidia-npp-cu12",
+      "versionInfo": "12.4.1.87",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-NVIDIA-Proprietary",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-nvjitlink-cu12",
+      "SPDXID": "SPDXRef-Package-71-nvidia-nvjitlink-cu12",
+      "versionInfo": "12.8.93",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NVIDIA Proprietary Software",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-nvshmem-cu12",
+      "SPDXID": "SPDXRef-Package-72-nvidia-nvshmem-cu12",
+      "versionInfo": "3.4.5",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-NVIDIA-Proprietary",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "nvidia-nvtx-cu12",
+      "SPDXID": "SPDXRef-Package-73-nvidia-nvtx-cu12",
+      "versionInfo": "12.8.90",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "onnxruntime",
+      "SPDXID": "SPDXRef-Package-74-onnxruntime",
+      "versionInfo": "1.26.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-api",
+      "SPDXID": "SPDXRef-Package-75-opentelemetry-api",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp",
+      "SPDXID": "SPDXRef-Package-76-opentelemetry-exporter-otlp",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "SPDXID": "SPDXRef-Package-77-opentelemetry-exporter-otlp-proto-common",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-grpc",
+      "SPDXID": "SPDXRef-Package-78-opentelemetry-exporter-otlp-proto-grpc",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "SPDXID": "SPDXRef-Package-79-opentelemetry-exporter-otlp-proto-http",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-proto",
+      "SPDXID": "SPDXRef-Package-80-opentelemetry-proto",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "SPDXID": "SPDXRef-Package-81-opentelemetry-sdk",
+      "versionInfo": "1.41.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "SPDXID": "SPDXRef-Package-82-opentelemetry-semantic-conventions",
+      "versionInfo": "0.62b1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "optuna",
+      "SPDXID": "SPDXRef-Package-83-optuna",
+      "versionInfo": "4.8.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "packaging",
+      "SPDXID": "SPDXRef-Package-84-packaging",
+      "versionInfo": "26.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0 OR BSD-2-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pandas",
+      "SPDXID": "SPDXRef-Package-85-pandas",
+      "versionInfo": "3.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License\n\n Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team\n All rights reserved.\n\n Copyright (c) 2011-2026, Open source contributors.",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pillow",
+      "SPDXID": "SPDXRef-Package-86-pillow",
+      "versionInfo": "12.3.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT-CMU",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "primepy",
+      "SPDXID": "SPDXRef-Package-87-primepy",
+      "versionInfo": "1.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "UNKNOWN",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "project-aura-refactor",
+      "SPDXID": "SPDXRef-Package-88-project-aura-refactor",
+      "versionInfo": "1.17.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "propcache",
+      "SPDXID": "SPDXRef-Package-89-propcache",
+      "versionInfo": "0.5.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "protobuf",
+      "SPDXID": "SPDXRef-Package-90-protobuf",
+      "versionInfo": "6.33.6",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "3-Clause BSD License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "psutil",
+      "SPDXID": "SPDXRef-Package-91-psutil",
+      "versionInfo": "7.2.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannote-audio",
+      "SPDXID": "SPDXRef-Package-92-pyannote-audio",
+      "versionInfo": "4.0.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannote-core",
+      "SPDXID": "SPDXRef-Package-93-pyannote-core",
+      "versionInfo": "6.0.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannote-database",
+      "SPDXID": "SPDXRef-Package-94-pyannote-database",
+      "versionInfo": "6.1.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannote-metrics",
+      "SPDXID": "SPDXRef-Package-95-pyannote-metrics",
+      "versionInfo": "4.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannote-pipeline",
+      "SPDXID": "SPDXRef-Package-96-pyannote-pipeline",
+      "versionInfo": "4.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyannoteai-sdk",
+      "SPDXID": "SPDXRef-Package-97-pyannoteai-sdk",
+      "versionInfo": "0.4.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyarrow",
+      "SPDXID": "SPDXRef-Package-98-pyarrow",
+      "versionInfo": "25.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyaudio",
+      "SPDXID": "SPDXRef-Package-99-pyaudio",
+      "versionInfo": "0.2.14",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pydub",
+      "SPDXID": "SPDXRef-Package-100-pydub",
+      "versionInfo": "0.25.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pygments",
+      "SPDXID": "SPDXRef-Package-101-pygments",
+      "versionInfo": "2.20.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyparsing",
+      "SPDXID": "SPDXRef-Package-102-pyparsing",
+      "versionInfo": "3.3.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyqt6",
+      "SPDXID": "SPDXRef-Package-103-pyqt6",
+      "versionInfo": "6.11.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyqt6-qt6",
+      "SPDXID": "SPDXRef-Package-104-pyqt6-qt6",
+      "versionInfo": "6.11.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL v3",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyqt6-sip",
+      "SPDXID": "SPDXRef-Package-105-pyqt6-sip",
+      "versionInfo": "13.11.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyqtgraph",
+      "SPDXID": "SPDXRef-Package-106-pyqtgraph",
+      "versionInfo": "0.14.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "python-dateutil",
+      "SPDXID": "SPDXRef-Package-107-python-dateutil",
+      "versionInfo": "2.9.0.post0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Dual License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pytorch-lightning",
+      "SPDXID": "SPDXRef-Package-108-pytorch-lightning",
+      "versionInfo": "2.6.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pytorch-metric-learning",
+      "SPDXID": "SPDXRef-Package-109-pytorch-metric-learning",
+      "versionInfo": "2.9.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "UNKNOWN",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pytz",
+      "SPDXID": "SPDXRef-Package-110-pytz",
+      "versionInfo": "2026.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "pyyaml",
+      "SPDXID": "SPDXRef-Package-111-pyyaml",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "qt-material",
+      "SPDXID": "SPDXRef-Package-112-qt-material",
+      "versionInfo": "2.17",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-2-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "rapidfuzz",
+      "SPDXID": "SPDXRef-Package-113-rapidfuzz",
+      "versionInfo": "3.14.5",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "regex",
+      "SPDXID": "SPDXRef-Package-114-regex",
+      "versionInfo": "2026.5.9",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0 AND CNRI-Python",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "requests",
+      "SPDXID": "SPDXRef-Package-115-requests",
+      "versionInfo": "2.34.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "rich",
+      "SPDXID": "SPDXRef-Package-116-rich",
+      "versionInfo": "15.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "safetensors",
+      "SPDXID": "SPDXRef-Package-117-safetensors",
+      "versionInfo": "0.7.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "scikit-learn",
+      "SPDXID": "SPDXRef-Package-118-scikit-learn",
+      "versionInfo": "1.8.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "scipy",
+      "SPDXID": "SPDXRef-Package-119-scipy",
+      "versionInfo": "1.17.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that th",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "setuptools",
+      "SPDXID": "SPDXRef-Package-120-setuptools",
+      "versionInfo": "81.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "shellingham",
+      "SPDXID": "SPDXRef-Package-121-shellingham",
+      "versionInfo": "1.5.4",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "ISC License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "six",
+      "SPDXID": "SPDXRef-Package-122-six",
+      "versionInfo": "1.17.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "sortedcontainers",
+      "SPDXID": "SPDXRef-Package-123-sortedcontainers",
+      "versionInfo": "2.4.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "sqlalchemy",
+      "SPDXID": "SPDXRef-Package-124-sqlalchemy",
+      "versionInfo": "2.0.49",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "sympy",
+      "SPDXID": "SPDXRef-Package-125-sympy",
+      "versionInfo": "1.14.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "threadpoolctl",
+      "SPDXID": "SPDXRef-Package-126-threadpoolctl",
+      "versionInfo": "3.6.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "tokenizers",
+      "SPDXID": "SPDXRef-Package-127-tokenizers",
+      "versionInfo": "0.22.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "tomli",
+      "SPDXID": "SPDXRef-Package-128-tomli",
+      "versionInfo": "2.4.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torch",
+      "SPDXID": "SPDXRef-Package-129-torch",
+      "versionInfo": "2.11.0+cu128",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torch-audiomentations",
+      "SPDXID": "SPDXRef-Package-130-torch-audiomentations",
+      "versionInfo": "0.12.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torch-pitch-shift",
+      "SPDXID": "SPDXRef-Package-131-torch-pitch-shift",
+      "versionInfo": "1.2.5",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torchaudio",
+      "SPDXID": "SPDXRef-Package-132-torchaudio",
+      "versionInfo": "2.11.0+cu128",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torchcodec",
+      "SPDXID": "SPDXRef-Package-133-torchcodec",
+      "versionInfo": "0.11.1+cu128",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD 3-Clause License\n\nCopyright 2024 Meta\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n1. Redistribu",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "torchmetrics",
+      "SPDXID": "SPDXRef-Package-134-torchmetrics",
+      "versionInfo": "1.9.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "tqdm",
+      "SPDXID": "SPDXRef-Package-135-tqdm",
+      "versionInfo": "4.67.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0 AND MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "transformers",
+      "SPDXID": "SPDXRef-Package-136-transformers",
+      "versionInfo": "5.8.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache 2.0 License",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "triton",
+      "SPDXID": "SPDXRef-Package-137-triton",
+      "versionInfo": "3.6.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "typer",
+      "SPDXID": "SPDXRef-Package-138-typer",
+      "versionInfo": "0.25.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "typing-extensions",
+      "SPDXID": "SPDXRef-Package-139-typing-extensions",
+      "versionInfo": "4.15.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "PSF-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "tzdata",
+      "SPDXID": "SPDXRef-Package-140-tzdata",
+      "versionInfo": "2026.2",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "urllib3",
+      "SPDXID": "SPDXRef-Package-141-urllib3",
+      "versionInfo": "2.7.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "webrtcvad",
+      "SPDXID": "SPDXRef-Package-142-webrtcvad",
+      "versionInfo": "2.0.10",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "yarl",
+      "SPDXID": "SPDXRef-Package-143-yarl",
+      "versionInfo": "1.23.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "zipp",
+      "SPDXID": "SPDXRef-Package-144-zipp",
+      "versionInfo": "3.23.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

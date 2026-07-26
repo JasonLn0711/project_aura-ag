@@ -1,0 +1,4 @@
+{"argv": ["git", "worktree", "add", "<demo-worktree>", "demo-6807f516"], "command_id": "cmd-demo-001", "created_at": "2026-07-25T21:38:05.184+08:00", "cwd": "<demo-repository>", "event_type": "command.requested", "simulated": true}
+{"command_id": "cmd-demo-001", "created_at": "2026-07-25T21:38:05.187+08:00", "event_type": "command.started", "simulated": true}
+{"command_id": "cmd-demo-001", "created_at": "2026-07-25T21:38:05.190+08:00", "event_type": "command.output.delta", "simulated": true, "text": "Preparing worktree (detached HEAD demo-6807f516)"}
+{"command_id": "cmd-demo-001", "created_at": "2026-07-25T21:38:05.192+08:00", "event_type": "command.completed", "exit_code": 0, "simulated": true}

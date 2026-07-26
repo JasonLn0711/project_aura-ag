@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "13",
+  "state": "work-progress-completed-seven",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "13-work-progress-completed-seven.png",
+  "sha256": "3088614161ae9e70f0c1d43e8ae282e5e390acf138557489c03f43f13ee08f5a",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "progress"
+  ],
+  "content_formats": [
+    "structured"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "progress:visual-13",
+      "kind": "progress",
+      "title": "工作進度",
+      "body_sha256": "a7b203ad22507e8266ec8498b9fbb0a8bc5200a6e358eb9dc34c39ed3cbbee45",
+      "body_characters": 10
+    }
+  ]
+}

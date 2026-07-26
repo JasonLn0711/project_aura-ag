@@ -1,0 +1,6 @@
+store,format,canonical_scope
+AURA session directory,JSON/JSONL/audio,meeting artifacts
+Evidence index,SQLite FTS5,rebuildable index
+Agent run directory,JSON/JSONL/patch,agent run
+Git worktree,Git checkout,approved proposal
+Audit directory,hash-linked JSONL,local usage audit

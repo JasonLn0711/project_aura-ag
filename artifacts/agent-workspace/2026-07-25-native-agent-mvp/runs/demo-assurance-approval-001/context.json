@@ -1,0 +1,6 @@
+{
+  "base_commit": "demo-6807f516",
+  "demo": true,
+  "evidence_package": "demo-architecture-package",
+  "repository": "sanitized-project-aura"
+}

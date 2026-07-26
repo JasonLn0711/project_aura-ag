@@ -1,0 +1,29 @@
+{
+  "status": "ready_with_limitations",
+  "items": [
+    {
+      "id": "ME-001",
+      "confidence": "Unknown",
+      "evidence": "Windows and macOS target-host suites are unavailable_not_passed; Ubuntu 24.04 is the measured release platform.",
+      "next_validation": "Run the full package and GUI suite on each additional declared target OS."
+    },
+    {
+      "id": "ME-002",
+      "confidence": "Partially Verified",
+      "evidence": "Native and model BOM entries reflect discoverable local commands and declarations.",
+      "next_validation": "Collect immutable native package and model manifests from release hosts."
+    },
+    {
+      "id": "ME-003",
+      "confidence": "Not Verified",
+      "evidence": "The required five-participant task-based usability and five-second comprehension study was not executed.",
+      "next_validation": "Run docs/agent-workspace/ux-redesign/09-usability-test-plan.md and retain privacy-safe aggregate results."
+    },
+    {
+      "id": "ME-004",
+      "confidence": "Partially Verified",
+      "evidence": "The typed facade owns core run intents; remaining legacy Git, SQLite, report, media, and provider presentation actions still need complete background-service migration.",
+      "next_validation": "Route each remaining action through typed background execution and retain a GUI-heartbeat regression."
+    }
+  ]
+}

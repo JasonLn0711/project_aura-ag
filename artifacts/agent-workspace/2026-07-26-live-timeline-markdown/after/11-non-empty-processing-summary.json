@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "state_id": "11",
+  "state": "non-empty-processing-summary",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "11-non-empty-processing-summary.png",
+  "sha256": "241b33cac1f9831380ab25893b4893c2ce5fa1fe9dfc5af5f7fe79b8c7508b3c",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 2,
+  "blank_item_count": 0,
+  "kinds": [
+    "summary",
+    "assistant"
+  ],
+  "content_formats": [
+    "markdown",
+    "markdown"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "summary:summary-1",
+      "kind": "summary",
+      "title": "處理摘要",
+      "body_sha256": "9fc428da0f673cddf29fc44ed21dbe6f612ba9f1a885636422dd6379ddedcc51",
+      "body_characters": 47
+    },
+    {
+      "stable_id": "assistant:assistant-1",
+      "kind": "assistant",
+      "title": "Aura",
+      "body_sha256": "cae10b6134067abb25f8f836198b92d4c29184e447e8929e7c2af8073ec3254e",
+      "body_characters": 11
+    }
+  ]
+}

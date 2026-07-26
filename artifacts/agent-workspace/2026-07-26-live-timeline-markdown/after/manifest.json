@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-07-26T20:19:04+08:00",
+  "source_commit": "3dcf465cf5650af206d3b0c8ec6665f4bdd68266",
+  "state_count": 22,
+  "blank_item_count": 0,
+  "states": [
+    {
+      "schema_version": 1,
+      "state_id": "01",
+      "state": "live-running-long-assistant-1440x900",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "01-live-running-long-assistant-1440x900.png",
+      "sha256": "578c3f73f751b3aaa622d8e271243ad4f881126a7f3068c1d592033cf6aa62f6",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-01",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "f9d86b7311bc5b088edb8a22b760c169f4c4be2cc5c96480ee24339bbe252fbd",
+          "body_characters": 356
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "02",
+      "state": "live-running-long-assistant-1024x768",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "02-live-running-long-assistant-1024x768.png",
+      "sha256": "c061ae76424579c0f3ccdb7ff513bafc1a75aef0f5947137b4f18a5fc99ca073",
+      "image_size": {
+        "width": 1024,
+        "height": 768
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-02",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "f9d86b7311bc5b088edb8a22b760c169f4c4be2cc5c96480ee24339bbe252fbd",
+          "body_characters": 356
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "03",
+      "state": "wrapped-user-markdown",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "03-wrapped-user-markdown.png",
+      "sha256": "d40b5fec88a71007a961388d22bf144e90c14433e6ef7ecc4969570d289ff731",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "user"
+      ],
+      "content_formats": [
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-wrap",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "71ff7e4cfe12b2855bff00fe21bb28fdc2880169afa0fc820be38047b6b4e1af",
+          "body_characters": 232
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "04",
+      "state": "heading-list-inline-code",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "04-heading-list-inline-code.png",
+      "sha256": "dd908b27ba9cece18cfb641179630bf9cb72a5c4c9906c15373f5fccaae1a3f7",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-04",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "8c8dadd59a96819eafa07e6e389aead69796a3fcdf589c027fe5c60339fa86b2",
+          "body_characters": 57
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "05",
+      "state": "fenced-code-block",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "05-fenced-code-block.png",
+      "sha256": "af8b1a3a5b65b7fd8e8de71718e4e8760c729be70e490e3176d043915e7e58f9",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-05",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "bd32b82895c0f960d122d8f014fb906fafd4db8c40022aa2a1f0cb04e7aa4ab1",
+          "body_characters": 103
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "06",
+      "state": "blockquote",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "06-blockquote.png",
+      "sha256": "b10a84427a5b22eaed96695768d96e4325afc20d34e08b920f3cfea784f0a955",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-06",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "c4297cf081a8955689f82184f885cb78105c8cf6e74ba9222c4a0be9ff564ff3",
+          "body_characters": 105
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "07",
+      "state": "simple-table",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "07-simple-table.png",
+      "sha256": "4839b4e3cf7e98e9ecd1d990585089e2e221e9b9be3265caad75b663195886d7",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-07",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "320834abac5e65d069f029f5fccf24b290d8b3449ff865f4c0b0ab4c3447161f",
+          "body_characters": 68
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "08",
+      "state": "wide-table-fallback",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "08-wide-table-fallback.png",
+      "sha256": "51b171de38d58a4d2b7d9760a345bca5c6f65f4eb36b8d164cb8fa089f9c8d74",
+      "image_size": {
+        "width": 1024,
+        "height": 768
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-08",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "8c18c501bb46d32b2f18cb433527298bd2126fefbd46ee186b8ad6f9e9f1d83c",
+          "body_characters": 306
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "09",
+      "state": "safe-link",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "09-safe-link.png",
+      "sha256": "b5772a3b360d009037589785eae1f194b2d5fc3b4503ee86a3d960a26e30d4b6",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-09",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "1221e40fea12ba3768e785ff4738c7f2a9434488957669e60cd72b486a6fac0b",
+          "body_characters": 93
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "10",
+      "state": "blocked-image-placeholder",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "10-blocked-image-placeholder.png",
+      "sha256": "9fea37c52727ea2ddefc6d4fe2a43b9810cce61dab2a2a5f8faa64fb3695d1b3",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-10",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "ca11ac85e81e16a03b7ea3c9fe0583236e08c645c0d880f93fe375cadf3e1271",
+          "body_characters": 89
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "11",
+      "state": "non-empty-processing-summary",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "11-non-empty-processing-summary.png",
+      "sha256": "241b33cac1f9831380ab25893b4893c2ce5fa1fe9dfc5af5f7fe79b8c7508b3c",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 2,
+      "blank_item_count": 0,
+      "kinds": [
+        "summary",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "summary:summary-1",
+          "kind": "summary",
+          "title": "處理摘要",
+          "body_sha256": "9fc428da0f673cddf29fc44ed21dbe6f612ba9f1a885636422dd6379ddedcc51",
+          "body_characters": 47
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "cae10b6134067abb25f8f836198b92d4c29184e447e8929e7c2af8073ec3254e",
+          "body_characters": 11
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "12",
+      "state": "no-summary-no-empty-card",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "12-no-summary-no-empty-card.png",
+      "sha256": "827d8d81651e1106e2a4a14524220fd655ff9d0d629d3e8fca2fd08f96395bf9",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 2,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-12",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "e9525fa933d8e2934968a3f0a82cfd174d4d9f303b8b80c513e00a4c84f3b1a3",
+          "body_characters": 36
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "13",
+      "state": "work-progress-completed-seven",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "13-work-progress-completed-seven.png",
+      "sha256": "3088614161ae9e70f0c1d43e8ae282e5e390acf138557489c03f43f13ee08f5a",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress"
+      ],
+      "content_formats": [
+        "structured"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-13",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "a7b203ad22507e8266ec8498b9fbb0a8bc5200a6e358eb9dc34c39ed3cbbee45",
+          "body_characters": 10
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "14",
+      "state": "work-progress-one-failed",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "14-work-progress-one-failed.png",
+      "sha256": "1a42310bfcfbd68c8380e7ee5d6bc7bae50e1a9f3a02d03bad599e4b1255af2b",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress"
+      ],
+      "content_formats": [
+        "structured"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-14",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "5f5f12ca57c3d2de3bad0f06e131ff278ee5d44591e93dc0c2e32af9f30f66ba",
+          "body_characters": 21
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "15",
+      "state": "details-collapsed",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "15-details-collapsed.png",
+      "sha256": "570736f2962aa98ddd2ab0d75b0580621964a1bb77c3e2312fed7ccc5eddb254",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress"
+      ],
+      "content_formats": [
+        "structured"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-15",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "0e4b713def0b9197c99a54bdd511fa7f54034588a8ff1741922aceb3a1b97c16",
+          "body_characters": 10
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "16",
+      "state": "details-expanded",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "16-details-expanded.png",
+      "sha256": "cede90d9f24ec40a756f3a5e321bd7d4904d18e56823e21edd508320419e0d4a",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress"
+      ],
+      "content_formats": [
+        "structured"
+      ],
+      "expanded_kind": "progress",
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-16",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "0e4b713def0b9197c99a54bdd511fa7f54034588a8ff1741922aceb3a1b97c16",
+          "body_characters": 10
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "17",
+      "state": "long-plan",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "17-long-plan.png",
+      "sha256": "8f7ab89c6ff25b3d063cdcb62b47b0df518db74f79037f544985e2b32a2e4dad",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "plan"
+      ],
+      "content_formats": [
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "plan:visual-17",
+          "kind": "plan",
+          "title": "執行計畫",
+          "body_sha256": "266623c80190c1f634e62420865f86ca7325186d3ef9e5e9cdef862ed00c2978",
+          "body_characters": 542
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "18",
+      "state": "final-multi-paragraph-answer",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "18-final-multi-paragraph-answer.png",
+      "sha256": "f88524a8d9d71b5f3cac41cbaa843d3686ffefde221458792caae3a6a3cc8f99",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "assistant:assistant-final",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "f37667ccbda4c46f529f2a298cceb18cfd30185003537650bebe3d6cde3c4e43",
+          "body_characters": 207
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "19",
+      "state": "waiting-approval",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "19-waiting-approval.png",
+      "sha256": "eaa7ba02b239b23c51445b4bc74afa20c021ac2706b6e8b9b5ebab73f229f93b",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 2,
+      "blank_item_count": 0,
+      "kinds": [
+        "progress",
+        "approval"
+      ],
+      "content_formats": [
+        "structured",
+        "structured"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "progress:visual-19",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "8628e0ac0d645135efc763c69586970974872b4aa36f86e06e7eca349816b47c",
+          "body_characters": 18
+        },
+        {
+          "stable_id": "approval:approval-1",
+          "kind": "approval",
+          "title": "需要你確認",
+          "body_sha256": "e4043a0b8066dab06c095decdae8c73422cbfb3191737b4995a6070895585caf",
+          "body_characters": 13
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "20",
+      "state": "provider-disconnected",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "20-provider-disconnected.png",
+      "sha256": "3031980cd861927ac2e21749ae63c76670ee7cc9668dd74cc11b2dc6a77e23f8",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 1,
+      "blank_item_count": 0,
+      "kinds": [
+        "error"
+      ],
+      "content_formats": [
+        "structured"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "provider-error:visual-20",
+          "kind": "error",
+          "title": "Codex 執行環境需要重新連線",
+          "body_sha256": "5a0f896925a4df6f2bb6f03752aa54076f5a6d4ca7aea9510aa7fef6b226b562",
+          "body_characters": 33
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "21",
+      "state": "font-scale-150-percent",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "21-font-scale-150-percent.png",
+      "sha256": "d879846149f4990fb9bc4298da3f0ce91f6f05bebfd89395aa7e8b24232e1282",
+      "image_size": {
+        "width": 1024,
+        "height": 768
+      },
+      "font_scale": 1.5,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": null,
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-21",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "ca61e7939b1fe596ee54100f3bf712fe4e7b2580dc0a0abbb74129e86c8c1948",
+          "body_characters": 38
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "state_id": "22",
+      "state": "dark-theme-selection-focus",
+      "source": "sanitized-canonical-event-fixture",
+      "png": "22-dark-theme-selection-focus.png",
+      "sha256": "ce3d4fee4742990dbf6a458f7470aa8c0337ad922a165ad87abbb52b4935acb0",
+      "image_size": {
+        "width": 1440,
+        "height": 900
+      },
+      "font_scale": 1.0,
+      "item_count": 3,
+      "blank_item_count": 0,
+      "kinds": [
+        "user",
+        "progress",
+        "assistant"
+      ],
+      "content_formats": [
+        "markdown",
+        "structured",
+        "markdown"
+      ],
+      "expanded_kind": null,
+      "selected_kind": "assistant",
+      "items": [
+        {
+          "stable_id": "user:user-1",
+          "kind": "user",
+          "title": "你",
+          "body_sha256": "5de4db413a44e2deef28b2a8993893dac8da6e2e4eab7e97787ac5239090ada0",
+          "body_characters": 42
+        },
+        {
+          "stable_id": "progress:visual-22",
+          "kind": "progress",
+          "title": "工作進度",
+          "body_sha256": "141191a57fb0e0155d724de69196de245f8eb5ab28d9acfed55ce103e228f81d",
+          "body_characters": 25
+        },
+        {
+          "stable_id": "assistant:assistant-1",
+          "kind": "assistant",
+          "title": "Aura",
+          "body_sha256": "bbf440c15f979d0214be5a75ce0b6c025ca482f505d9ff149a200e554df52d9f",
+          "body_characters": 35
+        }
+      ]
+    }
+  ]
+}

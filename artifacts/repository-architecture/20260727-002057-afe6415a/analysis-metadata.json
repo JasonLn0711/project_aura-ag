@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "run_id": "20260727-002057-afe6415a",
+  "generated_at": "2026-07-27T00:20:57+08:00",
+  "repository": "project_aura-ag",
+  "source_commit": "45b40fdcb8ece1029b18d23fc760c89cb970aab3",
+  "source_branch": "feat/agent-conversation-continuity",
+  "source_dirty": false,
+  "generator": "aura.agent.reporting.ArchitecturePackageGenerator",
+  "release_maturity": "single-operator stable daily-use",
+  "confidence_vocabulary": [
+    "Confirmed",
+    "Partially Verified",
+    "Inferred",
+    "Unknown",
+    "Blocked",
+    "Not Verified"
+  ],
+  "limitations": [
+    "Native dependency presence is observed on this workstation only.",
+    "Mermaid source receives structural validation when no Mermaid CLI is installed.",
+    "Model assets without immutable provider identifiers remain Partially Verified."
+  ]
+}

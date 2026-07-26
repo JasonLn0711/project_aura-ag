@@ -1,0 +1,1 @@
+{"request_id": "live-smoke-1", "workflow": "live_provider_smoke", "safety_profile": "read-only", "network_access": false, "data_boundary": "minimal synthetic instruction", "runtime_classification": "valid_target_runtime"}

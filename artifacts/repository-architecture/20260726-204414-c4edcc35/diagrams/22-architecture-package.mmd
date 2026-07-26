@@ -1,0 +1,12 @@
+flowchart LR
+Checkout[Observed checkout] --> Scanner[Source and runtime evidence collectors]
+Scanner --> Reports[25 reports]
+Scanner --> Inventories[Machine-readable inventories]
+Scanner --> BOM[Python, native, and model BOMs]
+Scanner --> Assurance[Compatibility, soak, screenshots, risks, controls]
+Reports --> Validator[Package validator]
+Inventories --> Validator
+BOM --> Validator
+Assurance --> Validator
+Validator --> Checksums[Manifest and checksums]
+Checksums --> Zip[CRC-validated archive]

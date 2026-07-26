@@ -1,0 +1,169 @@
+component,license,confidence
+accelerate,Unknown,Unknown
+aiohappyeyeballs,Unknown,Unknown
+aiohttp,Unknown,Unknown
+aiosignal,Unknown,Unknown
+alembic,Unknown,Unknown
+annotated-doc,MIT,Confirmed
+anyio,MIT,Confirmed
+asteroid-filterbanks,Unknown,Unknown
+async-timeout,Unknown,Unknown
+attrs,Unknown,Unknown
+av,BSD-3-Clause,Confirmed
+bitsandbytes,Unknown,Unknown
+certifi,MPL-2.0,Confirmed
+charset-normalizer,MIT,Confirmed
+click,BSD-3-Clause,Confirmed
+colorama,Unknown,Unknown
+colorlog,Unknown,Unknown
+contourpy,"BSD 3-Clause License
+
+ Copyright (c) 2021-2025, ContourPy Developers.
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided t",Confirmed
+ctranslate2,MIT,Confirmed
+cuda-bindings,LicenseRef-NVIDIA-SOFTWARE-LICENSE,Confirmed
+cuda-pathfinder,Apache-2.0,Confirmed
+cuda-toolkit,Unknown,Unknown
+cycler,"Copyright (c) 2015, matplotlib project
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are m",Confirmed
+einops,Unknown,Unknown
+exceptiongroup,Unknown,Unknown
+faster-whisper,MIT,Confirmed
+filelock,MIT,Confirmed
+flatbuffers,Apache 2.0,Confirmed
+fonttools,MIT,Confirmed
+frozenlist,Unknown,Unknown
+fsspec,BSD-3-Clause,Confirmed
+googleapis-common-protos,Unknown,Unknown
+greenlet,Unknown,Unknown
+grpcio,Unknown,Unknown
+h11,MIT,Confirmed
+hf-xet,Apache-2.0,Confirmed
+httpcore,BSD-3-Clause,Confirmed
+httpx,BSD-3-Clause,Confirmed
+huggingface-hub,Apache-2.0,Confirmed
+idna,BSD-3-Clause,Confirmed
+importlib-metadata,Unknown,Unknown
+jinja2,Unknown,Unknown
+joblib,BSD-3-Clause,Confirmed
+julius,Unknown,Unknown
+kiwisolver,"=========================
+ The Kiwi licensing terms
+=========================
+Kiwi is licensed under the terms of the Modified BSD License (also known as
+New or Revised BSD), as follows:
+
+Copyright (c",Confirmed
+lightning,Unknown,Unknown
+lightning-utilities,Unknown,Unknown
+mako,Unknown,Unknown
+markdown-it-py,Unknown,Unknown
+markupsafe,BSD-3-Clause,Confirmed
+matplotlib,"License agreement for matplotlib versions 1.3.0 and later
+ =========================================================
+
+ 1. This LICENSE AGREEMENT is between the Matplotlib Development Team
+ (""MDT""), an",Confirmed
+mdurl,Unknown,Unknown
+mpmath,BSD,Confirmed
+multidict,Unknown,Unknown
+networkx,BSD-3-Clause,Confirmed
+noisereduce,MIT,Confirmed
+numpy,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0,Confirmed
+nvidia-cublas-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cuda-cupti-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cuda-nvrtc-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cuda-runtime-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cudnn-cu12,LicenseRef-NVIDIA-Proprietary,Confirmed
+nvidia-cufft-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cufile-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-curand-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cusolver-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cusparse-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-cusparselt-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-nccl-cu12,LicenseRef-NVIDIA-Proprietary,Confirmed
+nvidia-npp-cu12,LicenseRef-NVIDIA-Proprietary,Confirmed
+nvidia-nvjitlink-cu12,NVIDIA Proprietary Software,Confirmed
+nvidia-nvshmem-cu12,LicenseRef-NVIDIA-Proprietary,Confirmed
+nvidia-nvtx-cu12,Apache 2.0,Confirmed
+onnxruntime,MIT License,Confirmed
+opentelemetry-api,Unknown,Unknown
+opentelemetry-exporter-otlp,Unknown,Unknown
+opentelemetry-exporter-otlp-proto-common,Unknown,Unknown
+opentelemetry-exporter-otlp-proto-grpc,Unknown,Unknown
+opentelemetry-exporter-otlp-proto-http,Unknown,Unknown
+opentelemetry-proto,Unknown,Unknown
+opentelemetry-sdk,Unknown,Unknown
+opentelemetry-semantic-conventions,Unknown,Unknown
+optuna,Unknown,Unknown
+packaging,Apache-2.0 OR BSD-2-Clause,Confirmed
+pandas,Unknown,Unknown
+pillow,MIT-CMU,Confirmed
+primepy,Unknown,Unknown
+project-aura-refactor,MIT,Confirmed
+propcache,Unknown,Unknown
+protobuf,3-Clause BSD License,Confirmed
+psutil,Unknown,Unknown
+pyannote-audio,Unknown,Unknown
+pyannote-core,Unknown,Unknown
+pyannote-database,Unknown,Unknown
+pyannote-metrics,Unknown,Unknown
+pyannote-pipeline,Unknown,Unknown
+pyannoteai-sdk,Unknown,Unknown
+pyarrow,Unknown,Unknown
+pyaudio,MIT,Confirmed
+pydub,MIT,Confirmed
+pygments,BSD-2-Clause,Confirmed
+pyparsing,MIT,Confirmed
+pyqt6,GPL-3.0-only,Confirmed
+pyqt6-qt6,LGPL v3,Confirmed
+pyqt6-sip,BSD-2-Clause,Confirmed
+pyqtgraph,MIT,Confirmed
+python-dateutil,Dual License,Confirmed
+pytorch-lightning,Unknown,Unknown
+pytorch-metric-learning,Unknown,Unknown
+pytz,Unknown,Unknown
+pyyaml,MIT,Confirmed
+qt-material,BSD-2-Clause,Confirmed
+rapidfuzz,MIT,Confirmed
+regex,Apache-2.0 AND CNRI-Python,Confirmed
+requests,Apache-2.0,Confirmed
+rich,MIT,Confirmed
+safetensors,Unknown,Unknown
+scikit-learn,Unknown,Unknown
+scipy,"Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that th",Confirmed
+setuptools,MIT,Confirmed
+shellingham,ISC License,Confirmed
+six,MIT,Confirmed
+sortedcontainers,Unknown,Unknown
+sqlalchemy,Unknown,Unknown
+sympy,BSD,Confirmed
+threadpoolctl,Unknown,Unknown
+tokenizers,Unknown,Unknown
+tomli,Unknown,Unknown
+torch,BSD-3-Clause,Confirmed
+torch-audiomentations,Unknown,Unknown
+torch-pitch-shift,Unknown,Unknown
+torchaudio,Unknown,Unknown
+torchcodec,Unknown,Unknown
+torchmetrics,Unknown,Unknown
+tqdm,MPL-2.0 AND MIT,Confirmed
+transformers,Apache 2.0 License,Confirmed
+triton,Unknown,Unknown
+typer,MIT,Confirmed
+typing-extensions,PSF-2.0,Confirmed
+tzdata,Unknown,Unknown
+urllib3,MIT,Confirmed
+webrtcvad,MIT,Confirmed
+yarl,Unknown,Unknown
+zipp,Unknown,Unknown

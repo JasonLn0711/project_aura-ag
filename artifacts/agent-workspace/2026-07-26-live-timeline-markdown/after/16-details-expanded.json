@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "16",
+  "state": "details-expanded",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "16-details-expanded.png",
+  "sha256": "cede90d9f24ec40a756f3a5e321bd7d4904d18e56823e21edd508320419e0d4a",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "progress"
+  ],
+  "content_formats": [
+    "structured"
+  ],
+  "expanded_kind": "progress",
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "progress:visual-16",
+      "kind": "progress",
+      "title": "工作進度",
+      "body_sha256": "0e4b713def0b9197c99a54bdd511fa7f54034588a8ff1741922aceb3a1b97c16",
+      "body_characters": 10
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+flowchart TB
+subgraph Desktop[Native PyQt6 desktop process]
+Main[MainWindow] --> Transcription[Transcription and review]
+Main --> Splitter[Track Splitter]
+Main --> AgentUI[Agent Workspace UI]
+AgentUI --> Application[Typed application service and presenter]
+Application --> Domain[Agent controller, policy, scheduler, evidence, publication]
+end
+Domain --> Catalog[(SQLite catalog and run artifacts)]
+Domain --> AuraEvidence[(Canonical AURA meeting evidence)]
+Domain --> Worktree[Isolated Git worktree]
+Domain --> Codex[Codex app-server child process]
+Codex --> Provider[OpenAI and ChatGPT account boundary]

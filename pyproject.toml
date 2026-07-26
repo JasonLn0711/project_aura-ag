@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-aura-refactor"
+version = "1.17.0"
+description = "Refactored Project AURA desktop audio transcription and splitting tool."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Jason Chia-Sheng Lin" }
+]
+dependencies = [
+  "faster-whisper>=1.2.1",
+  "noisereduce>=3.0.3",
+  "numpy>=2.0",
+  "nvidia-cublas-cu12==12.8.4.1; platform_system == 'Linux' and platform_machine == 'x86_64'",
+  "nvidia-cudnn-cu12==9.19.0.56; platform_system == 'Linux' and platform_machine == 'x86_64'",
+  "nvidia-npp-cu12==12.4.1.87; platform_system == 'Linux' and platform_machine == 'x86_64'",
+  "pyaudio>=0.2.14",
+  "pydub>=0.25.1",
+  "pyyaml>=6.0",
+  "pyqt6>=6.10",
+  "pyqtgraph>=0.14",
+  "rapidfuzz>=3.0",
+  "qt-material>=2.17",
+  "requests>=2.32",
+  "webrtcvad>=2.0.10",
+]
+
+[project.optional-dependencies]
+diarization = [
+  "pyannote.audio>=4.0",
+  "torch>=2.11,<2.12",
+  "torchaudio>=2.11,<2.12",
+  "torchcodec>=0.11,<0.12",
+]
+summary = [
+  "accelerate>=1.0",
+  "bitsandbytes>=0.45",
+  "torch>=2.0",
+  "transformers>=4.55",
+]
+punctuation = [
+  "torch>=2.0",
+  "transformers>=4.55",
+]
+benchmark = [
+  "huggingface-hub>=0.34",
+  "pyarrow>=18.0",
+]
+[project.scripts]
+aura = "aura.app:main"
+project-aura = "aura.app:main"
+aura-evidence = "aura.evidence_search:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+asr_postprocess = ["domain_glossary.yaml"]
+summary = ["meeting_summary_layers/*.system.txt"]
+aura = [
+  "agent/demo/fixtures/demo-repository-assurance/*",
+  "agent/providers/codex_compatibility.json",
+  "ui/agent_workspace/resources/*.qss",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchaudio = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchcodec = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

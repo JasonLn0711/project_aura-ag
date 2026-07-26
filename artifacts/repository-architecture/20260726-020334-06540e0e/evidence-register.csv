@@ -1,0 +1,13 @@
+evidence_id,claim,status,source,verification
+EV-BASE-001,Implementation-start regression retained,Confirmed,docs/agent-workspace/phase-0-baseline.md,451 tests passed before implementation
+EV-UI-001,Stable workspace is materially calmer and fits common viewports,Confirmed,artifacts/stable-daily-assurance/screenshots/README.md,real Qt before and after captures
+EV-DOMAIN-001,WorkItems runs links profiles grants and artifacts are durable,Confirmed,tests/test_agent_core.py and tests/test_agent_persistence.py,focused regression
+EV-REPO-001,Code writes use isolated worktrees and preserve selected checkout,Confirmed,tests/test_agent_integrations.py,worktree and dirty-source integration tests
+EV-POLICY-001,Autonomy transfer instruction and publication boundaries fail closed,Confirmed,tests/test_agent_policy.py and tests/test_agent_security.py,security regression
+EV-PUBLISH-001,Commit push and PR activate only through validated agent-branch Publish,Confirmed,tests/test_agent_publication.py,publication regression
+EV-SOAK-001,Fifty representative production-contract runs meet reliability gates,Confirmed,artifacts/stable-daily-assurance/soak-summary.json,50 runs 10 interruptions 5 restarts
+EV-LIVE-001,Installed Codex app-server completes a real compatible read-only turn,Confirmed,artifacts/stable-daily-assurance/live-codex/live-run-summary.json,LIVE_MINIMUM_COMPLETED
+EV-SCAN-001,Dependency findings are remediated or classified for the release platform,Confirmed,artifacts/stable-daily-assurance/vulnerability-assessment.md,PASS_WITH_CLASSIFIED_RESIDUAL
+EV-REGRESSION-001,Current AURA tree has no unexplained regression,Confirmed,docs/agent-workspace/final-implementation-report.md,483 tests passed
+EV-AC-001,All eighty acceptance criteria have direct evidence routes,Confirmed,docs/agent-workspace/definition-of-done.md,80 PASS 0 FAIL
+EV-PACKAGE-001,Architecture generator validates 25 reports 23 diagrams 18 ADRs BOMs checksums and archive,Confirmed,tests/test_agent_integrations.py,package integration test

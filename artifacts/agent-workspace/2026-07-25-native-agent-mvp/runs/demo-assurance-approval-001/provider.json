@@ -1,0 +1,16 @@
+{
+  "account_type": null,
+  "auth_status": "unknown",
+  "fallback_approval_required": false,
+  "fallback_decision": "not_required",
+  "last_event": "provider.ready",
+  "last_event_at": "2026-07-25T21:38:05.138+08:00",
+  "model_discovered_at": null,
+  "provider_id": "demo",
+  "provider_info": {},
+  "provider_status": "ready",
+  "reasoning_effort": null,
+  "requested_profile": "sol-ultra",
+  "resolved_display_name": null,
+  "resolved_model": null
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "state_id": "03",
+  "state": "wrapped-user-markdown",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "03-wrapped-user-markdown.png",
+  "sha256": "d40b5fec88a71007a961388d22bf144e90c14433e6ef7ecc4969570d289ff731",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 1,
+  "blank_item_count": 0,
+  "kinds": [
+    "user"
+  ],
+  "content_formats": [
+    "markdown"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "user:user-wrap",
+      "kind": "user",
+      "title": "你",
+      "body_sha256": "71ff7e4cfe12b2855bff00fe21bb28fdc2880169afa0fc820be38047b6b4e1af",
+      "body_characters": 232
+    }
+  ]
+}

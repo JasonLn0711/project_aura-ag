@@ -1,0 +1,11 @@
+flowchart TB
+subgraph Desktop[PyQt modular monolith]
+Main[MainWindow] --> Transcription[Transcription subsystem]
+Main --> Summary[Summary subsystem]
+Main --> Evidence[Evidence subsystem]
+Main --> Agent[Agent Workspace]
+end
+Agent --> Store[(Agent run store)]
+Agent --> Codex[Codex app-server]
+Agent --> Worktree[Isolated Git worktree]
+Codex --> Provider[External provider boundary]

@@ -1,0 +1,6 @@
+action_id,consequence,approval
+repository_health_review,read,data boundary
+generate_architecture_package,read/export,artifact output
+security_pii_review,read,data boundary
+plan_approved_fix,read then isolated write,worktree and each change
+review_confirmed_aura_action,read then optional isolated write,evidence transfer and each write

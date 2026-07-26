@@ -1,0 +1,4 @@
+entry_point,target,kind
+aura,aura.app:main,console script
+project-aura,aura.app:main,console script
+aura-evidence,aura.evidence_search:main,console script

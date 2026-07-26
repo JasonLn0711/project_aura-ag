@@ -1,0 +1,11 @@
+{
+  "fixture_id": "demo-repository-assurance",
+  "schema_version": 1,
+  "label": "Repository Assurance Demo",
+  "language": "zh-TW",
+  "sanitized": true,
+  "network_required": false,
+  "credentials_included": false,
+  "private_transcripts_included": false,
+  "primary_finding": "R-002"
+}

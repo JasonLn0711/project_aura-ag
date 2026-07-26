@@ -1,0 +1,8 @@
+flowchart LR
+Canonical[AURA canonical artifacts] --> Adapter[Read-only evidence adapter]
+Adapter --> Freshness[Eligibility and freshness]
+Freshness --> Preview[Local deterministic transfer preview]
+Preview --> Approval[User data-boundary confirmation]
+Approval --> Codex[Selected text to Codex]
+Canonical -. raw audio remains local .-> Local[Local playback]
+Codex --> Run[(Agent run artifacts)]

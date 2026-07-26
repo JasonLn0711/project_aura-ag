@@ -1,0 +1,68 @@
+{
+  "audit_id": "AUDIT-2026-07-27-AURA-REPOSITORY-STORE-ANONYMIZATION-001",
+  "generated_at": "2026-07-27T01:18:35.830+08:00",
+  "scope": "registered_worktrees_and_owned_runtime_stores",
+  "status": "current_state_validated_history_preserved",
+  "first_principle": {
+    "scarce_resource": "public trust, identity privacy, and recoverable repository history",
+    "canonical_home": "project_aura-ag",
+    "planning_role": "locator_status_capacity_validation_publication_next_gate"
+  },
+  "initial_repository_store_audit": {
+    "registered_worktrees": 10,
+    "older_registered_worktrees": 8,
+    "older_worktree_findings": 711,
+    "historical_objects_with_findings": 498,
+    "historical_git_metadata_findings": 18
+  },
+  "migration": {
+    "clean_worktrees_fast_forwarded": 7,
+    "dirty_worktrees_migrated": 1,
+    "legacy_sanitization_commit": "2c41929abf8cbc3334d9cf1ba611f3b8ff27f0d2",
+    "inherited_dirty_changes_preserved": 48,
+    "path_surfaces_migrated": 39,
+    "zip_packages_rebuilt": 1,
+    "screenshots_recaptured": 1,
+    "owned_runtime_stores": 2,
+    "owned_runtime_files": 4,
+    "sqlite_databases": 2,
+    "recovery_boundary_created": true
+  },
+  "validation": {
+    "registered_worktrees": 10,
+    "current_state_findings": 0,
+    "runtime_raw_findings": 0,
+    "runtime_logical_findings": 0,
+    "fresh_environment_files": 37355,
+    "fresh_environment_stale_partner_paths": 0,
+    "anonymization_tests_passed": 3,
+    "current_main_tests_passed": 600,
+    "python_tests_passed": 398,
+    "bridge_python_tests_passed": 14,
+    "web_tests_passed": 31,
+    "codex_bridge_tests_passed": 55,
+    "browser_e2e_deterministic_passed": 18,
+    "browser_e2e_disconnected_passed": 1,
+    "production_build": "pass",
+    "format": "pass",
+    "lint": "pass",
+    "typecheck": "pass",
+    "architecture_boundaries": "pass",
+    "git_diff_check": "pass",
+    "architecture_source_snapshot_sha256": "dfd3a1e191268133db4ba1065cbceec73e001b07e1c884d4b560abda2f18d35d"
+  },
+  "recovery": {
+    "directory": "~/Downloads/project_aura-ag-legacy08-recovery-20260727/",
+    "branch_bundle_sha256": "21cba2d141df0cefb02cd9a64c3d8bfd6ae61f9fa64b27b53f92fbc5e7b9ee13",
+    "dirty_patch_sha256": "646d8b4394bf30e85aad3d6860be1d4c080d0173ff3220fee9eeca0de3bf06a0"
+  },
+  "machine_event": {
+    "event_id": "a702ec95-a08f-4da5-81ff-8d6cad89c008",
+    "event_hash": "952183786855a47d5c1ca5aff14cba9b825c0a671dc5074412671c898c8dec15",
+    "trace_sha256": "ba293ee02c28ad0dda1dbcb9e18d29ea637ed1fff31898e9a3196892d25f62c4"
+  },
+  "scope_control": {
+    "current_state": "validated",
+    "historical_git_objects": "preserved_pending_explicit_force_update_authorization"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "state_id": "19",
+  "state": "waiting-approval",
+  "source": "sanitized-canonical-event-fixture",
+  "png": "19-waiting-approval.png",
+  "sha256": "eaa7ba02b239b23c51445b4bc74afa20c021ac2706b6e8b9b5ebab73f229f93b",
+  "image_size": {
+    "width": 1440,
+    "height": 900
+  },
+  "font_scale": 1.0,
+  "item_count": 2,
+  "blank_item_count": 0,
+  "kinds": [
+    "progress",
+    "approval"
+  ],
+  "content_formats": [
+    "structured",
+    "structured"
+  ],
+  "expanded_kind": null,
+  "selected_kind": null,
+  "items": [
+    {
+      "stable_id": "progress:visual-19",
+      "kind": "progress",
+      "title": "工作進度",
+      "body_sha256": "8628e0ac0d645135efc763c69586970974872b4aa36f86e06e7eca349816b47c",
+      "body_characters": 18
+    },
+    {
+      "stable_id": "approval:approval-1",
+      "kind": "approval",
+      "title": "需要你確認",
+      "body_sha256": "e4043a0b8066dab06c095decdae8c73422cbfb3191737b4995a6070895585caf",
+      "body_characters": 13
+    }
+  ]
+}

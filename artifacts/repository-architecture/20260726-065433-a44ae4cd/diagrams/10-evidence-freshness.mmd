@@ -1,0 +1,9 @@
+stateDiagram-v2
+[*] --> discovered
+discovered --> fresh: IDs and hashes resolve
+discovered --> stale: mismatch or invalidation
+fresh --> eligible: confirmed and supported
+fresh --> generic_only: review pending
+eligible --> previewed
+previewed --> attached: user confirms boundary
+stale --> discovered: canonical artifacts refreshed

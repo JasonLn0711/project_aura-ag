@@ -1,0 +1,15 @@
+sequenceDiagram
+actor User
+participant Publish
+participant Git
+participant Remote
+participant GitHub
+User->>Publish: Enter explicit Publish stage
+Publish->>Publish: Freshness, validation, secret, and policy gates
+Publish->>Git: Commit agent branch with run trailer
+Git-->>User: Commit SHA and diff hash
+User->>Publish: Approve push or push plus PR
+Publish->>Remote: Push HEAD to allowed agent branch
+opt Pull request selected
+Publish->>GitHub: Create redacted PR through external auth
+end

@@ -1,0 +1,11 @@
+sequenceDiagram
+actor User
+participant UI
+participant Controller
+participant Provider
+User->>UI: Stop
+UI->>Controller: Persist stop request
+Controller-->>UI: Interrupted state acknowledgement
+Controller->>Provider: turn/interrupt
+Provider-->>Controller: terminal event or bounded shutdown
+Controller-->>UI: Inspect or explicit retry

@@ -1,0 +1,21 @@
+stateDiagram-v2
+[*] --> draft
+draft --> preflight
+preflight --> context_review
+context_review --> planning
+planning --> waiting_for_approval
+planning --> running
+waiting_for_approval --> planning: reject
+waiting_for_approval --> running: approve once
+running --> testing
+running --> review_required
+testing --> review_required
+review_required --> reporting
+reporting --> completed
+draft --> interrupted
+preflight --> failed
+running --> failed
+running --> interrupted
+completed --> [*]
+failed --> [*]
+interrupted --> [*]

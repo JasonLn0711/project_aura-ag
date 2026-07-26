@@ -1,0 +1,21 @@
+sequenceDiagram
+actor User
+participant View
+participant Application
+participant Controller
+participant Codex
+participant Coalescer
+participant Models
+User->>View: Send confirmed intent
+View->>Application: typed StartRunRequest
+Application->>Controller: start_run
+Controller->>Codex: thread/start
+Codex-->>Controller: thread/started
+Controller->>Codex: turn/start
+Codex-->>Controller: streamed notifications
+Controller->>Controller: validate and persist normalized events
+Controller-->>Coalescer: ordered AgentUiEvent stream
+Coalescer-->>Models: bounded item updates
+Models-->>View: sidebar, timeline, and artifact state
+Codex-->>Controller: turn/completed
+Controller-->>View: durable terminal state

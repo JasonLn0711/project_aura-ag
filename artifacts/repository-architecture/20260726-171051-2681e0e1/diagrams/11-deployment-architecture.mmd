@@ -1,0 +1,8 @@
+flowchart LR
+Package[Python package + Qt runtime] --> Desktop[Local desktop process]
+Desktop --> GPU[Optional NVIDIA CUDA]
+Desktop --> FFmpeg[FFmpeg and audio services]
+Desktop --> Ollama[Optional local Ollama]
+Desktop --> Codex[Local Codex CLI]
+Codex --> Account[ChatGPT account]
+Desktop --> Data[(Local application data)]

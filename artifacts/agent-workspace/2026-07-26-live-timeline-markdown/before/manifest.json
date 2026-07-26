@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source": "user-provided-live-run-screenshots",
+  "captured_date": "2026-07-26",
+  "images": [
+    {
+      "file": "01-live-timeline-one-line-and-blank-summary.png",
+      "sha256": "1f1b6275f9722aa6467cc3322d6718913d04381b07b461df8413aa7c8b74174b",
+      "observed_role": "Live timeline with clipped assistant text, raw plan status, blank reasoning summaries, and generic exit-zero activity"
+    },
+    {
+      "file": "02-live-timeline-repeated-blank-activity.png",
+      "sha256": "394a460a859c6391c56a2714132d65d1e1742c26b58d6b1b2263c800ae68225c",
+      "observed_role": "Longer Live timeline with repeated blank reasoning and generic activity rows"
+    }
+  ]
+}

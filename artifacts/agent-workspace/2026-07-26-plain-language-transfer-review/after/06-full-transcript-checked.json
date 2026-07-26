@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "state_id": "06",
+  "state": "full-transcript-checked",
+  "source": "synthetic-invalid-test-data",
+  "capture_kind": "dialog",
+  "png": "06-full-transcript-checked.png",
+  "sha256": "d3e3212bf22587e562d9d130703075ef86c6548ac7c99bcafbd6c71b7a6dce64",
+  "image_size": {
+    "width": 760,
+    "height": 700
+  },
+  "dialog_size": {
+    "width": 760,
+    "height": 700
+  },
+  "local_demo": false,
+  "blocked": false,
+  "full_document_confirmation_required": true,
+  "full_document_checked": true,
+  "technical_details_expanded": false,
+  "confirmation_enabled": true,
+  "confirmation_visible": true
+}

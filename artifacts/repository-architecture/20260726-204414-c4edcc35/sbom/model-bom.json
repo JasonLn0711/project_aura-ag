@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "name": "faster-whisper",
+      "identity": "runtime-configured local ASR model",
+      "location": "provider cache",
+      "confidence": "Partially Verified"
+    },
+    {
+      "name": "gemma4:e4b-it-qat",
+      "identity": "local Ollama tag",
+      "location": "Ollama store",
+      "confidence": "Partially Verified"
+    },
+    {
+      "name": "gpt-5.6-sol",
+      "identity": "Codex provider-discovered model ID",
+      "location": "Codex/OpenAI provider boundary",
+      "confidence": "Partially Verified"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+sequenceDiagram
+actor User
+participant AURA
+participant Codex
+participant Browser
+User->>AURA: Sign in with ChatGPT
+AURA->>Codex: account/login/start
+Codex-->>AURA: authUrl and loginId
+AURA->>Browser: open authUrl
+Browser-->>Codex: provider-managed authorization
+Codex-->>AURA: account/login/completed
+AURA->>Codex: account/read
+Codex-->>AURA: non-secret account status

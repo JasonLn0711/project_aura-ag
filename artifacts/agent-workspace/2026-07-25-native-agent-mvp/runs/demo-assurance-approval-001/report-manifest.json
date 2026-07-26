@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "exported_at": "2026-07-25T21:38:05.298+08:00",
+      "path": "export/demo-evidence-packet.zip",
+      "sha256": "a95c147e91aa3705d9314607042037979908110c53e5986f5f11c0a7c68e685d"
+    }
+  ],
+  "package": "demo-architecture-package",
+  "ready_at": "2026-07-25T21:38:05.293+08:00",
+  "section_total": 20,
+  "sections": [
+    {
+      "section": 1,
+      "state": "ready",
+      "title": "Executive Summary"
+    },
+    {
+      "section": 2,
+      "state": "ready",
+      "title": "Repository Map"
+    },
+    {
+      "section": 3,
+      "state": "ready",
+      "title": "Technology Stack Inventory"
+    },
+    {
+      "section": 4,
+      "state": "ready",
+      "title": "C4 System Context"
+    },
+    {
+      "section": 5,
+      "state": "ready",
+      "title": "C4 Container Architecture"
+    },
+    {
+      "section": 6,
+      "state": "ready",
+      "title": "Component Architecture"
+    },
+    {
+      "section": 7,
+      "state": "ready",
+      "title": "Runtime and Data Flow"
+    },
+    {
+      "section": 8,
+      "state": "ready",
+      "title": "API and Interface Inventory"
+    },
+    {
+      "section": 9,
+      "state": "ready",
+      "title": "Dependency Graph"
+    },
+    {
+      "section": 10,
+      "state": "ready_with_limitations",
+      "title": "SBOM"
+    },
+    {
+      "section": 11,
+      "state": "ready",
+      "title": "Build and Deployment Architecture"
+    },
+    {
+      "section": 12,
+      "state": "ready",
+      "title": "Configuration and Environment Variables"
+    },
+    {
+      "section": 13,
+      "state": "ready",
+      "title": "Security Boundaries"
+    },
+    {
+      "section": 14,
+      "state": "ready",
+      "title": "Architecture Decision Records"
+    },
+    {
+      "section": 15,
+      "state": "ready",
+      "title": "Risks and Technical Debt"
+    },
+    {
+      "section": 16,
+      "state": "ready",
+      "title": "Local Development and Execution Guide"
+    },
+    {
+      "section": 17,
+      "state": "ready",
+      "title": "Testing and Quality Strategy"
+    },
+    {
+      "section": 18,
+      "state": "ready",
+      "title": "Observability and Operations"
+    },
+    {
+      "section": 19,
+      "state": "ready",
+      "title": "Data Storage, Retention, and Lifecycle"
+    },
+    {
+      "section": 20,
+      "state": "ready_with_limitations",
+      "title": "Open Questions, Unknowns, and Release Gates"
+    }
+  ],
+  "started_at": "2026-07-25T21:38:05.220+08:00",
+  "status": "ready_with_limitations",
+  "validated_at": "2026-07-25T21:38:05.287+08:00",
+  "validation": {
+    "missing_evidence": [
+      "live target platform matrix"
+    ],
+    "status": "ready_with_limitations"
+  }
+}

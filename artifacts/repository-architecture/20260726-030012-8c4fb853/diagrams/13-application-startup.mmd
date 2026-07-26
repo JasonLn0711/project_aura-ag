@@ -1,0 +1,13 @@
+sequenceDiagram
+actor User
+participant App
+participant Catalog
+participant Scheduler
+participant Provider
+User->>App: Launch native AURA
+App->>Catalog: Migrate, validate, and recover
+Catalog-->>App: WorkItems, queue, and Recovery Cards
+App->>Scheduler: Apply recording and one-Live policy
+App->>Provider: Compatibility preflight when Live is selected
+Provider-->>App: Ready, unavailable, or fail-closed state
+App-->>User: Task-first workspace

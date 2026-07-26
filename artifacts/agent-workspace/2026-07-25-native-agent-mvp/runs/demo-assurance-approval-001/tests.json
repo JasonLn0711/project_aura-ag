@@ -1,0 +1,10 @@
+{
+  "duration_seconds": 0.42,
+  "event_type": "test.completed",
+  "failed": 0,
+  "passed": 8,
+  "simulated": true,
+  "skipped": 0,
+  "status": "passed",
+  "updated_at": "2026-07-25T21:38:05.212+08:00"
+}

@@ -1,0 +1,383 @@
+{
+  "approval_cycles": 10,
+  "audit_event_count": 1223,
+  "audit_files": [
+    "audit-evidence/audit-2026-07-26.jsonl"
+  ],
+  "classification": "native_offscreen_integration_soak",
+  "completed_at": "2026-07-26T06:27:40.815+08:00",
+  "elapsed_ms": 7328.266,
+  "large_event_copy_bounded": true,
+  "large_event_elapsed_ms": 0.488,
+  "large_log": {
+    "elapsed_ms": 0.028,
+    "loaded_bytes": 65536,
+    "total_bytes": 52428800,
+    "truncated": true
+  },
+  "provider_failure_reconnect_cycles": 30,
+  "recording_banner_visible": true,
+  "recovery_cycles": 10,
+  "repository_head": "43eab8361ad22de45a9d98f4ad52a6f8d0a9a9f9",
+  "restart_work_item_count": 50,
+  "schema_version": 1,
+  "scope": "Deterministic native Qt integration evidence; human usability and live Codex network behavior are evaluated separately.",
+  "started_at": "2026-07-26T06:27:33.486+08:00",
+  "status": "passed",
+  "stop_cycles": 10,
+  "storage_banner_visible": true,
+  "task_count": 50,
+  "tasks": [
+    {
+      "branch": "approval",
+      "elapsed_ms": 335.628,
+      "event_count": 58,
+      "index": 1,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 278.691,
+      "event_count": 58,
+      "index": 2,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 265.876,
+      "event_count": 58,
+      "index": 3,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 262.947,
+      "event_count": 58,
+      "index": 4,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 396.276,
+      "event_count": 58,
+      "index": 5,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 421.515,
+      "event_count": 58,
+      "index": 6,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 380.614,
+      "event_count": 58,
+      "index": 7,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 303.994,
+      "event_count": 58,
+      "index": 8,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 279.934,
+      "event_count": 58,
+      "index": 9,
+      "phase": "completed"
+    },
+    {
+      "branch": "approval",
+      "elapsed_ms": 303.977,
+      "event_count": 58,
+      "index": 10,
+      "phase": "completed"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 81.178,
+      "event_count": 11,
+      "index": 11,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 100.723,
+      "event_count": 11,
+      "index": 12,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 80.976,
+      "event_count": 11,
+      "index": 13,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 101.965,
+      "event_count": 11,
+      "index": 14,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 126.544,
+      "event_count": 11,
+      "index": 15,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 99.93,
+      "event_count": 11,
+      "index": 16,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 124.112,
+      "event_count": 11,
+      "index": 17,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 75.915,
+      "event_count": 11,
+      "index": 18,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 115.074,
+      "event_count": 11,
+      "index": 19,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "stop_planning",
+      "elapsed_ms": 114.924,
+      "event_count": 11,
+      "index": 20,
+      "phase": "interrupted"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 67.536,
+      "event_count": 8,
+      "index": 21,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 73.793,
+      "event_count": 8,
+      "index": 22,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 63.705,
+      "event_count": 8,
+      "index": 23,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 82.527,
+      "event_count": 8,
+      "index": 24,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 52.319,
+      "event_count": 8,
+      "index": 25,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 116.977,
+      "event_count": 8,
+      "index": 26,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 91.085,
+      "event_count": 8,
+      "index": 27,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 90.998,
+      "event_count": 8,
+      "index": 28,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 57.646,
+      "event_count": 8,
+      "index": 29,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 89.101,
+      "event_count": 8,
+      "index": 30,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 87.932,
+      "event_count": 8,
+      "index": 31,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 82.565,
+      "event_count": 8,
+      "index": 32,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 101.045,
+      "event_count": 8,
+      "index": 33,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 98.761,
+      "event_count": 8,
+      "index": 34,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 104.85,
+      "event_count": 8,
+      "index": 35,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 59.48,
+      "event_count": 8,
+      "index": 36,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 79.114,
+      "event_count": 8,
+      "index": 37,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 66.605,
+      "event_count": 8,
+      "index": 38,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 63.495,
+      "event_count": 8,
+      "index": 39,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 92.299,
+      "event_count": 8,
+      "index": 40,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 77.858,
+      "event_count": 8,
+      "index": 41,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 63.042,
+      "event_count": 8,
+      "index": 42,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 82.439,
+      "event_count": 8,
+      "index": 43,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 65.952,
+      "event_count": 8,
+      "index": 44,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 84.357,
+      "event_count": 8,
+      "index": 45,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 55.201,
+      "event_count": 8,
+      "index": 46,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 87.69,
+      "event_count": 8,
+      "index": 47,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 90.736,
+      "event_count": 8,
+      "index": 48,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 98.161,
+      "event_count": 8,
+      "index": 49,
+      "phase": "failed"
+    },
+    {
+      "branch": "provider_failure",
+      "elapsed_ms": 72.875,
+      "event_count": 8,
+      "index": 50,
+      "phase": "failed"
+    }
+  ],
+  "thread_switch_elapsed_ms": 12.348
+}

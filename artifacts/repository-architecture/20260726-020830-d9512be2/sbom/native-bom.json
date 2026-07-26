@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "frontend_runtime": "native PyQt6; no web frontend",
+  "components": [
+    {
+      "name": "python",
+      "observed": true,
+      "version_evidence": "Python 3.12.3",
+      "command": [
+        "<repository-root>/.venv/bin/python3",
+        "--version"
+      ]
+    },
+    {
+      "name": "git",
+      "observed": true,
+      "version_evidence": "git version 2.43.0",
+      "command": [
+        "git",
+        "--version"
+      ]
+    },
+    {
+      "name": "codex",
+      "observed": true,
+      "version_evidence": "codex-cli 0.145.0",
+      "command": [
+        "codex",
+        "--version"
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "observed": true,
+      "version_evidence": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "command": [
+        "ffmpeg",
+        "-version"
+      ]
+    },
+    {
+      "name": "ollama",
+      "observed": true,
+      "version_evidence": "Warning: could not connect to a running Ollama instance",
+      "command": [
+        "ollama",
+        "--version"
+      ]
+    },
+    {
+      "name": "nvidia_smi",
+      "observed": true,
+      "version_evidence": "NVIDIA GeForce RTX 4090 Laptop GPU, 580.173.02",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,driver_version",
+        "--format=csv,noheader"
+      ]
+    },
+    {
+      "name": "pulseaudio",
+      "observed": true,
+      "version_evidence": "Server String: /run/user/1000/pulse/native",
+      "command": [
+        "pactl",
+        "info"
+      ]
+    },
+    {
+      "name": "pipewire",
+      "observed": true,
+      "version_evidence": "pipewire",
+      "command": [
+        "pipewire",
+        "--version"
+      ]
+    }
+  ]
+}

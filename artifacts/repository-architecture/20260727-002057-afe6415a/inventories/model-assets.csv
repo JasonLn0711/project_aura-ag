@@ -1,0 +1,4 @@
+asset,identity,location,confidence
+faster-whisper model,runtime configured,provider cache,Partially Verified
+gemma4:e4b-it-qat,local Ollama tag,Ollama store,Partially Verified
+gpt-5.6-sol,provider-discovered model ID,Codex provider,Partially Verified

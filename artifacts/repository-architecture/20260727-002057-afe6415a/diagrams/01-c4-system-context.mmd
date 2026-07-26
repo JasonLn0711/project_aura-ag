@@ -1,0 +1,11 @@
+flowchart LR
+User[AURA user] --> App[Project AURA desktop app]
+Audio[Local audio devices] --> App
+App --> Files[(Local filesystem)]
+App --> SQLite[(Local SQLite evidence index)]
+App --> Ollama[Local Ollama model]
+App --> Git[Selected Git repository]
+App --> Codex[Codex app-server child process]
+Codex --> OpenAI[OpenAI / ChatGPT account boundary]
+App --> Browser[System browser]
+Browser --> OpenAI

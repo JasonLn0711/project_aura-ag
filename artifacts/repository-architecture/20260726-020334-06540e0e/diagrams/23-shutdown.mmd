@@ -1,0 +1,14 @@
+sequenceDiagram
+actor User
+participant AURA
+participant Catalog
+participant Codex
+participant OS
+User->>AURA: Close
+AURA->>Catalog: Flush queue and terminal snapshots
+AURA->>Codex: Graceful shutdown
+alt Child remains
+AURA->>OS: Terminate exact process group
+end
+OS-->>AURA: No orphan child
+AURA-->>User: Native process exits

@@ -1,0 +1,60 @@
+{
+  "audit_id": "AUDIT-2026-07-26-AURA-PUBLIC-ANONYMIZATION-001",
+  "generated_at": "2026-07-26T23:45:34+08:00",
+  "scope": "current_publishable_checkout",
+  "status": "validated",
+  "initial_inventory": {
+    "person_label_files": 48,
+    "person_label_occurrences": 129,
+    "partner_label_files": 6,
+    "partner_label_occurrences": 27,
+    "zip_archives": 9,
+    "responsive_visual_captures": 36
+  },
+  "public_labels": {
+    "person": "Person A",
+    "partner": "Partner",
+    "highest_quality_profile": "Expert"
+  },
+  "validation": {
+    "current_checkout_findings": 0,
+    "archive_findings": 0,
+    "visual_contact_sheet_inspected": true,
+    "focused_tests_passed": 90,
+    "version_tests_passed": 8,
+    "full_regression_passed": 599,
+    "audit_integrity_issues": 0,
+    "checker": "scripts/check_public_anonymization.py",
+    "regression": "tests/test_public_anonymization.py"
+  },
+  "scope_control": {
+    "historical_git_objects": "separately_authorized_migration",
+    "other_registered_worktrees": "separately_authorized_migration"
+  },
+  "extended_repository_audit": {
+    "remote_main_findings": 0,
+    "canonical_main_findings": 0,
+    "active_feature_findings": 0,
+    "older_registered_worktrees": 8,
+    "older_clean_worktrees": 7,
+    "older_dirty_worktrees": 1,
+    "older_worktree_findings": 711,
+    "historical_person_label_change": true,
+    "historical_partner_label_change": true
+  },
+  "publication": {
+    "remote": "origin",
+    "target": "main",
+    "commits": [
+      "42b48e954dd19ac8c9ac26d480e023af7e26adba",
+      "8f64e87f171fe3da7a971eb494204842d00ba8b3",
+      "777bfb6a3eb460e70dc800fa34b18c4c1a9f5a2c",
+      "163e7bf2ddb95cb57ae579d2f15d8c0aaf7addaa",
+      "c942b72c1766e5a36a1f7c13707a458f554f6ec6"
+    ],
+    "post_push_divergence": [
+      0,
+      0
+    ]
+  }
+}

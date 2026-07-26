@@ -1,0 +1,8 @@
+diff --git a/src/aura/asr/threads.py b/src/aura/asr/threads.py
+index 1111111..2222222 100644
+--- a/src/aura/asr/threads.py
++++ b/src/aura/asr/threads.py
+@@ -240,7 +240,8 @@ class TranscriberThread(QThread):
+-        self.audio_queue = queue.Queue()
++        # Bounded provisional work preserves durable audio under sustained load.
++        self.audio_queue = queue.Queue(maxsize=8)

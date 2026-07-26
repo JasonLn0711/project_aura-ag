@@ -1,0 +1,12 @@
+flowchart TB
+subgraph Trusted[AURA-owned trusted boundary]
+UI[Native Qt UI]
+Controller[Controller and policy]
+Store[(Local run store)]
+end
+Repo[Untrusted repository content] --> Controller
+Evidence[Untrusted imported evidence] --> Controller
+Controller --> Child[Codex child process]
+Child --> Cloud[OpenAI provider]
+Controller --> Worktree[Approved writable worktree]
+Browser[System browser] --> Cloud

@@ -1,0 +1,8 @@
+technology,role,evidence,confidence
+Python,application runtime,pyproject.toml,Confirmed
+PyQt6,native desktop UI,src/aura/ui,Confirmed
+faster-whisper,ASR,pyproject.toml,Confirmed
+SQLite FTS5,local evidence index,src/aura/evidence_search.py,Confirmed
+Ollama,local summary model,src/aura/llm,Partially Verified
+Codex app-server,live Agent provider,src/aura/agent/providers,Confirmed
+Git worktree,isolated write workspace,src/aura/agent/worktree.py,Confirmed

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-07-26T20:19:04+08:00",
+  "source_commit": "3dcf465cf5650af206d3b0c8ec6665f4bdd68266",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "pyqt": "6.11.0",
+    "qt": "6.11.0",
+    "qpa": "offscreen"
+  },
+  "thresholds": {
+    "model_10000_ms": 1000.0,
+    "markdown_1000_ms": 5000.0,
+    "streaming_1000_ms": 1000.0,
+    "lifecycle_500_ms": 1000.0,
+    "resize_max_ms": 250.0,
+    "long_50kb_ms": 1500.0,
+    "max_gui_stall_ms": 250.0,
+    "rss_growth_mib": 512.0,
+    "cache_entries": 256
+  },
+  "metrics": {
+    "model_10000": {
+      "rows": 10000,
+      "elapsed_ms": 0.035,
+      "permanent_index_widgets_sampled": 0
+    },
+    "markdown_1000": {
+      "rows": 1000,
+      "elapsed_ms": 323.316
+    },
+    "streaming_1000": {
+      "events": 1000,
+      "elapsed_ms": 31.676,
+      "projected_rows": 1,
+      "body_characters": 1000,
+      "ui_throttle_interval_ms": 50
+    },
+    "activity_lifecycle_500": {
+      "events": 500,
+      "elapsed_ms": 53.939,
+      "projected_rows": 1,
+      "detail_count": 250
+    },
+    "viewport_resize": [
+      {
+        "width_px": 1400,
+        "height_px": 200,
+        "elapsed_ms": 14.738
+      },
+      {
+        "width_px": 984,
+        "height_px": 242,
+        "elapsed_ms": 1.793
+      },
+      {
+        "width_px": 1400,
+        "height_px": 200,
+        "elapsed_ms": 0.28
+      }
+    ],
+    "font_scale_150_percent": {
+      "height_px": 474,
+      "elapsed_ms": 25.079
+    },
+    "long_markdown_50kb": {
+      "source_bytes": 51198,
+      "elapsed_ms": 55.351,
+      "height_px": 23863.0,
+      "document_width_px": 984.0
+    },
+    "nested_table_code": {
+      "elapsed_ms": 3.921,
+      "height_px": 317.0,
+      "document_width_px": 984.0
+    },
+    "memory": {
+      "python_current_mib": 4.759,
+      "python_peak_mib": 4.943,
+      "rss_before_kib": 53524,
+      "rss_after_kib": 99980,
+      "rss_growth_mib": 45.367
+    },
+    "cache": {
+      "entries": 256,
+      "maximum_entries": 256,
+      "hits": 1,
+      "misses": 1002,
+      "hit_rate": 0.000997
+    },
+    "maximum_gui_thread_stall_ms": 55.351
+  },
+  "checks": {
+    "model_10000": true,
+    "markdown_1000": true,
+    "streaming_1000": true,
+    "lifecycle_500": true,
+    "resize": true,
+    "width_bounded": true,
+    "long_50kb": true,
+    "maximum_gui_stall": true,
+    "memory": true,
+    "cache_bounded": true
+  },
+  "status": "PASS"
+}

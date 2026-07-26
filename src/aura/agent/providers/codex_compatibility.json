@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "tested_cli_version": "0.145.0",
+  "minimum_cli_version": "0.145.0",
+  "maximum_cli_version_exclusive": "0.146.0",
+  "last_known_good_cli_version": "0.145.0",
+  "transport": "stdio-jsonl-v2",
+  "v2_schema_sha256": "16d8024fb52dfb10eb7a2c8a0768812a32d7e2a693d4e65a3831be6ea7bc2b1e",
+  "required_methods": [
+    "initialize",
+    "account/read",
+    "model/list",
+    "thread/start",
+    "thread/list",
+    "thread/read",
+    "thread/resume",
+    "thread/archive",
+    "turn/start",
+    "turn/steer",
+    "turn/interrupt"
+  ],
+  "required_notifications": [
+    "thread/started",
+    "turn/started",
+    "item/agentMessage/delta",
+    "item/reasoning/summaryTextDelta",
+    "item/started",
+    "item/completed",
+    "turn/completed"
+  ],
+  "required_server_requests": [
+    "item/commandExecution/requestApproval",
+    "item/fileChange/requestApproval"
+  ],
+  "optional_methods": [
+    "account/login/start",
+    "account/login/cancel",
+    "account/logout"
+  ],
+  "probe": {
+    "method": "thread/list",
+    "params": {
+      "limit": 1,
+      "useStateDbOnly": true
+    },
+    "side_effect": "none"
+  }
+}

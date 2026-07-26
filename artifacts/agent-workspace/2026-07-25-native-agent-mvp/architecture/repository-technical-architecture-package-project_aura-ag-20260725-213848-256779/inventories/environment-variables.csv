@@ -1,0 +1,12 @@
+variable,source,classification,secret_value_included
+AURA_AGENT_ALLOWED_ROOTS,src/aura/agent/config.py,configuration,no
+AURA_AGENT_DEFAULT_MODE,src/aura/agent/config.py,configuration,no
+AURA_AGENT_RUN_ROOT,src/aura/agent/config.py,configuration,no
+AURA_AGENT_WORKTREE_ROOT,src/aura/agent/config.py,configuration,no
+AURA_CODEX_EXECUTABLE,src/aura/agent/config.py,configuration,no
+AURA_AGENT_DEFAULT_SAFETY_PROFILE,src/aura/agent/config.py,configuration,no
+AURA_AGENT_REPORT_OUTPUT_ROOT,src/aura/agent/config.py,configuration,no
+LOCALAPPDATA,src/aura/audit.py,configuration,no
+XDG_STATE_HOME,src/aura/audit.py,configuration,no
+PATH,src/aura/system/gpu_diagnostics.py,configuration,no
+XDG_DATA_HOME,src/summary/layered_summary_pipeline.py,configuration,no

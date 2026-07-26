@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "state_id": "07",
+  "state": "technical-details-expanded",
+  "source": "synthetic-invalid-test-data",
+  "capture_kind": "dialog",
+  "png": "07-technical-details-expanded.png",
+  "sha256": "daaa8d9895bd4b9c6ae4f0611a8c63ea9d8446c09718f5762f54318bacc15dc7",
+  "image_size": {
+    "width": 760,
+    "height": 700
+  },
+  "dialog_size": {
+    "width": 760,
+    "height": 700
+  },
+  "local_demo": false,
+  "blocked": false,
+  "full_document_confirmation_required": false,
+  "full_document_checked": false,
+  "technical_details_expanded": true,
+  "confirmation_enabled": true,
+  "confirmation_visible": true
+}

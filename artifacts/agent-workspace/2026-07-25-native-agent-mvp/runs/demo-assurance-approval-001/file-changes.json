@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "additions": 2,
+      "binary": false,
+      "created_at": "2026-07-25T21:38:05.195+08:00",
+      "deletions": 1,
+      "event_type": "file_change.proposed",
+      "file_change_id": "change-demo-r002",
+      "path_policy": "allowed",
+      "paths": [
+        "src/aura/asr/threads.py"
+      ],
+      "simulated": true
+    },
+    {
+      "created_at": "2026-07-25T21:38:05.204+08:00",
+      "event_type": "file_change.completed",
+      "file_change_id": "change-demo-r002",
+      "paths": [
+        "src/aura/asr/threads.py"
+      ],
+      "simulated": true
+    }
+  ]
+}

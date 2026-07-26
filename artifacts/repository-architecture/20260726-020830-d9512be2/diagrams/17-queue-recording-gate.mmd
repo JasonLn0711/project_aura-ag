@@ -1,0 +1,9 @@
+stateDiagram-v2
+[*] --> queued
+queued --> running: Live slot free and resources safe
+queued --> recording_hold: recording or live ASR active
+recording_hold --> queued: recording and live ASR clear
+running --> interrupted: recording starts during heavy/write work
+interrupted --> inspect
+inspect --> queued: operator explicitly retries
+running --> completed

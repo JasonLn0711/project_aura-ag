@@ -1,0 +1,12 @@
+flowchart LR
+Tab[AgentWorkspaceTab] --> Controller[AgentRunController]
+Controller --> Reducer[State reducer]
+Controller --> Demo[DemoAgentProvider]
+Controller --> Live[CodexAppServerProvider]
+Live --> RPC[QProcess JSON-RPC client]
+Controller --> Store[AgentRunStore]
+Tab --> Renderers[Trusted renderer registry]
+Tab --> Approval[Approval dialog]
+Controller --> Policy[Path and command policy]
+Controller --> Evidence[AuraEvidenceAdapter]
+Controller --> Reports[ArchitecturePackageGenerator]

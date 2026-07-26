@@ -1,0 +1,2905 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:15eda530-b9bd-47a2-8c50-c387dac650cd",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-07-26T17:10:51+08:00",
+    "component": {
+      "type": "application",
+      "name": "project_aura-ag",
+      "version": "fdc0e4f659bacb2c895d65a0df87801deb20d241"
+    },
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "AURA ArchitecturePackageGenerator",
+          "version": "1"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/accelerate@1.13.0",
+      "name": "accelerate",
+      "version": "1.13.0",
+      "purl": "pkg:pypi/accelerate@1.13.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/aiohappyeyeballs@2.6.1",
+      "name": "aiohappyeyeballs",
+      "version": "2.6.1",
+      "purl": "pkg:pypi/aiohappyeyeballs@2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "PSF-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/aiohttp@3.14.3",
+      "name": "aiohttp",
+      "version": "3.14.3",
+      "purl": "pkg:pypi/aiohttp@3.14.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0 AND MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/aiosignal@1.4.0",
+      "name": "aiosignal",
+      "version": "1.4.0",
+      "purl": "pkg:pypi/aiosignal@1.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/alembic@1.18.4",
+      "name": "alembic",
+      "version": "1.18.4",
+      "purl": "pkg:pypi/alembic@1.18.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/annotated-doc@0.0.4",
+      "name": "annotated-doc",
+      "version": "0.0.4",
+      "purl": "pkg:pypi/annotated-doc@0.0.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/anyio@4.13.0",
+      "name": "anyio",
+      "version": "4.13.0",
+      "purl": "pkg:pypi/anyio@4.13.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/asteroid-filterbanks@0.4.0",
+      "name": "asteroid-filterbanks",
+      "version": "0.4.0",
+      "purl": "pkg:pypi/asteroid-filterbanks@0.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/async-timeout@5.0.1",
+      "name": "async-timeout",
+      "version": "5.0.1",
+      "purl": "pkg:pypi/async-timeout@5.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/attrs@26.1.0",
+      "name": "attrs",
+      "version": "26.1.0",
+      "purl": "pkg:pypi/attrs@26.1.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/av@17.0.1",
+      "name": "av",
+      "version": "17.0.1",
+      "purl": "pkg:pypi/av@17.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/bitsandbytes@0.49.2",
+      "name": "bitsandbytes",
+      "version": "0.49.2",
+      "purl": "pkg:pypi/bitsandbytes@0.49.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/certifi@2026.4.22",
+      "name": "certifi",
+      "version": "2026.4.22",
+      "purl": "pkg:pypi/certifi@2026.4.22",
+      "licenses": [
+        {
+          "license": {
+            "name": "MPL-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/charset-normalizer@3.4.7",
+      "name": "charset-normalizer",
+      "version": "3.4.7",
+      "purl": "pkg:pypi/charset-normalizer@3.4.7",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/click@8.3.3",
+      "name": "click",
+      "version": "8.3.3",
+      "purl": "pkg:pypi/click@8.3.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorama@0.4.6",
+      "name": "colorama",
+      "version": "0.4.6",
+      "purl": "pkg:pypi/colorama@0.4.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/colorlog@6.10.1",
+      "name": "colorlog",
+      "version": "6.10.1",
+      "purl": "pkg:pypi/colorlog@6.10.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/contourpy@1.3.3",
+      "name": "contourpy",
+      "version": "1.3.3",
+      "purl": "pkg:pypi/contourpy@1.3.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause License\n\n Copyright (c) 2021-2025, ContourPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided t"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/ctranslate2@4.7.1",
+      "name": "ctranslate2",
+      "version": "4.7.1",
+      "purl": "pkg:pypi/ctranslate2@4.7.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/cuda-bindings@12.9.7",
+      "name": "cuda-bindings",
+      "version": "12.9.7",
+      "purl": "pkg:pypi/cuda-bindings@12.9.7",
+      "licenses": [
+        {
+          "license": {
+            "name": "LicenseRef-NVIDIA-SOFTWARE-LICENSE"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/cuda-pathfinder@1.5.4",
+      "name": "cuda-pathfinder",
+      "version": "1.5.4",
+      "purl": "pkg:pypi/cuda-pathfinder@1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/cuda-toolkit@12.8.1",
+      "name": "cuda-toolkit",
+      "version": "12.8.1",
+      "purl": "pkg:pypi/cuda-toolkit@12.8.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/cycler@0.12.1",
+      "name": "cycler",
+      "version": "0.12.1",
+      "purl": "pkg:pypi/cycler@0.12.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Copyright (c) 2015, matplotlib project\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are m"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/einops@0.8.2",
+      "name": "einops",
+      "version": "0.8.2",
+      "purl": "pkg:pypi/einops@0.8.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/exceptiongroup@1.3.1",
+      "name": "exceptiongroup",
+      "version": "1.3.1",
+      "purl": "pkg:pypi/exceptiongroup@1.3.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/faster-whisper@1.2.1",
+      "name": "faster-whisper",
+      "version": "1.2.1",
+      "purl": "pkg:pypi/faster-whisper@1.2.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/filelock@3.29.0",
+      "name": "filelock",
+      "version": "3.29.0",
+      "purl": "pkg:pypi/filelock@3.29.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/flatbuffers@25.12.19",
+      "name": "flatbuffers",
+      "version": "25.12.19",
+      "purl": "pkg:pypi/flatbuffers@25.12.19",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/fonttools@4.62.1",
+      "name": "fonttools",
+      "version": "4.62.1",
+      "purl": "pkg:pypi/fonttools@4.62.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/frozenlist@1.8.0",
+      "name": "frozenlist",
+      "version": "1.8.0",
+      "purl": "pkg:pypi/frozenlist@1.8.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/fsspec@2026.4.0",
+      "name": "fsspec",
+      "version": "2026.4.0",
+      "purl": "pkg:pypi/fsspec@2026.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/googleapis-common-protos@1.75.0",
+      "name": "googleapis-common-protos",
+      "version": "1.75.0",
+      "purl": "pkg:pypi/googleapis-common-protos@1.75.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/greenlet@3.5.0",
+      "name": "greenlet",
+      "version": "3.5.0",
+      "purl": "pkg:pypi/greenlet@3.5.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT AND PSF-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/grpcio@1.80.0",
+      "name": "grpcio",
+      "version": "1.80.0",
+      "purl": "pkg:pypi/grpcio@1.80.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/h11@0.16.0",
+      "name": "h11",
+      "version": "0.16.0",
+      "purl": "pkg:pypi/h11@0.16.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/hf-xet@1.5.0",
+      "name": "hf-xet",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/hf-xet@1.5.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpcore@1.0.9",
+      "name": "httpcore",
+      "version": "1.0.9",
+      "purl": "pkg:pypi/httpcore@1.0.9",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/httpx@0.28.1",
+      "name": "httpx",
+      "version": "0.28.1",
+      "purl": "pkg:pypi/httpx@0.28.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/huggingface-hub@1.14.0",
+      "name": "huggingface-hub",
+      "version": "1.14.0",
+      "purl": "pkg:pypi/huggingface-hub@1.14.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/idna@3.15",
+      "name": "idna",
+      "version": "3.15",
+      "purl": "pkg:pypi/idna@3.15",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/importlib-metadata@8.7.1",
+      "name": "importlib-metadata",
+      "version": "8.7.1",
+      "purl": "pkg:pypi/importlib-metadata@8.7.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/jinja2@3.1.6",
+      "name": "jinja2",
+      "version": "3.1.6",
+      "purl": "pkg:pypi/jinja2@3.1.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/joblib@1.5.3",
+      "name": "joblib",
+      "version": "1.5.3",
+      "purl": "pkg:pypi/joblib@1.5.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/julius@0.2.7",
+      "name": "julius",
+      "version": "0.2.7",
+      "purl": "pkg:pypi/julius@0.2.7",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/kiwisolver@1.5.0",
+      "name": "kiwisolver",
+      "version": "1.5.0",
+      "purl": "pkg:pypi/kiwisolver@1.5.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "=========================\n The Kiwi licensing terms\n=========================\nKiwi is licensed under the terms of the Modified BSD License (also known as\nNew or Revised BSD), as follows:\n\nCopyright (c"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/lightning@2.6.1",
+      "name": "lightning",
+      "version": "2.6.1",
+      "purl": "pkg:pypi/lightning@2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/lightning-utilities@0.15.3",
+      "name": "lightning-utilities",
+      "version": "0.15.3",
+      "purl": "pkg:pypi/lightning-utilities@0.15.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/mako@1.3.12",
+      "name": "mako",
+      "version": "1.3.12",
+      "purl": "pkg:pypi/mako@1.3.12",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/markdown-it-py@4.2.0",
+      "name": "markdown-it-py",
+      "version": "4.2.0",
+      "purl": "pkg:pypi/markdown-it-py@4.2.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/markupsafe@3.0.3",
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/markupsafe@3.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/matplotlib@3.10.9",
+      "name": "matplotlib",
+      "version": "3.10.9",
+      "purl": "pkg:pypi/matplotlib@3.10.9",
+      "licenses": [
+        {
+          "license": {
+            "name": "License agreement for matplotlib versions 1.3.0 and later\n =========================================================\n\n 1. This LICENSE AGREEMENT is between the Matplotlib Development Team\n (\"MDT\"), an"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/mdurl@0.1.2",
+      "name": "mdurl",
+      "version": "0.1.2",
+      "purl": "pkg:pypi/mdurl@0.1.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/mpmath@1.3.0",
+      "name": "mpmath",
+      "version": "1.3.0",
+      "purl": "pkg:pypi/mpmath@1.3.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/multidict@6.7.1",
+      "name": "multidict",
+      "version": "6.7.1",
+      "purl": "pkg:pypi/multidict@6.7.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/networkx@3.6.1",
+      "name": "networkx",
+      "version": "3.6.1",
+      "purl": "pkg:pypi/networkx@3.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/noisereduce@3.0.3",
+      "name": "noisereduce",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/noisereduce@3.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/numpy@2.4.4",
+      "name": "numpy",
+      "version": "2.4.4",
+      "purl": "pkg:pypi/numpy@2.4.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cublas-cu12@12.8.4.1",
+      "name": "nvidia-cublas-cu12",
+      "version": "12.8.4.1",
+      "purl": "pkg:pypi/nvidia-cublas-cu12@12.8.4.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cuda-cupti-cu12@12.8.90",
+      "name": "nvidia-cuda-cupti-cu12",
+      "version": "12.8.90",
+      "purl": "pkg:pypi/nvidia-cuda-cupti-cu12@12.8.90",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cuda-nvrtc-cu12@12.8.93",
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "version": "12.8.93",
+      "purl": "pkg:pypi/nvidia-cuda-nvrtc-cu12@12.8.93",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cuda-runtime-cu12@12.8.90",
+      "name": "nvidia-cuda-runtime-cu12",
+      "version": "12.8.90",
+      "purl": "pkg:pypi/nvidia-cuda-runtime-cu12@12.8.90",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cudnn-cu12@9.19.0.56",
+      "name": "nvidia-cudnn-cu12",
+      "version": "9.19.0.56",
+      "purl": "pkg:pypi/nvidia-cudnn-cu12@9.19.0.56",
+      "licenses": [
+        {
+          "license": {
+            "name": "LicenseRef-NVIDIA-Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cufft-cu12@11.3.3.83",
+      "name": "nvidia-cufft-cu12",
+      "version": "11.3.3.83",
+      "purl": "pkg:pypi/nvidia-cufft-cu12@11.3.3.83",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cufile-cu12@1.13.1.3",
+      "name": "nvidia-cufile-cu12",
+      "version": "1.13.1.3",
+      "purl": "pkg:pypi/nvidia-cufile-cu12@1.13.1.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-curand-cu12@10.3.9.90",
+      "name": "nvidia-curand-cu12",
+      "version": "10.3.9.90",
+      "purl": "pkg:pypi/nvidia-curand-cu12@10.3.9.90",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cusolver-cu12@11.7.3.90",
+      "name": "nvidia-cusolver-cu12",
+      "version": "11.7.3.90",
+      "purl": "pkg:pypi/nvidia-cusolver-cu12@11.7.3.90",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cusparse-cu12@12.5.8.93",
+      "name": "nvidia-cusparse-cu12",
+      "version": "12.5.8.93",
+      "purl": "pkg:pypi/nvidia-cusparse-cu12@12.5.8.93",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-cusparselt-cu12@0.7.1",
+      "name": "nvidia-cusparselt-cu12",
+      "version": "0.7.1",
+      "purl": "pkg:pypi/nvidia-cusparselt-cu12@0.7.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-nccl-cu12@2.28.9",
+      "name": "nvidia-nccl-cu12",
+      "version": "2.28.9",
+      "purl": "pkg:pypi/nvidia-nccl-cu12@2.28.9",
+      "licenses": [
+        {
+          "license": {
+            "name": "LicenseRef-NVIDIA-Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-npp-cu12@12.4.1.87",
+      "name": "nvidia-npp-cu12",
+      "version": "12.4.1.87",
+      "purl": "pkg:pypi/nvidia-npp-cu12@12.4.1.87",
+      "licenses": [
+        {
+          "license": {
+            "name": "LicenseRef-NVIDIA-Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-nvjitlink-cu12@12.8.93",
+      "name": "nvidia-nvjitlink-cu12",
+      "version": "12.8.93",
+      "purl": "pkg:pypi/nvidia-nvjitlink-cu12@12.8.93",
+      "licenses": [
+        {
+          "license": {
+            "name": "NVIDIA Proprietary Software"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-nvshmem-cu12@3.4.5",
+      "name": "nvidia-nvshmem-cu12",
+      "version": "3.4.5",
+      "purl": "pkg:pypi/nvidia-nvshmem-cu12@3.4.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "LicenseRef-NVIDIA-Proprietary"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/nvidia-nvtx-cu12@12.8.90",
+      "name": "nvidia-nvtx-cu12",
+      "version": "12.8.90",
+      "purl": "pkg:pypi/nvidia-nvtx-cu12@12.8.90",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/onnxruntime@1.26.0",
+      "name": "onnxruntime",
+      "version": "1.26.0",
+      "purl": "pkg:pypi/onnxruntime@1.26.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-api@1.41.1",
+      "name": "opentelemetry-api",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-api@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-exporter-otlp@1.41.1",
+      "name": "opentelemetry-exporter-otlp",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-exporter-otlp-proto-common@1.41.1",
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-common@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-exporter-otlp-proto-grpc@1.41.1",
+      "name": "opentelemetry-exporter-otlp-proto-grpc",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-grpc@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-exporter-otlp-proto-http@1.41.1",
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp-proto-http@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-proto@1.41.1",
+      "name": "opentelemetry-proto",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-proto@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-sdk@1.41.1",
+      "name": "opentelemetry-sdk",
+      "version": "1.41.1",
+      "purl": "pkg:pypi/opentelemetry-sdk@1.41.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/opentelemetry-semantic-conventions@0.62b1",
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.62b1",
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions@0.62b1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/optuna@4.8.0",
+      "name": "optuna",
+      "version": "4.8.0",
+      "purl": "pkg:pypi/optuna@4.8.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/packaging@26.2",
+      "name": "packaging",
+      "version": "26.2",
+      "purl": "pkg:pypi/packaging@26.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0 OR BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pandas@3.0.3",
+      "name": "pandas",
+      "version": "3.0.3",
+      "purl": "pkg:pypi/pandas@3.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause License\n\n Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team\n All rights reserved.\n\n Copyright (c) 2011-2026, Open source contributors."
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pillow@12.3.0",
+      "name": "pillow",
+      "version": "12.3.0",
+      "purl": "pkg:pypi/pillow@12.3.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT-CMU"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/primepy@1.3",
+      "name": "primepy",
+      "version": "1.3",
+      "purl": "pkg:pypi/primepy@1.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/project-aura-refactor@1.17.0",
+      "name": "project-aura-refactor",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/project-aura-refactor@1.17.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/propcache@0.5.2",
+      "name": "propcache",
+      "version": "0.5.2",
+      "purl": "pkg:pypi/propcache@0.5.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/protobuf@6.33.6",
+      "name": "protobuf",
+      "version": "6.33.6",
+      "purl": "pkg:pypi/protobuf@6.33.6",
+      "licenses": [
+        {
+          "license": {
+            "name": "3-Clause BSD License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/psutil@7.2.2",
+      "name": "psutil",
+      "version": "7.2.2",
+      "purl": "pkg:pypi/psutil@7.2.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannote-audio@4.0.4",
+      "name": "pyannote-audio",
+      "version": "4.0.4",
+      "purl": "pkg:pypi/pyannote-audio@4.0.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannote-core@6.0.1",
+      "name": "pyannote-core",
+      "version": "6.0.1",
+      "purl": "pkg:pypi/pyannote-core@6.0.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannote-database@6.1.1",
+      "name": "pyannote-database",
+      "version": "6.1.1",
+      "purl": "pkg:pypi/pyannote-database@6.1.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannote-metrics@4.1",
+      "name": "pyannote-metrics",
+      "version": "4.1",
+      "purl": "pkg:pypi/pyannote-metrics@4.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannote-pipeline@4.0.0",
+      "name": "pyannote-pipeline",
+      "version": "4.0.0",
+      "purl": "pkg:pypi/pyannote-pipeline@4.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyannoteai-sdk@0.4.0",
+      "name": "pyannoteai-sdk",
+      "version": "0.4.0",
+      "purl": "pkg:pypi/pyannoteai-sdk@0.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyarrow@25.0.0",
+      "name": "pyarrow",
+      "version": "25.0.0",
+      "purl": "pkg:pypi/pyarrow@25.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyaudio@0.2.14",
+      "name": "pyaudio",
+      "version": "0.2.14",
+      "purl": "pkg:pypi/pyaudio@0.2.14",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pydub@0.25.1",
+      "name": "pydub",
+      "version": "0.25.1",
+      "purl": "pkg:pypi/pydub@0.25.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pygments@2.20.0",
+      "name": "pygments",
+      "version": "2.20.0",
+      "purl": "pkg:pypi/pygments@2.20.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyparsing@3.3.2",
+      "name": "pyparsing",
+      "version": "3.3.2",
+      "purl": "pkg:pypi/pyparsing@3.3.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyqt6@6.11.0",
+      "name": "pyqt6",
+      "version": "6.11.0",
+      "purl": "pkg:pypi/pyqt6@6.11.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-3.0-only"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyqt6-qt6@6.11.0",
+      "name": "pyqt6-qt6",
+      "version": "6.11.0",
+      "purl": "pkg:pypi/pyqt6-qt6@6.11.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL v3"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyqt6-sip@13.11.1",
+      "name": "pyqt6-sip",
+      "version": "13.11.1",
+      "purl": "pkg:pypi/pyqt6-sip@13.11.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyqtgraph@0.14.0",
+      "name": "pyqtgraph",
+      "version": "0.14.0",
+      "purl": "pkg:pypi/pyqtgraph@0.14.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "purl": "pkg:pypi/python-dateutil@2.9.0.post0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dual License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytorch-lightning@2.6.1",
+      "name": "pytorch-lightning",
+      "version": "2.6.1",
+      "purl": "pkg:pypi/pytorch-lightning@2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytorch-metric-learning@2.9.0",
+      "name": "pytorch-metric-learning",
+      "version": "2.9.0",
+      "purl": "pkg:pypi/pytorch-metric-learning@2.9.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pytz@2026.2",
+      "name": "pytz",
+      "version": "2026.2",
+      "purl": "pkg:pypi/pytz@2026.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/pyyaml@6.0.3",
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/qt-material@2.17",
+      "name": "qt-material",
+      "version": "2.17",
+      "purl": "pkg:pypi/qt-material@2.17",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-2-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/rapidfuzz@3.14.5",
+      "name": "rapidfuzz",
+      "version": "3.14.5",
+      "purl": "pkg:pypi/rapidfuzz@3.14.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/regex@2026.5.9",
+      "name": "regex",
+      "version": "2026.5.9",
+      "purl": "pkg:pypi/regex@2026.5.9",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0 AND CNRI-Python"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/requests@2.34.1",
+      "name": "requests",
+      "version": "2.34.1",
+      "purl": "pkg:pypi/requests@2.34.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/rich@15.0.0",
+      "name": "rich",
+      "version": "15.0.0",
+      "purl": "pkg:pypi/rich@15.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/safetensors@0.7.0",
+      "name": "safetensors",
+      "version": "0.7.0",
+      "purl": "pkg:pypi/safetensors@0.7.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/scikit-learn@1.8.0",
+      "name": "scikit-learn",
+      "version": "1.8.0",
+      "purl": "pkg:pypi/scikit-learn@1.8.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/scipy@1.17.1",
+      "name": "scipy",
+      "version": "1.17.1",
+      "purl": "pkg:pypi/scipy@1.17.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that th"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/setuptools@81.0.0",
+      "name": "setuptools",
+      "version": "81.0.0",
+      "purl": "pkg:pypi/setuptools@81.0.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/shellingham@1.5.4",
+      "name": "shellingham",
+      "version": "1.5.4",
+      "purl": "pkg:pypi/shellingham@1.5.4",
+      "licenses": [
+        {
+          "license": {
+            "name": "ISC License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/six@1.17.0",
+      "name": "six",
+      "version": "1.17.0",
+      "purl": "pkg:pypi/six@1.17.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/sortedcontainers@2.4.0",
+      "name": "sortedcontainers",
+      "version": "2.4.0",
+      "purl": "pkg:pypi/sortedcontainers@2.4.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/sqlalchemy@2.0.49",
+      "name": "sqlalchemy",
+      "version": "2.0.49",
+      "purl": "pkg:pypi/sqlalchemy@2.0.49",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/sympy@1.14.0",
+      "name": "sympy",
+      "version": "1.14.0",
+      "purl": "pkg:pypi/sympy@1.14.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/threadpoolctl@3.6.0",
+      "name": "threadpoolctl",
+      "version": "3.6.0",
+      "purl": "pkg:pypi/threadpoolctl@3.6.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/tokenizers@0.22.2",
+      "name": "tokenizers",
+      "version": "0.22.2",
+      "purl": "pkg:pypi/tokenizers@0.22.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/tomli@2.4.1",
+      "name": "tomli",
+      "version": "2.4.1",
+      "purl": "pkg:pypi/tomli@2.4.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torch@2.11.0+cu128",
+      "name": "torch",
+      "version": "2.11.0+cu128",
+      "purl": "pkg:pypi/torch@2.11.0+cu128",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torch-audiomentations@0.12.0",
+      "name": "torch-audiomentations",
+      "version": "0.12.0",
+      "purl": "pkg:pypi/torch-audiomentations@0.12.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torch-pitch-shift@1.2.5",
+      "name": "torch-pitch-shift",
+      "version": "1.2.5",
+      "purl": "pkg:pypi/torch-pitch-shift@1.2.5",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torchaudio@2.11.0+cu128",
+      "name": "torchaudio",
+      "version": "2.11.0+cu128",
+      "purl": "pkg:pypi/torchaudio@2.11.0+cu128",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torchcodec@0.11.1+cu128",
+      "name": "torchcodec",
+      "version": "0.11.1+cu128",
+      "purl": "pkg:pypi/torchcodec@0.11.1+cu128",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause License\n\nCopyright 2024 Meta\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n1. Redistribu"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/torchmetrics@1.9.0",
+      "name": "torchmetrics",
+      "version": "1.9.0",
+      "purl": "pkg:pypi/torchmetrics@1.9.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/tqdm@4.67.3",
+      "name": "tqdm",
+      "version": "4.67.3",
+      "purl": "pkg:pypi/tqdm@4.67.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "MPL-2.0 AND MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/transformers@5.8.1",
+      "name": "transformers",
+      "version": "5.8.1",
+      "purl": "pkg:pypi/transformers@5.8.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0 License"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/triton@3.6.0",
+      "name": "triton",
+      "version": "3.6.0",
+      "purl": "pkg:pypi/triton@3.6.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/typer@0.25.1",
+      "name": "typer",
+      "version": "0.25.1",
+      "purl": "pkg:pypi/typer@0.25.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/typing-extensions@4.15.0",
+      "name": "typing-extensions",
+      "version": "4.15.0",
+      "purl": "pkg:pypi/typing-extensions@4.15.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "PSF-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/tzdata@2026.2",
+      "name": "tzdata",
+      "version": "2026.2",
+      "purl": "pkg:pypi/tzdata@2026.2",
+      "licenses": [
+        {
+          "license": {
+            "name": "Unknown"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/urllib3@2.7.0",
+      "name": "urllib3",
+      "version": "2.7.0",
+      "purl": "pkg:pypi/urllib3@2.7.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/webrtcvad@2.0.10",
+      "name": "webrtcvad",
+      "version": "2.0.10",
+      "purl": "pkg:pypi/webrtcvad@2.0.10",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/yarl@1.23.0",
+      "name": "yarl",
+      "version": "1.23.0",
+      "purl": "pkg:pypi/yarl@1.23.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache-2.0"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:pypi/zipp@3.23.1",
+      "name": "zipp",
+      "version": "3.23.1",
+      "purl": "pkg:pypi/zipp@3.23.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "aura:scope",
+          "value": "transitive"
+        }
+      ]
+    }
+  ]
+}

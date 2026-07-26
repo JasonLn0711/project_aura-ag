@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "assessed_at": "2026-07-26",
+  "release_maturity": "single-operator stable daily-use",
+  "release_platforms": [
+    {
+      "platform": "Ubuntu 24.04 x86_64",
+      "status": "passed",
+      "evidence": "483-test regression, 85 Agent tests, 50-run soak, real Codex minimum"
+    },
+    {
+      "platform": "Windows",
+      "status": "unavailable_not_passed",
+      "evidence": "target-host release execution was unavailable"
+    },
+    {
+      "platform": "macOS",
+      "status": "unavailable_not_passed",
+      "evidence": "target-host release execution was unavailable; setuptools sdist advisory remains an activation gate"
+    }
+  ],
+  "codex": {
+    "tested_cli_version": "0.145.0",
+    "minimum_cli_version": "0.145.0",
+    "maximum_cli_version_exclusive": "0.146.0",
+    "transport": "stdio-jsonl-v2",
+    "schema_sha256": "16d8024fb52dfb10eb7a2c8a0768812a32d7e2a693d4e65a3831be6ea7bc2b1e",
+    "status": "compatible",
+    "live_runtime": "valid_target_runtime"
+  }
+}

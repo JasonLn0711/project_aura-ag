@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "run_id": "20260726-204414-c4edcc35",
+  "generated_at": "2026-07-26T20:44:14+08:00",
+  "repository": "project_aura-ag",
+  "source_commit": "9a3d8341e258a3d553ea597262901773052bd422",
+  "source_branch": "feat/live-timeline-markdown-readability",
+  "source_dirty": false,
+  "generator": "aura.agent.reporting.ArchitecturePackageGenerator",
+  "release_maturity": "single-operator stable daily-use",
+  "confidence_vocabulary": [
+    "Confirmed",
+    "Partially Verified",
+    "Inferred",
+    "Unknown",
+    "Blocked",
+    "Not Verified"
+  ],
+  "limitations": [
+    "Native dependency presence is observed on this workstation only.",
+    "Mermaid source receives structural validation when no Mermaid CLI is installed.",
+    "Model assets without immutable provider identifiers remain Partially Verified."
+  ]
+}

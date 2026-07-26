@@ -1,0 +1,12 @@
+bb437ce83abd006ac3fae0c96677ae9f8659e960c5888ac43f2a55fd333a9957  artifacts/agent-workspace/2026-07-26-conversation-continuity/README.md
+c12b16a76bebaf97881683cf201bdf93513cd61d59708bb927ed1c59e0790353  artifacts/agent-workspace/2026-07-26-conversation-continuity/audit/audit-2026-07-26.jsonl
+472301b2e911bfd37ddd641f293a6d5a2cb38e0e5a3d90b9cabe9d378e0d36f5  artifacts/agent-workspace/2026-07-26-conversation-continuity/before/observed-detached-aura-window.png
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/error-log.jsonl
+1eb39a9c61eb982b516bc99e728e0611fc593c7a0e31df8d35f3c066c8895981  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/event-trace.jsonl
+2a1904e0d3ec7e6830c95a830d16a24cdb84d6040ff42daca5f64ae9328a2cc3  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/failure-analysis.md
+d07cb17708b4dc590a570a934da4b39b555acf4ffcfd9456fe84aaf3e271d3c9  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/latency-report.md
+bda593de10f5d88886b8dd748f942a435e7581e24eb852faaf3ca8e39d2beed4  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/live-run-summary.json
+5e2547812cadf6fea71fabc26bfcbf6201fa0b3184105b375ab84946018804df  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/request-summary.jsonl
+18740c8846a5d285aaf17ff59d4421329d2ff8562e547dd3f6c87d51b52f12d6  artifacts/agent-workspace/2026-07-26-conversation-continuity/live-two-turn/runtime-validity-report.md
+0a8817069abb2a820ba37c1a423b1e41c9de5567bbb58d7ff367d7ab5382b600  artifacts/agent-workspace/2026-07-26-conversation-continuity/screenshots/01-inline-codex-status.png
+80b4ca0b35b275928dfe538ab6448f6356e591938fc4e8e02eeee64234a522d0  artifacts/agent-workspace/2026-07-26-conversation-continuity/screenshots/02-two-turn-continuity.png

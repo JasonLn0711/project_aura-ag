@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-25T21:38:48+08:00",
+  "repository": "project_aura-ag",
+  "source_commit": "368118ec79291bd94f62af4633131afe5fc202f9",
+  "source_branch": "main",
+  "source_dirty": true,
+  "generator": "aura.agent.reporting.ArchitecturePackageGenerator",
+  "confidence_vocabulary": [
+    "Confirmed",
+    "Partially Verified",
+    "Inferred",
+    "Unknown",
+    "Blocked"
+  ],
+  "limitations": [
+    "Native dependency presence is observed on this workstation only.",
+    "Mermaid source receives structural validation when no Mermaid CLI is installed.",
+    "Model assets without immutable provider identifiers remain Partially Verified."
+  ]
+}

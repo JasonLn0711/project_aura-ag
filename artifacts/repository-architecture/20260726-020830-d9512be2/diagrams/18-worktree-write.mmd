@@ -1,0 +1,11 @@
+sequenceDiagram
+actor User
+participant Policy
+participant Git
+participant Agent
+User->>Policy: Approve Implement
+Policy->>Git: Validate allowlist, root, base, and branch
+Git->>Git: Create collision-safe agent worktree
+Git-->>Agent: Isolated path and base commit
+Agent->>Agent: Write and validate inside worktree
+Agent-->>User: Diff, tests, and omitted dirty-source paths

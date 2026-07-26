@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "command": "python -m unittest tests.test_agent_demo",
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "duration_seconds": 0.42,
+  "fixture_result": true
+}
