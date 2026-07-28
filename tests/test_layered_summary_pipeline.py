@@ -371,7 +371,11 @@ class LayeredSummaryPipelineTests(unittest.TestCase):
             result = generate_layered_summary("corrected transcript", client=FakeClient())
             paths = save_layered_outputs(result, Path(temp_dir) / "local_outputs" / "meeting_summary")
 
-        self.assertIn("local_outputs/meeting_summary", str(paths["final_summary"]))
+            self.assertTrue(
+                paths["final_summary"].is_relative_to(
+                    Path(temp_dir) / "local_outputs" / "meeting_summary"
+                )
+            )
 
     def test_each_meeting_gets_its_own_summary_evidence_directory(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:

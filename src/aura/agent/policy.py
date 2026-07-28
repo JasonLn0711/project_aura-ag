@@ -831,9 +831,14 @@ class DataTransferGuard:
         self,
         path_aliases: Mapping[str | Path, str] | None = None,
     ):
+        aliases: dict[str, str] = {}
+        for path, alias in (path_aliases or {}).items():
+            expanded = Path(path).expanduser()
+            if expanded.is_absolute():
+                aliases[str(expanded)] = alias
+            aliases[str(expanded.resolve())] = alias
         self.path_aliases = tuple(
-            (str(Path(path).expanduser().resolve()), alias)
-            for path, alias in (path_aliases or {}).items()
+            sorted(aliases.items(), key=lambda item: len(item[0]), reverse=True)
         )
 
     def preview_text(

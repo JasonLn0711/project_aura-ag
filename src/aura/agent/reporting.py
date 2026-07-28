@@ -1953,7 +1953,10 @@ class ArchitecturePackageGenerator:
         assurance = self.repository / "artifacts" / "stable-daily-assurance"
         source_evidence = assurance / "evidence-register.csv"
         if source_evidence.is_file():
-            shutil.copyfile(source_evidence, package / "evidence-register.csv")
+            _write_text(
+                package / "evidence-register.csv",
+                source_evidence.read_text(encoding="utf-8"),
+            )
         else:
             _write_csv(
                 package / "evidence-register.csv",

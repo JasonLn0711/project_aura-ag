@@ -507,7 +507,6 @@ class CodexAppServerProviderTests(unittest.TestCase):
                 codex_version_output="codex-cli 0.145.0",
                 cwd=cwd,
             )
-            self.addCleanup(provider.shutdown)
             events = []
             provider.event_ready.connect(events.append)
             provider.start()
@@ -556,6 +555,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
             self.assertFalse(
                 any(event.event_type == "provider.protocol_error" for event in events)
             )
+            provider.shutdown()
 
     def test_server_command_approval_is_request_scoped(self):
         with tempfile.TemporaryDirectory() as temporary:
