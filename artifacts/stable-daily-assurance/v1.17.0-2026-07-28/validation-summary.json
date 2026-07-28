@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "release": "v1.17.0",
+  "release_platform": "Ubuntu 24.04 x86_64",
+  "status": "READY_FOR_PR",
+  "code_commit_under_test": "c331312357979857c700ff3395232bddcb3df36b",
+  "automated_validation": {
+    "tests_passed": 607,
+    "tests_failed": 0,
+    "native_controls_passed": 36,
+    "native_controls_blocked": 0,
+    "native_harness_errors": 0
+  },
+  "performance_ms": {
+    "ordinary_ui_maximum": 18.132,
+    "ordinary_ui_gate": 100.0,
+    "progress_projection_maximum": 0.022,
+    "progress_projection_gate": 250.0,
+    "visible_heartbeat_maximum": 194.035,
+    "visible_heartbeat_gate": 500.0,
+    "workspace_thread_switch": 18.173,
+    "workspace_large_event_projection": 8.574,
+    "workspace_50_mib_preview": 0.031,
+    "stable_soak_heartbeat_maximum": 71.68
+  },
+  "runtime_validity": [
+    {
+      "runtime": "aura_breeze_asr_25_cuda",
+      "classification": "valid_target_runtime",
+      "real_runs": 10
+    },
+    {
+      "runtime": "meetily_breeze_asr_26_cuda",
+      "classification": "valid_target_runtime",
+      "real_runs": 10
+    },
+    {
+      "runtime": "pyannote_diarization_cuda",
+      "classification": "valid_target_runtime",
+      "real_runs": 2
+    },
+    {
+      "runtime": "aura_splitter",
+      "classification": "valid_target_runtime",
+      "real_runs": 1,
+      "audio_files": 2
+    },
+    {
+      "runtime": "ollama_gemma4_summary",
+      "classification": "valid_target_runtime",
+      "real_runs": 1,
+      "validated_fields": 9
+    },
+    {
+      "runtime": "codex_app_server_read_only",
+      "classification": "valid_target_runtime",
+      "real_runs": 1
+    },
+    {
+      "runtime": "physical_microphone_capture",
+      "classification": "valid_target_runtime",
+      "real_runs": 1
+    },
+    {
+      "runtime": "native_qt_controls",
+      "classification": "valid_target_runtime",
+      "controls": 36
+    },
+    {
+      "runtime": "native_workspace_soak",
+      "classification": "valid_deterministic_reliability_soak",
+      "tasks": 50
+    },
+    {
+      "runtime": "stable_daily_use_soak",
+      "classification": "valid_deterministic_reliability_soak",
+      "runs": 50
+    }
+  ],
+  "soak_counts": {
+    "workspace_tasks": 50,
+    "approval_cycles": 10,
+    "stop_cycles": 10,
+    "provider_failure_reconnect_cycles": 30,
+    "workspace_recovery_cycles": 10,
+    "content_free_audit_events": 1323,
+    "stable_completed_runs": 40,
+    "stable_interrupted_runs": 10,
+    "stable_provider_restarts": 5,
+    "stable_recovery_exercises": 5,
+    "stable_workflows": 12
+  },
+  "privacy": {
+    "working_tree": "passed",
+    "registered_worktrees": "passed",
+    "all_local_git_objects": "passed",
+    "git_metadata": "passed",
+    "policy_findings": 0
+  },
+  "dependency_assurance": {
+    "status": "PASS_WITH_CLASSIFIED_RESIDUAL",
+    "unique_advisories": 1,
+    "release_asset_scope": "source_and_validation_manifest_only",
+    "next_refresh_gate": "native_macos_release_host"
+  },
+  "publication": {
+    "pull_request": "pending",
+    "hosted_ci": "pending",
+    "merge_commit": "pending",
+    "annotated_tag": "pending",
+    "github_release": "pending"
+  },
+  "future_validation_gates": [
+    "native_windows_release_host",
+    "native_macos_release_host",
+    "five_participant_usability_study",
+    "screen_reader_field_study"
+  ]
+}
