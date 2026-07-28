@@ -38,6 +38,7 @@ WORKFLOWS = (
     "package",
     "docs",
     "publish",
+    "meeting",
 )
 FORCED_RESTART_RUNS = {10, 20, 30, 40, 50}
 STOP_BRANCH_RUNS = {5, 15, 25, 35, 45}
@@ -281,7 +282,7 @@ def main() -> int:
             interruptions >= 10,
             provider_restarts >= 5,
             recovery_exercises >= 5,
-            len(workflows) >= 8,
+            len(workflows) == len(WORKFLOWS),
             all(record["integrity_valid"] for record in records),
             tracked_before == tracked_after,
             max_gap_ms < 500,
@@ -305,6 +306,7 @@ def main() -> int:
         "workflows": workflows,
         "heartbeat_count": len(heartbeats),
         "maximum_ui_heartbeat_gap_ms": round(max_gap_ms, 3),
+        "maximum_ui_heartbeat_gap_gate_ms": 500,
         "catalog_integrity": catalog_integrity,
         "tracked_checkout_unchanged": tracked_before == tracked_after,
         "out_of_bound_write_findings": 0,
