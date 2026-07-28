@@ -31,7 +31,7 @@ screen-reader, IME, or accessibility conformance.
 | Key | Behavior |
 | --- | --- |
 | `Ctrl+N` | Create new task and focus composer |
-| `Ctrl+K` | Open task search/command palette |
+| `Ctrl+K` | Show or hide repository and task-thread search |
 | `Ctrl+Enter` | Submit from composer |
 | `Enter` | Submit only when IME composition is inactive and preference allows |
 | `Shift+Enter` | Insert newline |
@@ -177,7 +177,7 @@ reduced motion is active:
 
 - Human-facing Agent Workspace copy is Taiwan Traditional Chinese.
 - Established technical nouns remain consistent: `Repository`, `Worktree`,
-  `Context`, `Diff`, `Tests`, `Report`, `Run Details`, `Diagnostics`.
+  `Context`, `Diff`, `Tests`, `Report`, `Run Details`, and `匯出診斷`.
 - Copy uses `現場人員` and AURA terms where applicable.
 - Concatenated grammar is minimized; placeholders preserve word order.
 - Long repository names, paths, model names, and translated status labels are

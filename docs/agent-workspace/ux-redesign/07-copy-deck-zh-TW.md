@@ -5,7 +5,7 @@
 
 The voice is positive, active, trustworthy, and boundary-clear. Copy begins
 with the available capability and states activation gates as the next action.
-Protocol identifiers remain in Run Details and Diagnostics.
+Protocol identifiers remain in Run Details and its diagnostic export.
 
 ## Primary navigation
 
@@ -175,13 +175,14 @@ path and no confirmation action.
 | `artifact.tests` | Tests |
 | `artifact.report` | Report |
 | `artifact.run` | Run Details |
-| `artifact.diagnostics` | Diagnostics |
+| `run.export_diagnostics` | 匯出診斷 |
 | `artifact.close` | 關閉成果檢視 |
 | `artifact.back` | 返回任務 |
 | `artifact.unavailable` | 這項成果會在建立後顯示。 |
 
 The unavailable label is used in explanation surfaces; unavailable artifact
-tabs are not rendered.
+tabs are not rendered. `run.export_diagnostics` is a Run Details action rather
+than an artifact tab.
 
 ## Completion and publication
 
@@ -250,7 +251,7 @@ Recovery actions:
 | Shortcut | Copy |
 | --- | --- |
 | `Ctrl+N` | 新增任務 |
-| `Ctrl+K` | 搜尋任務與指令 |
+| `Ctrl+K` | 搜尋 Repository 與任務 |
 | `Ctrl+Enter` | 開始／送出 |
 | `Enter` | 送出（輸入法組字完成後） |
 | `Shift+Enter` | 換行 |

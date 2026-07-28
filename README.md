@@ -516,8 +516,8 @@ The Track Splitter workflow:
 The third native tab uses one repository/thread workspace for General and
 Evidence-Backed tasks. Start by typing in the centered composer. Three optional
 suggestions provide feature, bug, and meeting-evidence entry points; the
-complete registry remains available through intent inference, slash commands,
-and `Ctrl+K`.
+complete registry remains available through intent inference and slash
+commands. `Ctrl+K` opens or closes repository and task-thread search.
 
 The sidebar groups threads by repository and shows Needs Attention only when
 work requires a decision. The normalized timeline coalesces plans, narrative,
@@ -528,7 +528,8 @@ remain available through explicit disclosure.
 Evidence, repository-file, and existing-artifact references appear as compact
 removable context chips. Environment details open on demand, and
 Evidence/Diff/Tests/Report/Run inspectors reserve no width until their actual
-artifacts exist. Live is the startup default: AURA starts the Codex provider,
+artifacts exist. Run Details also provides the sanitized diagnostic export.
+Live is the startup default: AURA starts the Codex provider,
 reads the current ChatGPT account, discovers compatible models, and presents a
 ready composer before the first prompt. Provider thread and turn identities are
 created automatically when that prompt is sent, so every external identity

@@ -43,7 +43,8 @@ no thread or turn setup is required.
 
 General and Evidence-Backed work use this same surface. The user does not
 select a task family before typing. Three suggestion chips provide quick
-starts; `Ctrl+K` opens task and command search.
+starts; intent inference and slash commands retain the complete workflow
+registry. `Ctrl+K` opens or closes repository and task-thread search.
 
 ### Start-button activation
 
@@ -193,8 +194,8 @@ after their artifacts exist:
 - **Diff** — changed-file model, base commit, worktree, and unified diff;
 - **Tests** — command, duration, counts, result, and bounded output;
 - **Report** — section state, validation, missing evidence, and checksums;
-- **Run Details** — phase, model, effort, sandbox, approvals, errors, and path;
-- **Diagnostics** — provider and local operational evidence.
+- **Run Details** — phase, model, effort, sandbox, approvals, errors, path, and
+  the sanitized diagnostic export.
 
 Open a completed thread, then choose its diff or test result. Press `Esc` to
 close the active inspector or dialog.

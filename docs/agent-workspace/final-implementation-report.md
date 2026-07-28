@@ -96,10 +96,10 @@ Queue. The send action becomes Stop while execution is active.
 
 ### Artifacts and publication
 
-Evidence, Diff, Tests, Report, Run Details, and Diagnostics use dedicated
-native views. Commit appears only after worktree, diff, Publish mode,
-validation, freshness, and secret-scan readiness. Push and PR actions appear
-only after a local commit and an allowlisted remote.
+Evidence, Diff, Tests, Report, and Run Details use dedicated native views. Run
+Details owns the sanitized diagnostic export. Commit appears only after
+worktree, diff, Publish mode, validation, freshness, and secret-scan readiness.
+Push and PR actions appear only after a local commit and an allowlisted remote.
 
 ### Recording and recovery
 
@@ -170,7 +170,7 @@ Rename, pin, archive, and local hide preserve run and audit history.
 ## Accessibility and keyboard behavior
 
 - `Ctrl+N`: new task.
-- `Ctrl+K`: task and command search.
+- `Ctrl+K`: show or hide repository and task-thread search.
 - `Enter`: send after CJK IME composition is complete.
 - `Shift+Enter`: newline.
 - `Ctrl+Enter`: compatibility send.

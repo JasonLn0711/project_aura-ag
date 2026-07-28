@@ -107,7 +107,7 @@ The path requires no more than repository selection plus thread selection.
 
 ## F-07 — Inspect environment
 
-1. Choose the compact environment/status action or use the command palette.
+1. Choose the compact environment/status action.
 2. Open one grouped environment surface.
 3. Review repository/worktree, provider/account, model/effort/budget,
    access/grants, recording/resources, diagnostics/storage.
