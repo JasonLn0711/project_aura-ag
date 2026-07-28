@@ -4,14 +4,15 @@
 
 ## Context
 
-Diffs, tests, evidence, reports, run details, and diagnostics require distinct
-review affordances, while an empty inspector consumes primary task width.
+Diffs, tests, evidence, reports, and run details require distinct review
+affordances, while an empty inspector consumes primary task width. Sanitized
+diagnostics are exported as an action from Run Details.
 
 ## Decision
 
 Keep the inspector closed with zero reserved width until an artifact exists.
 Register dedicated native views and tabs only as their evidence becomes
-available.
+available, with diagnostic export owned by the Run Details view.
 
 ## Alternatives
 

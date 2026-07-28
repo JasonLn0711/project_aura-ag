@@ -82,21 +82,21 @@ class PunctuationTests(unittest.TestCase):
     def test_missing_model_dependency_is_actionable_and_cached(self):
         restorer = TransformersChinesePunctuationRestorer()
         real_import = __import__
-        transformer_imports = 0
+        dependency_imports = 0
 
-        def import_with_missing_transformers(name, *args, **kwargs):
-            nonlocal transformer_imports
-            if name == "transformers":
-                transformer_imports += 1
-                raise ModuleNotFoundError("No module named 'transformers'", name="transformers")
+        def import_with_missing_dependency(name, *args, **kwargs):
+            nonlocal dependency_imports
+            if name == "torch":
+                dependency_imports += 1
+                raise ModuleNotFoundError("No module named 'torch'", name="torch")
             return real_import(name, *args, **kwargs)
 
-        with patch("builtins.__import__", side_effect=import_with_missing_transformers):
+        with patch("builtins.__import__", side_effect=import_with_missing_dependency):
             for _ in range(2):
-                with self.assertRaisesRegex(RuntimeError, "make setup-app"):
+                with self.assertRaisesRegex(RuntimeError, r"Dependency `torch`.*make setup-app"):
                     restorer.restore("這是一段需要標點的會議紀錄")
 
-        self.assertEqual(transformer_imports, 1)
+        self.assertEqual(dependency_imports, 1)
 
 
 if __name__ == "__main__":

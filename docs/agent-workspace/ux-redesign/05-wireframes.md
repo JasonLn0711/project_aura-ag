@@ -13,7 +13,7 @@ Primary composition:
 | --- | --- | --- |
 | Sidebar | repository, New Task, search, recent threads | pinned, attention, queue groups when populated |
 | Thread | compact header, narrative/activity list, composer | recording banner, approval, recovery, outcome actions |
-| Inspector | none while closed | evidence, diff, tests, report, run, diagnostics |
+| Inspector | none while closed | evidence, diff, tests, report, and Run Details with diagnostic export |
 
 Strengths:
 
@@ -31,6 +31,10 @@ Trade-off:
 **Decision:** Selected.
 
 ### Study B — Global command palette with a single full-screen thread
+
+This non-selected study is retained as historical design exploration. The
+implemented release keeps the selected sidebar and assigns `Ctrl+K` to its
+repository and task-thread search.
 
 Primary composition:
 

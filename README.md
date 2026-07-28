@@ -118,7 +118,7 @@ Use this repository for:
 
 | Runtime path | Recommended use | Current evidence |
 | --- | --- | --- |
-| Ubuntu 24.04 desktop | Full AURA operation, Agent development, and release validation | Primary measured platform; the current 599-test full regression and native 50-task workspace soak pass |
+| Ubuntu 24.04 desktop | Full AURA operation, Agent development, and release validation | Primary measured platform; the current 608-test full regression and native 50-task workspace soak pass |
 | Windows with WSL2 Ubuntu 24.04 | Linux-aligned development and the fastest Windows path to the Agent Workspace | Supported implementation path; target-host AURA release execution is `unavailable_not_passed` |
 | Native Windows | Portable onboarding and native Windows release work | Packaging and source paths exist; v1.17.0 target-host execution is `unavailable_not_passed` |
 | macOS | Source portability and future release-host work | Cross-platform code paths exist; v1.17.0 target-host execution is `unavailable_not_passed` |
@@ -144,7 +144,7 @@ GitHub Releases owns the durable release chronology. The sections below
 describe the current product contract and link each capability to its
 canonical design or evidence source.
 
-## Latest Update — v1.17.0 (2026-07-26)
+## Latest Update — v1.17.0 (2026-07-28)
 
 Project AURA v1.17.0 advances the native Agent Workspace to one intent-first
 repository/thread surface while retaining the complete evidence-first meeting
@@ -169,7 +169,7 @@ approval gates, and terminal outcomes remain visible. Canonical events retain
 their complete sequence for audit and recovery.
 
 The final validation includes 82 timeline-focused tests within the current
-599-test full regression, 22
+608-test full regression, 22
 native states with zero blank projected items, and a bounded performance packet
 whose maximum measured GUI-thread stall is 55.351 ms. The complete issue,
 72-row acceptance ledger, security contract, and evidence are in the
@@ -222,16 +222,16 @@ Codex process. The approved-worktree follow-up also completed as
 `valid_target_runtime` with the stable thread contract and an isolated
 `workspaceWrite` turn policy.
 
-The Ubuntu 24.04 gate passes the current 599-test full regression. The native
+The Ubuntu 24.04 gate passes the current 608-test full regression. The native
 50-task workspace soak exercises ten approval cycles, ten stop cycles, 30
 provider failure/reconnect cycles, ten Recovery Cards, recording/storage
-transitions, and restart persistence. It retains 1,223 content-free audit
+transitions, and restart persistence. It retains 1,323 content-free audit
 events with hash-chain integrity `PASS`.
 
 The redesign captures nine states at 1024×768, 1280×820, 1440×900, and
-1920×1080. Repository/thread switching measures 12.348 ms, a large event
-projection measures 0.488 ms, and the 50 MiB log path loads a bounded 64 KiB
-preview. The five-participant task study and complete background execution for
+1920×1080. Repository/thread switching measures 18.173 ms, a large event
+projection measures 8.574 ms, and the 50 MiB log path loads a bounded 64 KiB
+preview in 0.031 ms. The five-participant task study and complete background execution for
 remaining legacy Git/SQLite/report/media/provider UI actions remain explicit
 validation gates.
 
@@ -253,9 +253,13 @@ evidence.
 
 #### v1.17.0 validation
 
-- Full regression: 599 tests pass.
+- Full regression: 608 tests pass.
 - Native workspace soak: 50/50 tasks pass the deterministic integrity gate.
-- Content-free audit: 1,223 events pass hash-chain verification.
+- Content-free audit: 1,323 events pass hash-chain verification.
+- Native control matrix: 36/36 reachable controls and state gates pass with
+  0 blocked controls and 0 harness errors.
+- Stable daily-use soak: 50/50 runs pass with 40 completed, 10 interrupted,
+  5 restarts, 5 Recovery Card exercises, and a 71.680 ms maximum heartbeat gap.
 - Responsive visual evidence: 36/36 final state captures exist at the declared geometries.
 - Real Codex minimum: `LIVE_MINIMUM_COMPLETED`.
 - Redesign acceptance: 90 `CONFIRMED`, 3 `PARTIALLY VERIFIED`, 1 `NOT VERIFIED`.
@@ -516,8 +520,8 @@ The Track Splitter workflow:
 The third native tab uses one repository/thread workspace for General and
 Evidence-Backed tasks. Start by typing in the centered composer. Three optional
 suggestions provide feature, bug, and meeting-evidence entry points; the
-complete registry remains available through intent inference, slash commands,
-and `Ctrl+K`.
+complete registry remains available through intent inference and slash
+commands. `Ctrl+K` opens or closes repository and task-thread search.
 
 The sidebar groups threads by repository and shows Needs Attention only when
 work requires a decision. The normalized timeline coalesces plans, narrative,
@@ -528,7 +532,8 @@ remain available through explicit disclosure.
 Evidence, repository-file, and existing-artifact references appear as compact
 removable context chips. Environment details open on demand, and
 Evidence/Diff/Tests/Report/Run inspectors reserve no width until their actual
-artifacts exist. Live is the startup default: AURA starts the Codex provider,
+artifacts exist. Run Details also provides the sanitized diagnostic export.
+Live is the startup default: AURA starts the Codex provider,
 reads the current ChatGPT account, discovers compatible models, and presents a
 ready composer before the first prompt. Provider thread and turn identities are
 created automatically when that prompt is sent, so every external identity
@@ -965,10 +970,12 @@ connections.
 
 | Evidence layer | Result |
 | --- | --- |
-| v1.17.0 candidate regression | Current `599`-test full repository regression passes on Ubuntu 24.04 |
+| v1.17.0 candidate regression | Current `608`-test full repository regression passes on Ubuntu 24.04 |
 | Live timeline readability | `82` focused tests, `22/22` native states, zero blank items, 72-row acceptance mapping, and bounded performance gate pass |
 | Native Agent Workspace validation | Architecture, domain, queue, Demo, Codex, Qt, policy, persistence, publication, security, recovery, reporting, accessibility, model/view scale, and migration checks pass |
-| Native workspace soak | `50/50` tasks pass; 10 approvals, 10 stops, 30 provider failure/reconnect cycles, 10 Recovery Cards, and 1,223 integrity-verified audit events |
+| Native workspace soak | `50/50` tasks pass; 10 approvals, 10 stops, 30 provider failure/reconnect cycles, 10 Recovery Cards, and 1,323 integrity-verified audit events |
+| Native control matrix | `36/36` reachable controls and state gates pass; ordinary interaction, progress projection, and visible-heartbeat gates remain within their release thresholds |
+| Stable daily-use soak | `50/50` runs pass; 40 completed, 10 interrupted, 5 restarts, 5 Recovery Card exercises, and 12 workflows retain artifact and catalog integrity |
 | v1.17.0 Agent Live minimum | One real Codex app-server turn is `valid_target_runtime`; Quick resolves `gpt-5.6-sol` with `low` effort, expected reply observed, no approval, unchanged checkout, clean process tree |
 | v1.17.0 conversation continuity Live minimum | Two real Codex turns are `valid_target_runtime`; both expected replies are observed on one resumed provider thread with unchanged checkout and a clean process tree |
 | v1.17.0 workspace-write Live minimum | One real approved-worktree turn is `valid_target_runtime`; the stable thread contract, scoped turn policy, unchanged checkout, and clean process shutdown pass |
@@ -1417,6 +1424,7 @@ ollama pull gemma4:e4b-it-qat
 | [`docs/audit-events/2026-07-26-agent-workspace-conversation-continuity/audit-event.md`](docs/audit-events/2026-07-26-agent-workspace-conversation-continuity/audit-event.md) | Conversation-retention and detached-status-window issue, root-cause correction, visual evidence, Live verification, and machine audit lineage |
 | [`artifacts/agent-workspace/2026-07-26-conversation-continuity/`](artifacts/agent-workspace/2026-07-26-conversation-continuity/) | Original symptom, accepted screenshots, two-turn Live trace, focused/full validation, checksums, and content-free audit evidence |
 | [`artifacts/agent-workspace/2026-07-26-codex-desktop-inspired-uiux/`](artifacts/agent-workspace/2026-07-26-codex-desktop-inspired-uiux/) | Before/after visuals, responsive states, performance, soak, checksums, and content-free audit evidence |
+| [`artifacts/stable-daily-assurance/v1.17.0-2026-07-28/`](artifacts/stable-daily-assurance/v1.17.0-2026-07-28/) | v1.17.0 Ubuntu runtime validity, native controls, reliability soaks, privacy validation, and publication activation status |
 | [`docs/aura-llm-agent-product-strategy.md`](docs/aura-llm-agent-product-strategy.md) | Product positioning, public pain evidence, local summary strategy, and Agent activation gates |
 | [`docs/audit-event-system-design.md`](docs/audit-event-system-design.md) | Audit schema, privacy, integrity, retention, analysis, and operator controls |
 | [`docs/asr_postprocess_fuzzy_glossary.md`](docs/asr_postprocess_fuzzy_glossary.md) | Glossary correction thresholds, artifacts, and validation path |

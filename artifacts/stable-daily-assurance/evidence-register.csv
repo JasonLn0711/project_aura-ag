@@ -8,6 +8,16 @@ EV-PUBLISH-001,Commit push and PR activate only through validated agent-branch P
 EV-SOAK-001,Fifty representative production-contract runs meet reliability gates,Confirmed,artifacts/stable-daily-assurance/soak-summary.json,50 runs 10 interruptions 5 restarts
 EV-LIVE-001,Installed Codex app-server completes a real compatible read-only turn,Confirmed,artifacts/stable-daily-assurance/live-codex/live-run-summary.json,LIVE_MINIMUM_COMPLETED
 EV-SCAN-001,Dependency findings are remediated or classified for the release platform,Confirmed,artifacts/stable-daily-assurance/vulnerability-assessment.md,PASS_WITH_CLASSIFIED_RESIDUAL
-EV-REGRESSION-001,Current AURA tree has no unexplained regression,Confirmed,docs/agent-workspace/final-implementation-report.md,484 tests passed
+EV-REGRESSION-001,Earlier implementation regression baseline retained,Superseded,docs/agent-workspace/final-implementation-report.md,484 tests passed at the earlier baseline
 EV-AC-001,All eighty acceptance criteria have direct evidence routes,Confirmed,docs/agent-workspace/definition-of-done.md,80 PASS 0 FAIL
 EV-PACKAGE-001,Architecture generator validates 25 reports 23 diagrams 18 ADRs BOMs checksums and archive,Confirmed,tests/test_agent_integrations.py,package integration test
+EV-REGRESSION-117,v1.17.0 full repository regression passes,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/validation-summary.json,607 tests passed
+EV-CONTROLS-117,Reachable native controls and workflow state gates pass,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/validation-summary.json,36 passed 0 blocked
+EV-SOAK-117,Workspace and stable daily-use reliability gates pass,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/validation-summary.json,50 tasks and 50 runs passed
+EV-ASR-117,AURA and Meetily zh-TW ASR paths complete real CUDA inference,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/README.md,10 AURA and 10 Meetily runs
+EV-DIARIZATION-117,Speaker diarization completes real CUDA inference,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/README.md,2 runs and 54 speaker turns
+EV-SPLITTER-117,Splitter product pipeline preserves the complete source duration,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/README.md,1 run and 2 WAV chunks
+EV-SUMMARY-117,Local Ollama product summary satisfies the field contract,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/README.md,1 pipeline and 9 valid fields
+EV-CODEX-117,Codex app-server completes a real read-only turn,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/README.md,1 turn 0 approvals clean shutdown
+EV-PRIVACY-117,Public tree history worktrees and metadata pass anonymization policy,Confirmed,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/privacy-summary.md,0 policy findings
+EV-PUBLISH-117,Formal PR CI merge tag and GitHub Release activation,Prepared,artifacts/stable-daily-assurance/v1.17.0-2026-07-28/validation-summary.json,publication gates pending

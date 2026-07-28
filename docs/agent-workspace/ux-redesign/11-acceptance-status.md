@@ -43,7 +43,7 @@ set in `12.348ms`, coalesced the large event in `0.488ms`, and loaded only
 | UX-010 | CONFIRMED | Attention is created only for populated approval/failure states; model test. |
 | UX-011 | CONFIRMED | Thread rows expose state and relative activity roles plus accessible text. |
 | UX-012 | CONFIRMED | Sidebar New Task and `Ctrl+N` both call `clear_draft()`. |
-| UX-013 | CONFIRMED | `Ctrl+K` activates repository/thread search and command discovery. |
+| UX-013 | CONFIRMED | `Ctrl+K` toggles repository and task-thread search. |
 | UX-014 | CONFIRMED | A visible thread opens directly from the native tree; reopening is one row activation. |
 | UX-015 | CONFIRMED | Draft WorkItems and selected thread state survive restart; `test_draft_autosave_and_task_rail_survive_restart`. |
 | UX-016 | CONFIRMED | Rename, pin, archive, and history-preserving local hide live in the row context menu; restart test. |
@@ -54,7 +54,7 @@ set in `12.348ms`, coalesced the large event in `0.488ms`, and loaded only
 | UX-021 | CONFIRMED | Evidence, repository-file, and existing-artifact references render compact preview/remove controls; removal invalidates transfer. |
 | UX-022 | CONFIRMED | Normal footer exposes only authority and model selectors. |
 | UX-023 | CONFIRMED | Validation profile remains hidden and workflow-derived. |
-| UX-024 | CONFIRMED | Workflow combo is hidden from the default surface; inference and `Ctrl+K` retain access. |
+| UX-024 | CONFIRMED | Workflow combo is hidden from the default surface; inference and explicit slash commands retain access. |
 | UX-025 | CONFIRMED | Inference restores the explicit authority selector and policy remains authoritative; core/policy tests. |
 | UX-026 | CONFIRMED | Active composer labels Steer and Queue; typed request tests cover both contracts. |
 | UX-027 | CONFIRMED | Send hides and Stop appears while a turn is active; composer test and running screenshot. |
@@ -69,7 +69,7 @@ set in `12.348ms`, coalesced the large event in `0.488ms`, and loaded only
 | UX-036 | CONFIRMED | Inspector starts hidden. |
 | UX-037 | CONFIRMED | Closed splitter size is zero; Qt integration test. |
 | UX-038 | CONFIRMED | `ArtifactInspector` adds tabs only on `show_artifact()`. |
-| UX-039 | CONFIRMED | Evidence, Diff, Tests, Report, and Run Details use dedicated native view classes. |
+| UX-039 | CONFIRMED | Evidence, Diff, Tests, Report, and Run Details use dedicated native view classes; Run Details owns the sanitized diagnostic export. |
 | UX-040 | CONFIRMED | Completed outcome opens the available Diff tab directly; captured completed-diff state. |
 | UX-041 | CONFIRMED | Evidence picker defaults to eligible confirmed/supported rows; model test. |
 | UX-042 | CONFIRMED | Source spans resolve inside the session and play through native local media; adapter and UI paths. |

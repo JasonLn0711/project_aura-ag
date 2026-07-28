@@ -582,6 +582,21 @@ def _write_text(path: Path, value: str) -> None:
         handle.write(value)
 
 
+def _copy_artifact(source: Path, destination: Path) -> None:
+    if source.suffix.lower() in {
+        ".csv",
+        ".json",
+        ".jsonl",
+        ".md",
+        ".mmd",
+        ".sha256",
+        ".txt",
+    }:
+        _write_text(destination, source.read_text(encoding="utf-8"))
+        return
+    shutil.copyfile(source, destination)
+
+
 def _write_csv(path: Path, rows: Iterable[Mapping[str, object]], fields: Sequence[str]) -> None:
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
@@ -1953,7 +1968,10 @@ class ArchitecturePackageGenerator:
         assurance = self.repository / "artifacts" / "stable-daily-assurance"
         source_evidence = assurance / "evidence-register.csv"
         if source_evidence.is_file():
-            shutil.copyfile(source_evidence, package / "evidence-register.csv")
+            _write_text(
+                package / "evidence-register.csv",
+                source_evidence.read_text(encoding="utf-8"),
+            )
         else:
             _write_csv(
                 package / "evidence-register.csv",
@@ -1978,11 +1996,11 @@ class ArchitecturePackageGenerator:
 
         adr_source = self.repository / "docs" / "agent-workspace" / "adr"
         for path in sorted(adr_source.glob("ADR-*.md")):
-            shutil.copyfile(path, package / "adr" / path.name)
+            _copy_artifact(path, package / "adr" / path.name)
 
         compatibility_source = assurance / "compatibility-matrix.json"
         if compatibility_source.is_file():
-            shutil.copyfile(
+            _copy_artifact(
                 compatibility_source,
                 package / "validation" / "compatibility-matrix.json",
             )
@@ -2027,7 +2045,7 @@ class ArchitecturePackageGenerator:
 
         soak_source = assurance / "soak-report.md"
         if soak_source.is_file():
-            shutil.copyfile(
+            _copy_artifact(
                 soak_source,
                 package / "validation" / "soak-report.md",
             )
@@ -2042,7 +2060,7 @@ class ArchitecturePackageGenerator:
         for filename in ("soak-summary.json", "soak-events.jsonl"):
             source = assurance / filename
             if source.is_file():
-                shutil.copyfile(source, package / "artifacts" / filename)
+                _copy_artifact(source, package / "artifacts" / filename)
 
         live_codex_source = assurance / "live-codex"
         if live_codex_source.is_dir():
@@ -2050,7 +2068,7 @@ class ArchitecturePackageGenerator:
             live_codex_target.mkdir(parents=True, exist_ok=True)
             for path in sorted(live_codex_source.iterdir()):
                 if path.is_file():
-                    shutil.copyfile(path, live_codex_target / path.name)
+                    _copy_artifact(path, live_codex_target / path.name)
 
         redesign_assurance = (
             self.repository
@@ -2067,10 +2085,10 @@ class ArchitecturePackageGenerator:
         if screenshot_source.is_dir():
             for path in sorted(screenshot_source.iterdir()):
                 if path.is_file() and path.suffix.lower() in {".md", ".png"}:
-                    shutil.copyfile(path, package / "screenshots" / path.name)
+                    _copy_artifact(path, package / "screenshots" / path.name)
         comparison = redesign_assurance / "baseline-vs-redesign-1440x900.png"
         if comparison.is_file():
-            shutil.copyfile(comparison, package / "screenshots" / comparison.name)
+            _copy_artifact(comparison, package / "screenshots" / comparison.name)
         for source, destination in (
             (
                 redesign_assurance / "validation-report.md",
@@ -2097,7 +2115,7 @@ class ArchitecturePackageGenerator:
             ),
         ):
             if source.is_file():
-                shutil.copyfile(source, destination)
+                _copy_artifact(source, destination)
 
         transfer_assurance = (
             self.repository
@@ -2114,10 +2132,10 @@ class ArchitecturePackageGenerator:
             destination_dir.mkdir(parents=True, exist_ok=True)
             for path in sorted(source_dir.iterdir()):
                 if path.is_file():
-                    shutil.copyfile(path, destination_dir / path.name)
+                    _copy_artifact(path, destination_dir / path.name)
         visual_review = transfer_assurance / "after" / "visual-review.md"
         if visual_review.is_file():
-            shutil.copyfile(
+            _copy_artifact(
                 visual_review,
                 package
                 / "validation"
@@ -2156,7 +2174,7 @@ class ArchitecturePackageGenerator:
 
         vulnerability_source = assurance / "vulnerability-scan.json"
         if vulnerability_source.is_file():
-            shutil.copyfile(
+            _copy_artifact(
                 vulnerability_source,
                 package / "validation" / "vulnerability-scan.json",
             )
@@ -2179,7 +2197,7 @@ class ArchitecturePackageGenerator:
             )
         vulnerability_assessment = assurance / "vulnerability-assessment.md"
         if vulnerability_assessment.is_file():
-            shutil.copyfile(
+            _copy_artifact(
                 vulnerability_assessment,
                 package / "validation" / "vulnerability-assessment.md",
             )

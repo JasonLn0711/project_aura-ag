@@ -15,7 +15,7 @@ Agent Workspace
 ├── Sidebar
 │   ├── Repository switcher
 │   ├── New Task
-│   ├── Search / command palette
+│   ├── Repository / task-thread search
 │   ├── Pinned threads, when present
 │   ├── Needs Attention, when present
 │   ├── Recent threads
@@ -33,8 +33,7 @@ Agent Workspace
     ├── Diff, when produced
     ├── Tests, when run
     ├── Report, when produced
-    ├── Run Details, when a run exists
-    └── Diagnostics, when requested or needed
+    └── Run Details, with diagnostic export when a run exists
 ```
 
 Empty fixed state headings are omitted. A category appears only when it
@@ -78,9 +77,9 @@ The composer answers:
 - Can I send now, steer the active turn, or queue follow-up work?
 
 The default surface contains one intent editor, context action, compact access
-control, compact model control, and one primary send/stop action. Workflow and
-validation are inferred or available through the command palette and advanced
-surface.
+control, compact model control, and one primary send/stop action. Workflow is
+inferred from intent or an explicit slash command; validation remains
+workflow-derived.
 
 ### Inspector
 
@@ -131,14 +130,14 @@ The ten-tab Control Panel becomes category navigation:
 | Turn | One provider interaction within a run |
 | Context | Attached repository or AURA evidence reference |
 | Access | Ask, Review, Implement, or Publish consequence scope |
-| Artifact | Existing evidence, diff, tests, report, run detail, or diagnostic |
+| Artifact | Existing evidence, diff, tests, report, or run detail; Run Details provides the sanitized diagnostic export |
 | Needs Attention | A thread with an approval, failure, or recovery decision |
 
 ## Navigation rules
 
 - `Ctrl+N` creates a new thread in the selected repository and focuses the
   composer.
-- `Ctrl+K` opens search and commands.
+- `Ctrl+K` opens or closes repository and task-thread search.
 - Selecting a thread restores its draft, view state, and latest run summary.
 - Opening an artifact reveals the inspector without changing thread identity.
 - Closing the inspector returns focus to the control that opened it.

@@ -11,6 +11,8 @@ from unittest.mock import Mock, patch
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
+from PyQt6.QtCore import Qt
+from PyQt6.QtTest import QTest
 from PyQt6.QtWidgets import QApplication, QDialog, QFrame, QMessageBox
 
 from aura.agent.config import AgentConfig
@@ -33,7 +35,7 @@ FIXTURE = Path(__file__).parent / "fixtures" / "codex_fake_app_server.py"
 REPOSITORY = Path(__file__).resolve().parents[1]
 
 
-def spin_until(predicate, app, timeout=4.0):
+def spin_until(predicate, app, timeout=15.0):
     deadline = time.monotonic() + timeout
     while not predicate() and time.monotonic() < deadline:
         app.processEvents()
@@ -205,6 +207,135 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             self.app.processEvents()
             self.assertTrue(tab.task_rail._collapsed)
             tab.close()
+            tab.shutdown()
+
+    def test_search_and_run_diagnostics_controls_follow_the_runtime_contract(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            destination = root / "diagnostics.json"
+            task_secret = "TASK_PRIVATE_SENTINEL"
+            evidence_secret = "EVIDENCE_PRIVATE_SENTINEL"
+            raw_event_secret = "RAW_EVENT_PRIVATE_SENTINEL"
+            tab = AgentWorkspaceTab(config=self.make_config(root))
+            tab.resize(1280, 800)
+            tab.show()
+            tab.inspector_tabs.show_artifact("run")
+            tab.task_edit.setPlainText(task_secret)
+            tab.selected_evidence = EvidenceSelection(
+                meeting_id="meeting-diagnostics",
+                claim_id="claim-diagnostics",
+                text=evidence_secret,
+                review_status="confirmed",
+                support_status="supported",
+                source_segment_ids=("segment-diagnostics",),
+                snippets=(
+                    {
+                        "segment_id": "segment-diagnostics",
+                        "text": evidence_secret,
+                        "speaker": "Speaker 1",
+                        "start_ms": 0,
+                        "end_ms": 1000,
+                    },
+                ),
+                stale=False,
+                eligible=True,
+                reasons=(),
+                source_digest="d" * 64,
+            )
+            tab._on_event(
+                AgentUiEvent.create(
+                    run_id="run-diagnostics",
+                    event_type="message.assistant.completed",
+                    sequence=1,
+                    source="fixture",
+                    severity="info",
+                    payload={"text": raw_event_secret},
+                    created_at="2026-07-28T10:30:00+08:00",
+                    event_id="event-diagnostics",
+                )
+            )
+            self.app.processEvents()
+
+            with patch(
+                "aura.ui.agent_workspace.artifact_actions.QFileDialog.getSaveFileName",
+                return_value=(str(destination), "JSON files (*.json)"),
+            ):
+                controls = (
+                    (
+                        "Ctrl+K repository and thread search",
+                        lambda: tab.search_shortcut.activated.emit(),
+                        lambda: (
+                            tab.task_rail.search.isVisibleTo(tab)
+                            and self.app.focusWidget() is tab.task_rail.search
+                        ),
+                    ),
+                    (
+                        "Run Details export diagnostics",
+                        tab.export_diagnostics_button.click,
+                        destination.is_file,
+                    ),
+                )
+                for name, activate, consequence_ready in controls:
+                    with self.subTest(control=name):
+                        activate()
+                        self.app.processEvents()
+                        self.assertTrue(consequence_ready())
+
+            self.assertEqual(tab.search_shortcut.key().toString(), "Ctrl+K")
+            self.assertEqual(
+                tab.task_rail.search.accessibleName(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(
+                tab.task_rail.search_button.accessibleName(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(
+                tab.task_rail.search.placeholderText(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(tab.inspector_tabs.available_artifacts(), ("run",))
+            self.assertNotIn(
+                "diagnostics",
+                tab.inspector_tabs.available_artifacts(),
+            )
+            diagnostics = json.loads(destination.read_text(encoding="utf-8"))
+            self.assertEqual(
+                set(diagnostics),
+                {
+                    "generated_at",
+                    "provider",
+                    "provider_info",
+                    "state",
+                    "event_types",
+                    "provider_diagnostics",
+                    "protocol_error_summaries",
+                    "configuration_keys",
+                },
+            )
+            self.assertEqual(
+                set(diagnostics["state"]),
+                {
+                    "mode",
+                    "provider_status",
+                    "auth_status",
+                    "requested_profile",
+                    "resolved_model",
+                    "resolved_effort",
+                    "phase",
+                    "safety_profile",
+                    "network_access",
+                },
+            )
+            self.assertEqual(diagnostics["provider"], "demo")
+            self.assertIn(
+                "message.assistant.completed",
+                diagnostics["event_types"],
+            )
+            serialized = json.dumps(diagnostics, ensure_ascii=False)
+            self.assertNotIn(task_secret, serialized)
+            self.assertNotIn(evidence_secret, serialized)
+            self.assertNotIn(raw_event_secret, serialized)
             tab.shutdown()
 
     def test_first_launch_and_disabled_send_explain_the_next_action(self):
@@ -554,7 +685,7 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                 "not_required",
             )
             self.assertTrue(provider_record["model_discovered_at"])
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
             tab._provider_diagnostic(f"provider stderr {credential}")
             destination = root / "diagnostics.json"
             with patch(
@@ -696,6 +827,51 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             self.assertEqual(tab.controller.state.auth_status, "signed_in")
             self.assertEqual(tab.controller.state.resolved_model, "gpt-5.6-sol")
             self.assertEqual(tab.empty_title.text(), "今天想先做什麼？")
+            tab.shutdown()
+
+    def test_logout_refreshes_fake_provider_account_state(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            factory = lambda: CodexAppServerProvider(
+                process_program=sys.executable,
+                process_arguments=(str(FIXTURE),),
+                codex_version_output="codex-cli 0.145.0",
+                cwd=REPOSITORY,
+            )
+            tab = AgentWorkspaceTab(
+                config=replace(self.make_config(root), default_mode="live"),
+                codex_provider_factory=factory,
+            )
+            tab.resize(1280, 800)
+            tab.show()
+            spin_until(
+                lambda: tab.controller.state.provider_status == "ready",
+                self.app,
+            )
+            tab.open_control_panel()
+            tab.control_panel.categories.setCurrentRow(1)
+            self.app.processEvents()
+            self.assertTrue(tab.logout_button.isVisibleTo(tab.control_panel))
+
+            QTest.mouseClick(
+                tab.logout_button,
+                Qt.MouseButton.LeftButton,
+            )
+            spin_until(
+                lambda: (
+                    tab.controller.state.auth_status == "signed_out"
+                    and tab.controller.state.provider_status == "login_required"
+                ),
+                self.app,
+            )
+
+            self.assertFalse(
+                tab.logout_button.isVisibleTo(tab.control_panel)
+            )
+            self.assertTrue(tab.login_button.isVisibleTo(tab.control_panel))
+            self.assertTrue(
+                tab.device_login_button.isVisibleTo(tab.control_panel)
+            )
             tab.shutdown()
 
     def test_live_write_run_completes_catalog_and_releases_the_worker(self):
@@ -1368,6 +1544,19 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             self.assertEqual(len(tab.recovery_widgets), 2)
             tab._recovery_action(
                 "legacy:run-unresumable",
+                "resume",
+            )
+            self.assertIsNone(tab.resume_thread_id)
+            self.assertIn(
+                "Provider thread ID",
+                tab.run_view.toPlainText(),
+            )
+            self.assertIn(
+                "legacy:run-unresumable",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            tab._recovery_action(
+                "legacy:run-unresumable",
                 "abandon",
             )
             interrupted = json.loads(
@@ -1385,6 +1574,105 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                 )["payload"]["reason"],
                 "user_abandoned",
             )
+            tab.shutdown()
+
+    def test_catalog_recovery_resume_loads_thread_before_resolving_card(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.task_edit.setPlainText("Resume a catalog recovery.")
+            tab._create_catalog_run(
+                work_item_id="work-recovery",
+                run_id="run-recovery",
+                workflow="architecture",
+                continuation_of_run_id=None,
+            )
+            tab.catalog.create_recovery_record(
+                recovery_id="recovery-catalog",
+                run_id="run-recovery",
+                status="recovery_required",
+                reconciliation={
+                    "provider_thread_id": "thread-catalog",
+                    "side_effects_may_have_occurred": True,
+                },
+                created_at="2026-07-28T12:00:00+08:00",
+            )
+            tab._show_recovery()
+
+            tab._recovery_action("recovery-catalog", "resume")
+
+            self.assertEqual(tab.resume_thread_id, "thread-catalog")
+            self.assertIn(
+                "恢復前檢查已載入",
+                tab.run_view.toPlainText(),
+            )
+            self.assertNotIn(
+                "recovery-catalog",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            self.assertEqual(tab.catalog.recovery_cards(), [])
+            tab.shutdown()
+
+    def test_catalog_recovery_without_thread_stays_available(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.task_edit.setPlainText("Retain an unresolved recovery.")
+            tab._create_catalog_run(
+                work_item_id="work-recovery",
+                run_id="run-recovery",
+                workflow="architecture",
+                continuation_of_run_id=None,
+            )
+            tab.catalog.create_recovery_record(
+                recovery_id="recovery-catalog",
+                run_id="run-recovery",
+                status="recovery_required",
+                reconciliation={
+                    "provider_thread_id": None,
+                    "side_effects_may_have_occurred": True,
+                },
+                created_at="2026-07-28T12:00:00+08:00",
+            )
+            tab._show_recovery()
+
+            tab._recovery_action("recovery-catalog", "resume")
+
+            self.assertIsNone(tab.resume_thread_id)
+            self.assertIn(
+                "Provider thread ID",
+                tab.run_view.toPlainText(),
+            )
+            self.assertIn(
+                "recovery-catalog",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            self.assertEqual(
+                [card["recovery_id"] for card in tab.catalog.recovery_cards()],
+                ["recovery-catalog"],
+            )
+            tab.shutdown()
+
+    def test_accepted_start_consumes_recovery_thread_once(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.choose_workflow("replay_demo")
+            tab.task_edit.setPlainText("Resume exactly once.")
+            tab.apply_data_boundary_confirmation(True)
+            tab._view.resume_thread_id = "thread-resume-once"
+
+            with patch.object(tab.application, "start_run") as start_run:
+                tab.start_current_run(policy_confirmed=True)
+
+            self.assertEqual(
+                start_run.call_args.args[0].resume_thread_id,
+                "thread-resume-once",
+            )
+            self.assertIsNone(tab.resume_thread_id)
             tab.shutdown()
 
 

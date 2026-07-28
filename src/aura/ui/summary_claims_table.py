@@ -90,6 +90,9 @@ class SummaryClaimsTable(QTableWidget):
         claim_id = str(self.claims[row].get("claim_id") or "")
         self.claims[row] = record_claim_edit(self.session_dir, claim_id, text)
         self.item(row, self.CLAIM_COLUMN).setText(self.claims[row]["text"])
+        self.item(row, self.REVIEW_COLUMN).setText(
+            self.claims[row]["review_status"]
+        )
 
     def _request_source(self, row: int, _column: int) -> None:
         if not 0 <= row < len(self.claims):

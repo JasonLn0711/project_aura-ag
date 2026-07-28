@@ -397,6 +397,7 @@ class RunActions(WorkspaceActionGroup):
                     resume_thread_id=resume_thread_id,
                 )
             )
+            self.resume_thread_id = None
             self.task_edit.clear()
             self._audit(
                 "agent.run_started",

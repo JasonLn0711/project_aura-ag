@@ -16,6 +16,7 @@ from PyQt6.QtCore import QTimer
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
 from aura.agent.config import AgentConfig
+from aura.agent.evidence import AuraEvidenceAdapter
 from aura.agent.scheduler import (
     ResourceGovernor,
     ResourceRequest,
@@ -38,6 +39,7 @@ WORKFLOWS = (
     "package",
     "docs",
     "publish",
+    "meeting",
 )
 FORCED_RESTART_RUNS = {10, 20, 30, 40, 50}
 STOP_BRANCH_RUNS = {5, 15, 25, 35, 45}
@@ -105,6 +107,69 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory(prefix="aura-stable-soak-") as temporary:
         root = Path(temporary)
+        evidence_dir = root / "meeting-evidence"
+        evidence_dir.mkdir()
+        transcript_hash = hashlib.sha256(
+            b"Create a bounded release checklist."
+        ).hexdigest()
+        _write_json(
+            evidence_dir / "session.json",
+            {
+                "meeting_id": "meeting-release-soak",
+                "transcript_sha256": transcript_hash,
+                "summary_status": "ready",
+            },
+        )
+        _write_json(
+            evidence_dir / "segments.json",
+            {
+                "segments": [
+                    {
+                        "segment_id": "segment-1",
+                        "text": "Create a bounded release checklist.",
+                        "speaker": "Speaker 1",
+                        "start_ms": 0,
+                        "end_ms": 1000,
+                    }
+                ]
+            },
+        )
+        _write_json(
+            evidence_dir / "summary.json",
+            {
+                "meeting_id": "meeting-release-soak",
+                "transcript_sha256": transcript_hash,
+                "claims": [
+                    {
+                        "claim_id": "action-1",
+                        "field": "action_items",
+                        "text": "Create the bounded release checklist.",
+                        "support_status": "supported",
+                        "source_segment_ids": ["segment-1"],
+                    }
+                ],
+            },
+        )
+        (evidence_dir / "review_events.jsonl").write_text(
+            json.dumps(
+                {
+                    "event": "claim.confirmed",
+                    "claim_id": "action-1",
+                    "changes": {
+                        "review_status": {
+                            "from": "unreviewed",
+                            "to": "confirmed",
+                        }
+                    },
+                },
+                sort_keys=True,
+            )
+            + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        evidence_adapter = AuraEvidenceAdapter(evidence_dir)
+        evidence_selection = evidence_adapter.select_confirmed_action("action-1")
         config = AgentConfig(
             enabled=True,
             default_mode="demo",
@@ -145,6 +210,10 @@ def main() -> int:
             forced_restart = number in FORCED_RESTART_RUNS
             tab.clear_draft()
             tab.choose_workflow(workflow)
+            if workflow == "meeting":
+                tab.evidence_adapter = evidence_adapter
+                tab.selected_evidence = evidence_selection
+                tab._render_selected_evidence()
             branch_index = tab.demo_branch_combo.findData(branch)
             if branch_index < 0:
                 raise RuntimeError(f"Demo branch unavailable: {branch}")
@@ -281,7 +350,7 @@ def main() -> int:
             interruptions >= 10,
             provider_restarts >= 5,
             recovery_exercises >= 5,
-            len(workflows) >= 8,
+            len(workflows) == len(WORKFLOWS),
             all(record["integrity_valid"] for record in records),
             tracked_before == tracked_after,
             max_gap_ms < 500,
@@ -305,6 +374,7 @@ def main() -> int:
         "workflows": workflows,
         "heartbeat_count": len(heartbeats),
         "maximum_ui_heartbeat_gap_ms": round(max_gap_ms, 3),
+        "maximum_ui_heartbeat_gap_gate_ms": 500,
         "catalog_integrity": catalog_integrity,
         "tracked_checkout_unchanged": tracked_before == tracked_after,
         "out_of_bound_write_findings": 0,

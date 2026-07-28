@@ -52,7 +52,7 @@ class SummaryClaimsTableTests(unittest.TestCase):
 
             self.assertEqual(table.rowCount(), 1)
             self.assertEqual(table.item(0, table.SOURCE_COLUMN).text(), "seg-1")
-            self.assertEqual(table.item(0, table.REVIEW_COLUMN).text(), "confirmed")
+            self.assertEqual(table.item(0, table.REVIEW_COLUMN).text(), "edited")
             self.assertEqual(
                 table.item(0, table.CLAIM_COLUMN).text(), "採用來源覆核流程"
             )

@@ -3,7 +3,7 @@
 | Shortcut | Action | Scope |
 | --- | --- | --- |
 | `Ctrl+N` | Create a new task | Agent Workspace |
-| `Ctrl+K` | Open task and command search | Agent Workspace |
+| `Ctrl+K` | Show or hide repository and task-thread search | Agent Workspace |
 | `Enter` | Send when IME composition is inactive | Composer |
 | `Shift+Enter` | Insert a newline | Composer |
 | `Ctrl+Enter` / `Ctrl+Return` | Send explicitly | Composer |

@@ -204,6 +204,7 @@ for raw in sys.stdin:
                 }
             )
     elif method == "account/logout":
+        signed_in = False
         send({"id": request_id, "result": {}})
     elif method == "account/login/cancel":
         send({"id": request_id, "result": {}})

@@ -105,6 +105,11 @@ class RepositoryThreadModelTests(unittest.TestCase):
                     )
         self.assertEqual(visible_ids, ["work-0999"])
 
+        model.set_query("project_aura-ag")
+        repository = model.index(0, 0)
+        self.assertEqual(model.data(repository), "project_aura-ag")
+        self.assertGreater(model.rowCount(repository), 0)
+
 
 class TimelineProjectionTests(unittest.TestCase):
     def test_streamed_messages_neutralize_legacy_private_brand_text(self):

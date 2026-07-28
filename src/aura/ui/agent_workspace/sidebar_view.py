@@ -111,7 +111,7 @@ class WorkspaceSidebar(QFrame):
         header.addStretch(1)
         self.search_button = self._icon_button(
             QStyle.StandardPixmap.SP_FileDialogContentsView,
-            "搜尋任務",
+            "搜尋 Repository 與任務",
             "搜尋 Repository 與任務",
         )
         self.search_button.clicked.connect(self._toggle_search)
@@ -139,8 +139,8 @@ class WorkspaceSidebar(QFrame):
         root.addWidget(self.new_task_button)
 
         self.search = QLineEdit()
-        self.search.setAccessibleName("搜尋任務")
-        self.search.setPlaceholderText("搜尋任務")
+        self.search.setAccessibleName("搜尋 Repository 與任務")
+        self.search.setPlaceholderText("搜尋 Repository 與任務")
         self.search.textChanged.connect(self.model.set_query)
         self.search.hide()
         root.addWidget(self.search)

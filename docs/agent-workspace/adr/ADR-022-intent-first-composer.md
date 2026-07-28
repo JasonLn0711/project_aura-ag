@@ -26,7 +26,8 @@ filesystem, network, publication, or evidence authority.
 ## Migration
 
 The twelve existing workflows remain available through inference, suggestions,
-and `Ctrl+K`; stored workflow identifiers remain readable.
+and explicit slash commands; stored workflow identifiers remain readable.
+`Ctrl+K` opens or closes repository and task-thread search.
 
 ## Validation evidence
 

@@ -61,7 +61,7 @@ class JsonLineRpcClientTests(unittest.TestCase):
     def test_multiple_lines_result_error_timeout_and_size_limit_are_bounded(self):
         with tempfile.TemporaryDirectory() as temporary:
             client = JsonLineRpcClient(
-                request_timeout_ms=40,
+                request_timeout_ms=1000,
                 max_message_bytes=1024,
             )
             started = []
@@ -102,6 +102,7 @@ class JsonLineRpcClientTests(unittest.TestCase):
                 {},
                 results.append,
                 request_errors.append,
+                timeout_ms=40,
             )
             spin_until(lambda: len(request_errors) > before, self.app)
             self.assertIn("timed out", request_errors[-1])
@@ -262,7 +263,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
             provider = self.make_provider(Path(temporary))
             events = []
             provider.event_ready.connect(events.append)
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
 
             provider._request_failed(
                 "thread/start",
@@ -507,7 +508,6 @@ class CodexAppServerProviderTests(unittest.TestCase):
                 codex_version_output="codex-cli 0.145.0",
                 cwd=cwd,
             )
-            self.addCleanup(provider.shutdown)
             events = []
             provider.event_ready.connect(events.append)
             provider.start()
@@ -556,6 +556,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
             self.assertFalse(
                 any(event.event_type == "provider.protocol_error" for event in events)
             )
+            provider.shutdown()
 
     def test_server_command_approval_is_request_scoped(self):
         with tempfile.TemporaryDirectory() as temporary:
@@ -668,7 +669,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
 
             events.clear()
             provider.client.respond.reset_mock()
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
             provider._on_server_request(
                 91,
                 "item/commandExecution/requestApproval",

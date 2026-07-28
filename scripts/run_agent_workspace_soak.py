@@ -163,6 +163,12 @@ def run_soak(output: Path) -> dict[str, object]:
         preview_started = time.perf_counter()
         preview = load_bounded_preview(fifty_mib_log)
         preview_elapsed_ms = (time.perf_counter() - preview_started) * 1000
+        if switch_elapsed_ms >= 100:
+            raise AssertionError("Thread switching exceeded the 100 ms UI gate.")
+        if large_event_elapsed_ms >= 250:
+            raise AssertionError("Progress projection exceeded the 250 ms UI gate.")
+        if preview_elapsed_ms >= 100:
+            raise AssertionError("Large-log preview exceeded the 100 ms UI gate.")
 
         normal = ResourceSnapshot(
             recording_active=False,
@@ -264,6 +270,10 @@ def run_soak(output: Path) -> dict[str, object]:
                 "loaded_bytes": preview.loaded_bytes,
                 "truncated": preview.truncated,
                 "elapsed_ms": round(preview_elapsed_ms, 3),
+            },
+            "performance_gates_ms": {
+                "ordinary_ui": 100,
+                "progress_projection": 250,
             },
             "recording_banner_visible": recording_banner_visible,
             "storage_banner_visible": storage_banner_visible,

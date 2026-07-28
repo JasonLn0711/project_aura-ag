@@ -1,7 +1,17 @@
 # Project AURA Stable Daily-Use Release Assurance
 
-This directory is the canonical bounded evidence packet for the v1.17.0 Agent
-Workspace candidate.
+This directory indexes the canonical bounded evidence packets for Project
+AURA's stable daily-use release path.
+
+| Release evidence | Status | Source |
+| --- | --- | --- |
+| v1.17.0 Ubuntu release validation | `READY_FOR_PR` | [`v1.17.0-2026-07-28/`](v1.17.0-2026-07-28/) |
+| Preserved Agent Workspace pre-release baseline | `CONFIRMED` | The files and directories at this level |
+
+The dated v1.17.0 packet connects the current 607-test regression, native
+control matrix, CUDA and local-runtime evidence, two reliability soaks,
+privacy validation, and formal publication gate. The top-level baseline
+remains preserved for historical claim lineage.
 
 | Evidence | Result | Source |
 | --- | --- | --- |
