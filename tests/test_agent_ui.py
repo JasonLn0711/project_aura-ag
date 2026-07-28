@@ -207,6 +207,59 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             tab.close()
             tab.shutdown()
 
+    def test_search_and_run_diagnostics_controls_follow_the_runtime_contract(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(config=self.make_config(Path(temporary)))
+            tab.resize(1280, 800)
+            tab.show()
+            tab.inspector_tabs.show_artifact("run")
+            self.app.processEvents()
+
+            with patch(
+                "aura.ui.agent_workspace.artifact_actions.QFileDialog.getSaveFileName",
+                return_value=("", ""),
+            ) as choose_destination:
+                controls = (
+                    (
+                        "Ctrl+K repository and thread search",
+                        lambda: tab.search_shortcut.activated.emit(),
+                        lambda: (
+                            tab.task_rail.search.isVisibleTo(tab)
+                            and self.app.focusWidget() is tab.task_rail.search
+                        ),
+                    ),
+                    (
+                        "Run Details export diagnostics",
+                        tab.export_diagnostics_button.click,
+                        lambda: choose_destination.call_count == 1,
+                    ),
+                )
+                for name, activate, consequence_ready in controls:
+                    with self.subTest(control=name):
+                        activate()
+                        self.app.processEvents()
+                        self.assertTrue(consequence_ready())
+
+            self.assertEqual(tab.search_shortcut.key().toString(), "Ctrl+K")
+            self.assertEqual(
+                tab.task_rail.search.accessibleName(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(
+                tab.task_rail.search_button.accessibleName(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(
+                tab.task_rail.search.placeholderText(),
+                "搜尋 Repository 與任務",
+            )
+            self.assertEqual(tab.inspector_tabs.available_artifacts(), ("run",))
+            self.assertNotIn(
+                "diagnostics",
+                tab.inspector_tabs.available_artifacts(),
+            )
+            tab.shutdown()
+
     def test_first_launch_and_disabled_send_explain_the_next_action(self):
         with tempfile.TemporaryDirectory() as temporary:
             config = replace(

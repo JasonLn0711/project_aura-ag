@@ -87,16 +87,21 @@ class RepositoryThreadModel(QAbstractItemModel):
     def _rebuild(self) -> None:
         self._root = _Node("root", "", "root")
         for repository in self._repositories:
+            repository_matches = bool(
+                self._query
+                and self._query
+                in f"{repository.name} {repository.repository_id}".casefold()
+            )
             grouped: dict[str, list[ThreadRow]] = {
                 key: [] for key, _label in self.GROUPS
             }
             for thread in repository.threads:
-                if self._query and self._query not in (
+                if self._query and not repository_matches and self._query not in (
                     f"{thread.title} {thread.work_item_id} {thread.state}".casefold()
                 ):
                     continue
                 grouped[self._group_for(thread)].append(thread)
-            if self._query and not any(grouped.values()):
+            if self._query and not repository_matches and not any(grouped.values()):
                 continue
             repository_node = _Node(
                 "repository",
