@@ -209,16 +209,55 @@ class AgentWorkspaceTabTests(unittest.TestCase):
 
     def test_search_and_run_diagnostics_controls_follow_the_runtime_contract(self):
         with tempfile.TemporaryDirectory() as temporary:
-            tab = AgentWorkspaceTab(config=self.make_config(Path(temporary)))
+            root = Path(temporary)
+            destination = root / "diagnostics.json"
+            task_secret = "TASK_PRIVATE_SENTINEL"
+            evidence_secret = "EVIDENCE_PRIVATE_SENTINEL"
+            raw_event_secret = "RAW_EVENT_PRIVATE_SENTINEL"
+            tab = AgentWorkspaceTab(config=self.make_config(root))
             tab.resize(1280, 800)
             tab.show()
             tab.inspector_tabs.show_artifact("run")
+            tab.task_edit.setPlainText(task_secret)
+            tab.selected_evidence = EvidenceSelection(
+                meeting_id="meeting-diagnostics",
+                claim_id="claim-diagnostics",
+                text=evidence_secret,
+                review_status="confirmed",
+                support_status="supported",
+                source_segment_ids=("segment-diagnostics",),
+                snippets=(
+                    {
+                        "segment_id": "segment-diagnostics",
+                        "text": evidence_secret,
+                        "speaker": "Speaker 1",
+                        "start_ms": 0,
+                        "end_ms": 1000,
+                    },
+                ),
+                stale=False,
+                eligible=True,
+                reasons=(),
+                source_digest="d" * 64,
+            )
+            tab._on_event(
+                AgentUiEvent.create(
+                    run_id="run-diagnostics",
+                    event_type="message.assistant.completed",
+                    sequence=1,
+                    source="fixture",
+                    severity="info",
+                    payload={"text": raw_event_secret},
+                    created_at="2026-07-28T10:30:00+08:00",
+                    event_id="event-diagnostics",
+                )
+            )
             self.app.processEvents()
 
             with patch(
                 "aura.ui.agent_workspace.artifact_actions.QFileDialog.getSaveFileName",
-                return_value=("", ""),
-            ) as choose_destination:
+                return_value=(str(destination), "JSON files (*.json)"),
+            ):
                 controls = (
                     (
                         "Ctrl+K repository and thread search",
@@ -231,7 +270,7 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                     (
                         "Run Details export diagnostics",
                         tab.export_diagnostics_button.click,
-                        lambda: choose_destination.call_count == 1,
+                        destination.is_file,
                     ),
                 )
                 for name, activate, consequence_ready in controls:
@@ -258,6 +297,43 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                 "diagnostics",
                 tab.inspector_tabs.available_artifacts(),
             )
+            diagnostics = json.loads(destination.read_text(encoding="utf-8"))
+            self.assertEqual(
+                set(diagnostics),
+                {
+                    "generated_at",
+                    "provider",
+                    "provider_info",
+                    "state",
+                    "event_types",
+                    "provider_diagnostics",
+                    "protocol_error_summaries",
+                    "configuration_keys",
+                },
+            )
+            self.assertEqual(
+                set(diagnostics["state"]),
+                {
+                    "mode",
+                    "provider_status",
+                    "auth_status",
+                    "requested_profile",
+                    "resolved_model",
+                    "resolved_effort",
+                    "phase",
+                    "safety_profile",
+                    "network_access",
+                },
+            )
+            self.assertEqual(diagnostics["provider"], "demo")
+            self.assertIn(
+                "message.assistant.completed",
+                diagnostics["event_types"],
+            )
+            serialized = json.dumps(diagnostics, ensure_ascii=False)
+            self.assertNotIn(task_secret, serialized)
+            self.assertNotIn(evidence_secret, serialized)
+            self.assertNotIn(raw_event_secret, serialized)
             tab.shutdown()
 
     def test_first_launch_and_disabled_send_explain_the_next_action(self):

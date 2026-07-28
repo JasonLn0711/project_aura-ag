@@ -281,7 +281,12 @@ class WorkflowRegistryTests(unittest.TestCase):
         registry = WorkflowRegistry()
 
         self.assertEqual(len(registry.all()), 12)
-        self.assertEqual(registry.resolve_command("/bug fix it").template_id, "bug")
+        for template in registry.all():
+            with self.subTest(command=template.command):
+                self.assertIs(
+                    registry.resolve_command(f"{template.command} objective"),
+                    template,
+                )
         self.assertEqual(len(registry.suggestions()), 4)
         self.assertEqual(
             {template.default_mode for template in registry.all()},
