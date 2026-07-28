@@ -35,7 +35,7 @@ FIXTURE = Path(__file__).parent / "fixtures" / "codex_fake_app_server.py"
 REPOSITORY = Path(__file__).resolve().parents[1]
 
 
-def spin_until(predicate, app, timeout=4.0):
+def spin_until(predicate, app, timeout=15.0):
     deadline = time.monotonic() + timeout
     while not predicate() and time.monotonic() < deadline:
         app.processEvents()

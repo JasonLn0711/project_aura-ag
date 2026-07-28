@@ -17,6 +17,7 @@ from aura.agent.reporting import (
     CONFIDENCE,
     REPORTS,
     ArchitecturePackageGenerator,
+    _copy_artifact,
     _redact_evidence_text,
 )
 from aura.agent.repository_registry import RepositoryRegistry
@@ -332,6 +333,17 @@ class RepositoryRegistryTests(unittest.TestCase):
 
 
 class ArchitecturePackageGeneratorTests(unittest.TestCase):
+    def test_copied_text_artifacts_use_lf_on_every_platform(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "source.md"
+            destination = root / "destination.md"
+            source.write_bytes(b"first\r\nsecond\r\n")
+
+            _copy_artifact(source, destination)
+
+            self.assertEqual(destination.read_bytes(), b"first\nsecond\n")
+
     def test_redesign_reports_keep_required_order(self):
         self.assertEqual(
             REPORTS[16:],
