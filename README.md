@@ -118,7 +118,7 @@ Use this repository for:
 
 | Runtime path | Recommended use | Current evidence |
 | --- | --- | --- |
-| Ubuntu 24.04 desktop | Full AURA operation, Agent development, and release validation | Primary measured platform; the current 607-test full regression and native 50-task workspace soak pass |
+| Ubuntu 24.04 desktop | Full AURA operation, Agent development, and release validation | Primary measured platform; the current 608-test full regression and native 50-task workspace soak pass |
 | Windows with WSL2 Ubuntu 24.04 | Linux-aligned development and the fastest Windows path to the Agent Workspace | Supported implementation path; target-host AURA release execution is `unavailable_not_passed` |
 | Native Windows | Portable onboarding and native Windows release work | Packaging and source paths exist; v1.17.0 target-host execution is `unavailable_not_passed` |
 | macOS | Source portability and future release-host work | Cross-platform code paths exist; v1.17.0 target-host execution is `unavailable_not_passed` |
@@ -169,7 +169,7 @@ approval gates, and terminal outcomes remain visible. Canonical events retain
 their complete sequence for audit and recovery.
 
 The final validation includes 82 timeline-focused tests within the current
-607-test full regression, 22
+608-test full regression, 22
 native states with zero blank projected items, and a bounded performance packet
 whose maximum measured GUI-thread stall is 55.351 ms. The complete issue,
 72-row acceptance ledger, security contract, and evidence are in the
@@ -222,7 +222,7 @@ Codex process. The approved-worktree follow-up also completed as
 `valid_target_runtime` with the stable thread contract and an isolated
 `workspaceWrite` turn policy.
 
-The Ubuntu 24.04 gate passes the current 607-test full regression. The native
+The Ubuntu 24.04 gate passes the current 608-test full regression. The native
 50-task workspace soak exercises ten approval cycles, ten stop cycles, 30
 provider failure/reconnect cycles, ten Recovery Cards, recording/storage
 transitions, and restart persistence. It retains 1,323 content-free audit
@@ -253,7 +253,7 @@ evidence.
 
 #### v1.17.0 validation
 
-- Full regression: 607 tests pass.
+- Full regression: 608 tests pass.
 - Native workspace soak: 50/50 tasks pass the deterministic integrity gate.
 - Content-free audit: 1,323 events pass hash-chain verification.
 - Native control matrix: 36/36 reachable controls and state gates pass with
@@ -970,7 +970,7 @@ connections.
 
 | Evidence layer | Result |
 | --- | --- |
-| v1.17.0 candidate regression | Current `607`-test full repository regression passes on Ubuntu 24.04 |
+| v1.17.0 candidate regression | Current `608`-test full repository regression passes on Ubuntu 24.04 |
 | Live timeline readability | `82` focused tests, `22/22` native states, zero blank items, 72-row acceptance mapping, and bounded performance gate pass |
 | Native Agent Workspace validation | Architecture, domain, queue, Demo, Codex, Qt, policy, persistence, publication, security, recovery, reporting, accessibility, model/view scale, and migration checks pass |
 | Native workspace soak | `50/50` tasks pass; 10 approvals, 10 stops, 30 provider failure/reconnect cycles, 10 Recovery Cards, and 1,323 integrity-verified audit events |

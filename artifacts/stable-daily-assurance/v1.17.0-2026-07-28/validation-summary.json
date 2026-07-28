@@ -2,10 +2,10 @@
   "schema_version": 1,
   "release": "v1.17.0",
   "release_platform": "Ubuntu 24.04 x86_64",
-  "status": "READY_FOR_PR",
-  "code_commit_under_test": "c331312357979857c700ff3395232bddcb3df36b",
+  "status": "READY_FOR_HOSTED_CI",
+  "code_commit_under_test": "c2d9adb56ffff198d662557084a66d4843d164e0",
   "automated_validation": {
-    "tests_passed": 607,
+    "tests_passed": 608,
     "tests_failed": 0,
     "native_controls_passed": 36,
     "native_controls_blocked": 0,
@@ -104,7 +104,7 @@
     "next_refresh_gate": "native_macos_release_host"
   },
   "publication": {
-    "pull_request": "pending",
+    "pull_request": "https://github.com/JasonLn0711/project_aura-ag/pull/1",
     "hosted_ci": "pending",
     "merge_commit": "pending",
     "annotated_tag": "pending",

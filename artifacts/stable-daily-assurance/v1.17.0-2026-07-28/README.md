@@ -2,16 +2,16 @@
 
 ## Result
 
-Status: `READY_FOR_PR`
+Status: `READY_FOR_HOSTED_CI`
 
 The Ubuntu 24.04 release candidate completes the requested v1.17.0 feature,
 privacy, anonymization, native-control, workflow, CUDA, local-LLM, and
-reliability gates. The formal GitHub pull request, hosted CI, merge commit,
-annotated tag, and release publication are the remaining activation steps.
+reliability gates. Pull request #1 carries the validated candidate; hosted CI,
+the merge commit, annotated tag, and release publication are the remaining
+activation steps.
 
-The code candidate under test is commit `c331312357979857c700ff3395232bddcb3df36b`.
-Documentation-only release preparation may advance the branch while this code
-commit remains the validated implementation boundary.
+The code candidate under test is commit
+`c2d9adb56ffff198d662557084a66d4843d164e0`.
 
 ## Runtime Validity
 
@@ -34,7 +34,7 @@ release-blocking variant.
 
 ## Validation
 
-- Full repository regression: 607/607 tests pass.
+- Full repository regression: 608/608 tests pass.
 - Native Qt controls: 36 passed, 0 blocked, 0 harness errors.
 - Native Qt latency: 18.132 ms ordinary maximum, 0.022 ms progress
   projection, and 194.035 ms visible heartbeat maximum.
