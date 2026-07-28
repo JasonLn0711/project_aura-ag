@@ -102,9 +102,9 @@ Use this repository for:
 | --- | --- |
 | Project Name | Project AURA / Ultimate Audio Assistant |
 | Refactor Version | `1.17.0` |
-| Latest Published Tag | `v1.14.0` |
+| Latest Published Tag | `v1.17.0` |
 | Next Release Candidate | `v1.17.0` |
-| Release State | `v1.17.0` stable daily-use candidate includes the intent-first native Agent Workspace; automated regression, responsive visual, and 50-task soak gates pass, while the five-participant usability study and remaining GUI-thread background-service migration stay explicit next validation layers |
+| Release State | `v1.17.0` is the published Ubuntu stable daily-use release with the intent-first native Agent Workspace; automated regression, responsive visual, native controls, live runtimes, and both 50-task reliability gates pass, with target-host and field-study packages retained as the next validation layers |
 | Primary Platform | Ubuntu 22.04 / 24.04 desktop |
 | Python Runtime | Python 3.10+ |
 | ASR Model | `SoybeanMilk/faster-whisper-Breeze-ASR-25` |
@@ -133,7 +133,7 @@ and remaining host gates are tracked in the
 
 | Release | Contribution |
 | --- | --- |
-| `v1.17.0` candidate | Single-operator stable daily-use Agent Workspace with twelve workflows, four modes, durable queue/catalog, resource governance, dynamic quality profiles, explicit Publish, recovery/support tooling, and 25-report assurance |
+| `v1.17.0` | Published Ubuntu stable daily-use Agent Workspace with twelve workflows, four modes, durable queue/catalog, resource governance, dynamic quality profiles, explicit Publish, recovery/support tooling, and 25-report assurance |
 | `v1.16.0` candidate | Native Agent Workspace P0, evidence-gated Demo and Live operation, architecture-package generation, and the WSL2 Ubuntu 24.04 implementation path |
 | `v1.15.0` preserved source baseline | Durable meeting sessions, crash recovery, timestamped transcript review, source-linked summary claims, and rebuildable local evidence search |
 | `v1.14.0` | Operator-focused workspace, content-free local audit events, runtime diagnostics, integrity checks, and synchronized version automation |
@@ -970,7 +970,7 @@ connections.
 
 | Evidence layer | Result |
 | --- | --- |
-| v1.17.0 candidate regression | Current `608`-test full repository regression passes on Ubuntu 24.04 |
+| v1.17.0 release regression | Current `608`-test full repository regression passes on Ubuntu 24.04 |
 | Live timeline readability | `82` focused tests, `22/22` native states, zero blank items, 72-row acceptance mapping, and bounded performance gate pass |
 | Native Agent Workspace validation | Architecture, domain, queue, Demo, Codex, Qt, policy, persistence, publication, security, recovery, reporting, accessibility, model/view scale, and migration checks pass |
 | Native workspace soak | `50/50` tasks pass; 10 approvals, 10 stops, 30 provider failure/reconnect cycles, 10 Recovery Cards, and 1,323 integrity-verified audit events |

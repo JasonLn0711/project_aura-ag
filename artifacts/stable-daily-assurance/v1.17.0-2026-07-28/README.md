@@ -2,13 +2,13 @@
 
 ## Result
 
-Status: `READY_FOR_HOSTED_CI`
+Status: `LIVE_FULL_COMPLETED`
 
-The Ubuntu 24.04 release candidate completes the requested v1.17.0 feature,
+The published Ubuntu 24.04 release completes the requested v1.17.0 feature,
 privacy, anonymization, native-control, workflow, CUDA, local-LLM, and
-reliability gates. Pull request #1 carries the validated candidate; hosted CI,
-the merge commit, annotated tag, and release publication are the remaining
-activation steps.
+reliability gates. Pull request #1 passed Ubuntu and Windows hosted CI and
+merged at `44e265d9e05836504bcfff181b35273ecb1c45f9`; annotated tag `v1.17.0`
+and the GitHub Release publish the measured Ubuntu stable daily-use package.
 
 The code candidate under test is commit
 `c2d9adb56ffff198d662557084a66d4843d164e0`.
@@ -74,8 +74,7 @@ screen-reader field study remain separately activated validation paths.
 
 ## Decision
 
-- Production default: Project AURA v1.17.0 on Ubuntu 24.04 after formal PR,
-  hosted CI, merge, tag, and GitHub Release publication.
+- Production default: Project AURA v1.17.0 on Ubuntu 24.04.
 - Operational fallback: the deterministic Demo provider through the same
   native workspace and evidence contracts.
 - Research candidate: target-host Windows/macOS validation and the
