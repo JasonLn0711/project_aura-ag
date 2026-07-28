@@ -736,11 +736,16 @@ class ArtifactActions(WorkspaceActionGroup):
             if metadata is None:
                 return
             if action == "resume":
-                self.resume_thread_id = (
-                    str(metadata.get("provider_thread_id"))
-                    if metadata.get("provider_thread_id")
-                    else None
-                )
+                resume_thread_id = str(
+                    metadata.get("provider_thread_id") or ""
+                ).strip()
+                if not resume_thread_id:
+                    self._show_error(
+                        "恢復流程需要可用的 Provider thread ID；"
+                        "現有證據已保留，可先檢視或結束此紀錄。"
+                    )
+                    return
+                self.resume_thread_id = resume_thread_id
                 self.run_view.setPlainText(
                     "恢復前檢查已載入。請檢視既有事件、worktree 與 pending "
                     "approval；系統不會自動重送 mutating command。"
@@ -769,6 +774,22 @@ class ArtifactActions(WorkspaceActionGroup):
                 )
                 self.inspector_tabs.show_artifact("run")
                 return
+            if action == "resume":
+                resume_thread_id = str(
+                    record["reconciliation"].get("provider_thread_id") or ""
+                ).strip()
+                if not resume_thread_id:
+                    self._show_error(
+                        "恢復流程需要可用的 Provider thread ID；"
+                        "現有證據已保留，可先檢視或結束此紀錄。"
+                    )
+                    return
+                self.resume_thread_id = resume_thread_id
+                self.run_view.setPlainText(
+                    "恢復前檢查已載入。請檢視既有事件、worktree 與 pending "
+                    "approval；系統不會自動重送 mutating command。"
+                )
+                self.inspector_tabs.show_artifact("run")
             self.catalog.resolve_recovery(
                 recovery_id,
                 resolution=action,

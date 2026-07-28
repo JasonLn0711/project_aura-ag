@@ -11,6 +11,8 @@ from unittest.mock import Mock, patch
 
 os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 
+from PyQt6.QtCore import Qt
+from PyQt6.QtTest import QTest
 from PyQt6.QtWidgets import QApplication, QDialog, QFrame, QMessageBox
 
 from aura.agent.config import AgentConfig
@@ -827,6 +829,51 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             self.assertEqual(tab.empty_title.text(), "今天想先做什麼？")
             tab.shutdown()
 
+    def test_logout_refreshes_fake_provider_account_state(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            factory = lambda: CodexAppServerProvider(
+                process_program=sys.executable,
+                process_arguments=(str(FIXTURE),),
+                codex_version_output="codex-cli 0.145.0",
+                cwd=REPOSITORY,
+            )
+            tab = AgentWorkspaceTab(
+                config=replace(self.make_config(root), default_mode="live"),
+                codex_provider_factory=factory,
+            )
+            tab.resize(1280, 800)
+            tab.show()
+            spin_until(
+                lambda: tab.controller.state.provider_status == "ready",
+                self.app,
+            )
+            tab.open_control_panel()
+            tab.control_panel.categories.setCurrentRow(1)
+            self.app.processEvents()
+            self.assertTrue(tab.logout_button.isVisibleTo(tab.control_panel))
+
+            QTest.mouseClick(
+                tab.logout_button,
+                Qt.MouseButton.LeftButton,
+            )
+            spin_until(
+                lambda: (
+                    tab.controller.state.auth_status == "signed_out"
+                    and tab.controller.state.provider_status == "login_required"
+                ),
+                self.app,
+            )
+
+            self.assertFalse(
+                tab.logout_button.isVisibleTo(tab.control_panel)
+            )
+            self.assertTrue(tab.login_button.isVisibleTo(tab.control_panel))
+            self.assertTrue(
+                tab.device_login_button.isVisibleTo(tab.control_panel)
+            )
+            tab.shutdown()
+
     def test_live_write_run_completes_catalog_and_releases_the_worker(self):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -1497,6 +1544,19 @@ class AgentWorkspaceTabTests(unittest.TestCase):
             self.assertEqual(len(tab.recovery_widgets), 2)
             tab._recovery_action(
                 "legacy:run-unresumable",
+                "resume",
+            )
+            self.assertIsNone(tab.resume_thread_id)
+            self.assertIn(
+                "Provider thread ID",
+                tab.run_view.toPlainText(),
+            )
+            self.assertIn(
+                "legacy:run-unresumable",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            tab._recovery_action(
+                "legacy:run-unresumable",
                 "abandon",
             )
             interrupted = json.loads(
@@ -1514,6 +1574,105 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                 )["payload"]["reason"],
                 "user_abandoned",
             )
+            tab.shutdown()
+
+    def test_catalog_recovery_resume_loads_thread_before_resolving_card(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.task_edit.setPlainText("Resume a catalog recovery.")
+            tab._create_catalog_run(
+                work_item_id="work-recovery",
+                run_id="run-recovery",
+                workflow="architecture",
+                continuation_of_run_id=None,
+            )
+            tab.catalog.create_recovery_record(
+                recovery_id="recovery-catalog",
+                run_id="run-recovery",
+                status="recovery_required",
+                reconciliation={
+                    "provider_thread_id": "thread-catalog",
+                    "side_effects_may_have_occurred": True,
+                },
+                created_at="2026-07-28T12:00:00+08:00",
+            )
+            tab._show_recovery()
+
+            tab._recovery_action("recovery-catalog", "resume")
+
+            self.assertEqual(tab.resume_thread_id, "thread-catalog")
+            self.assertIn(
+                "恢復前檢查已載入",
+                tab.run_view.toPlainText(),
+            )
+            self.assertNotIn(
+                "recovery-catalog",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            self.assertEqual(tab.catalog.recovery_cards(), [])
+            tab.shutdown()
+
+    def test_catalog_recovery_without_thread_stays_available(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.task_edit.setPlainText("Retain an unresolved recovery.")
+            tab._create_catalog_run(
+                work_item_id="work-recovery",
+                run_id="run-recovery",
+                workflow="architecture",
+                continuation_of_run_id=None,
+            )
+            tab.catalog.create_recovery_record(
+                recovery_id="recovery-catalog",
+                run_id="run-recovery",
+                status="recovery_required",
+                reconciliation={
+                    "provider_thread_id": None,
+                    "side_effects_may_have_occurred": True,
+                },
+                created_at="2026-07-28T12:00:00+08:00",
+            )
+            tab._show_recovery()
+
+            tab._recovery_action("recovery-catalog", "resume")
+
+            self.assertIsNone(tab.resume_thread_id)
+            self.assertIn(
+                "Provider thread ID",
+                tab.run_view.toPlainText(),
+            )
+            self.assertIn(
+                "recovery-catalog",
+                {card.recovery_id for card in tab.recovery_widgets},
+            )
+            self.assertEqual(
+                [card["recovery_id"] for card in tab.catalog.recovery_cards()],
+                ["recovery-catalog"],
+            )
+            tab.shutdown()
+
+    def test_accepted_start_consumes_recovery_thread_once(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            tab = AgentWorkspaceTab(
+                config=self.make_config(Path(temporary))
+            )
+            tab.choose_workflow("replay_demo")
+            tab.task_edit.setPlainText("Resume exactly once.")
+            tab.apply_data_boundary_confirmation(True)
+            tab._view.resume_thread_id = "thread-resume-once"
+
+            with patch.object(tab.application, "start_run") as start_run:
+                tab.start_current_run(policy_confirmed=True)
+
+            self.assertEqual(
+                start_run.call_args.args[0].resume_thread_id,
+                "thread-resume-once",
+            )
+            self.assertIsNone(tab.resume_thread_id)
             tab.shutdown()
 
 
