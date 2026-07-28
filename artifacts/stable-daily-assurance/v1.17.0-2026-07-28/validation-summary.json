@@ -2,8 +2,9 @@
   "schema_version": 1,
   "release": "v1.17.0",
   "release_platform": "Ubuntu 24.04 x86_64",
-  "status": "READY_FOR_HOSTED_CI",
+  "status": "LIVE_FULL_COMPLETED",
   "code_commit_under_test": "c2d9adb56ffff198d662557084a66d4843d164e0",
+  "release_merge_commit": "44e265d9e05836504bcfff181b35273ecb1c45f9",
   "automated_validation": {
     "tests_passed": 608,
     "tests_failed": 0,
@@ -105,10 +106,14 @@
   },
   "publication": {
     "pull_request": "https://github.com/JasonLn0711/project_aura-ag/pull/1",
-    "hosted_ci": "pending",
-    "merge_commit": "pending",
-    "annotated_tag": "pending",
-    "github_release": "pending"
+    "hosted_ci": {
+      "status": "passed",
+      "ubuntu": "https://github.com/JasonLn0711/project_aura-ag/actions/runs/30329190744",
+      "windows": "https://github.com/JasonLn0711/project_aura-ag/actions/runs/30329190756"
+    },
+    "merge_commit": "44e265d9e05836504bcfff181b35273ecb1c45f9",
+    "annotated_tag": "v1.17.0",
+    "github_release": "https://github.com/JasonLn0711/project_aura-ag/releases/tag/v1.17.0"
   },
   "future_validation_gates": [
     "native_windows_release_host",
