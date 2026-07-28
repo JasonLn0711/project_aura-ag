@@ -61,7 +61,7 @@ class JsonLineRpcClientTests(unittest.TestCase):
     def test_multiple_lines_result_error_timeout_and_size_limit_are_bounded(self):
         with tempfile.TemporaryDirectory() as temporary:
             client = JsonLineRpcClient(
-                request_timeout_ms=40,
+                request_timeout_ms=1000,
                 max_message_bytes=1024,
             )
             started = []
@@ -102,6 +102,7 @@ class JsonLineRpcClientTests(unittest.TestCase):
                 {},
                 results.append,
                 request_errors.append,
+                timeout_ms=40,
             )
             spin_until(lambda: len(request_errors) > before, self.app)
             self.assertIn("timed out", request_errors[-1])
