@@ -685,7 +685,7 @@ class AgentWorkspaceTabTests(unittest.TestCase):
                 "not_required",
             )
             self.assertTrue(provider_record["model_discovered_at"])
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
             tab._provider_diagnostic(f"provider stderr {credential}")
             destination = root / "diagnostics.json"
             with patch(

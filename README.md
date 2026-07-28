@@ -144,7 +144,7 @@ GitHub Releases owns the durable release chronology. The sections below
 describe the current product contract and link each capability to its
 canonical design or evidence source.
 
-## Latest Update — v1.17.0 (2026-07-26)
+## Latest Update — v1.17.0 (2026-07-28)
 
 Project AURA v1.17.0 advances the native Agent Workspace to one intent-first
 repository/thread surface while retaining the complete evidence-first meeting

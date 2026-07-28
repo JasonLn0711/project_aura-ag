@@ -262,7 +262,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
             provider = self.make_provider(Path(temporary))
             events = []
             provider.event_ready.connect(events.append)
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
 
             provider._request_failed(
                 "thread/start",
@@ -668,7 +668,7 @@ class CodexAppServerProviderTests(unittest.TestCase):
 
             events.clear()
             provider.client.respond.reset_mock()
-            credential = "sk-abcdefghijklmnopqrstuv"
+            credential = "sk-" + "abcdefghijklmnopqrstuv"
             provider._on_server_request(
                 91,
                 "item/commandExecution/requestApproval",
