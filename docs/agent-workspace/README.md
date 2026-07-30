@@ -27,6 +27,7 @@ separately activated work packages.
 | [Keyboard shortcuts](keyboard-shortcuts.md) | Native task, search, send, CJK IME, inspector, list, and focus controls |
 | [Demo script](demo-script.md) | Replay the repository assurance scenario and required terminal branches |
 | [Architecture](architecture.md) | Domain ownership, runtime flow, persistence, policy, worktrees, and publication |
+| [PyQt6-to-Electron migration source record](pyqt6-to-electron-migration-source-record.md) | Public-safe expert source, adopted Project/Workspace and local-first Node/SQLite target, Electron-independent multi-entry core, A→C→B→D sequence, Artifact Ingestion-to-`sourceArtifactId` boundary, current dynamic-intelligence/authoritative-control learning gate, paused artifact-custody path, storage evidence, and cross-repository routes |
 | [Developer guide](developer-guide.md) | Extend contracts, providers, renderers, fixtures, and tests |
 | [Codex provider guide](codex-provider-guide.md) | Protocol, supervision, compatibility, login, and model resolution |
 | [Login guide](login-guide.md) | Codex-owned ChatGPT and device-code flows |

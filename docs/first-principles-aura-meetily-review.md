@@ -270,3 +270,27 @@ production build 顯示 `/meeting-details` First Load JS 約 845 kB，是目前�
 ## 下一個可驗收決策
 
 下一個 gate 是把已通過的 GPU-only benchmark 從 5 段 clean speech 擴充為具授權的長音訊、遠距、重疊語音與雜訊 corpus。唯一勝出條件仍是「最少人工修正、最短完成確認、可接受的 GPU 記憶體與取消恢復行為、完整可追溯證據」。模型名稱、framework 與既有投資不構成保留理由；量測結果決定產品預設、GPU fallback、研究候選與退場項目。
+
+## 2026-07-30 Desktop architecture re-evaluation input
+
+新的
+[PyQt6 → Electron 專家對話](agent-workspace/pyqt6-to-electron-migration-source-record.md)
+已保存兩輪 public verbatim source、第三至第八輪 public-safe decision
+overlays，並記錄新的 adopted target direction：
+Electron／React 提供桌面表面，Node Application Core 擁有唯一權威狀態，
+Python 只承接受控運算工作。本審查既有的 Meetily/Tauri 產品表面分工持續
+作為目前 implemented baseline。AURA root object 已採用
+Project／Workspace，第一位使用者由預設 Workspace／快速開始承接；v1
+deployment 已採 local-first、single-user、API-shaped Node Core 與 local
+SQLite authority。Node Core 採 Electron-independent、多入口原則；
+Electron、Web、CLI 與 test mode 可透過各自 adapter 呼叫同一核心。
+A → C → B → D delivery sequence 已採納，Phase 1 是匯入音訊 → ASR →
+持久化逐字稿。Artifact Ingestion 先建立正式 artifact identity，
+`StartTranscription` 再以 `sourceArtifactId` 啟動 ASR。下一個 gate 是
+自行定義 dynamic intelligence 與 authoritative control 的邊界，包括
+builder／runtime、success、stopping、evidence、human review 與 independent
+checking。AURA-managed copy、external reference 或 hybrid 的 artifact
+custody policy 保留在 paused path；恢復並完成 custody 與 Phase 1
+Definition of Done 後，再對齊 Electron target 與 Meetily/Tauri 的產品
+對象、migration role 及 acceptance criteria，並以 superseding decision
+啟動可驗證 work package。
